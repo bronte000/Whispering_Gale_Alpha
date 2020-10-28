@@ -15,7 +15,6 @@ public class Louis_Controller : MonoBehaviour
 
     private float x;
     private float z;
-    private int loop;
     
 
     // Start is called before the first frame update
@@ -24,8 +23,7 @@ public class Louis_Controller : MonoBehaviour
         speed = 6.0f;
         jumpSpeed = 8.0f;
         gravity = 20.0f;
-
-        loop = 0;
+        
 
         MoveDir = Vector3.zero;
         RotDir = Vector3.zero;
@@ -39,8 +37,7 @@ public class Louis_Controller : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            loop = loop + 1;
-            print(loop);
+
             x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
             MoveDir = new Vector3(x, 0, z); MoveDir *= speed;
 
