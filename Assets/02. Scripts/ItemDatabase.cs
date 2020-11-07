@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class ItemDatabase : MonoBehaviour
 {
     public static ItemDatabase instance;
+
     public List<Item> items = new List<Item>();
 
     void Awake()
@@ -14,9 +16,9 @@ public class ItemDatabase : MonoBehaviour
 
     void Add(string itemName, int itemValue, int itemPrice, string itemDesc, ItemType itemType)
     {
-        items.Add(new Item(itemName, itemValue, itemPrice, itemDesc, itemType,
-            Resources.Load<Sprite>("ItemImages/" + itemName)));
-        print("Itme added");
+        Item item = new Item(itemName, itemValue, itemPrice, itemDesc, itemType,
+            Resources.Load<Sprite>("ItemImages/" + itemName));
+        items.Add(item);
     }
     // Start is called before the first frame update
     void Start()
