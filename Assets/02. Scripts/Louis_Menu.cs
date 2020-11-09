@@ -11,8 +11,6 @@ public class Louis_Menu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ActionMenu.SetActive(false);
-        Inventory.SetActive(false);
     }
 
     // Update is called once per frame

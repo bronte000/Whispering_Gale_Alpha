@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[System.Serializable]
 public class Slot : MonoBehaviour
 {
-    public int number;
-    public Item item;
-
     // Start is called before the first frame update
     void Start()
     {
