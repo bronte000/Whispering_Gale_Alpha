@@ -11,7 +11,6 @@ public class Inventory : MonoBehaviour
     private void Start()
     {
         slots = slotHolder.GetComponentsInChildren<Slot>();
-        print(slots.Length);
     }
 
     private void Update()

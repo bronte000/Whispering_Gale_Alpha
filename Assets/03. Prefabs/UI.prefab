@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ActionMenu: {fileID: 5509508805766381247}
-  Inventory: {fileID: 0}
+  Inventory: {fileID: 4500057919626783405}
 --- !u!114 &2540114281905166314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ RectTransform:
   m_Children:
   - {fileID: 5749709334332536920}
   m_Father: {fileID: 4585883530309978522}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1019,7 +1019,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.00004832074, y: -0.00002200812}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &8985968288739906322
@@ -1090,8 +1090,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6618038352009810460}
   - {fileID: 6784651464184907056}
+  - {fileID: 6618038352009810460}
   m_Father: {fileID: 6023323675805823345}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1653,7 +1653,7 @@ RectTransform:
   m_Children:
   - {fileID: 2559434453211783185}
   m_Father: {fileID: 4585883530309978522}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
