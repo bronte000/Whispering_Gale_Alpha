@@ -70,4 +70,9 @@ void Start()
             sleeping = 1;
         }
     }
+
+    public void Hotel()
+    {
+        Sleep();
+    }
 }
