@@ -15,7 +15,6 @@ public class Louis_Controller : MonoBehaviour
 
     private float x;
     private float z;
-    
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +22,6 @@ public class Louis_Controller : MonoBehaviour
         speed = 6.0f;
         jumpSpeed = 8.0f;
         gravity = 20.0f;
-        
 
         MoveDir = Vector3.zero;
         RotDir = Vector3.zero;
@@ -56,6 +54,20 @@ public class Louis_Controller : MonoBehaviour
 
         MoveDir.y -= gravity * Time.deltaTime;
         controller.Move(MoveDir * Time.deltaTime);
+        WalkAndRun();
+    }
+
+    void WalkAndRun()
+    {
+        if (animator.GetBool("IsWalk") == true)
+        {
+            if (Input.GetKey(KeyCode.LeftShift))
+                animator.SetBool("IsRun", true);
+        }
+        else
+        {
+            animator.SetBool("IsRun", false);
+        }
     }
 
 }
