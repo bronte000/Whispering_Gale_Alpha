@@ -13,4 +13,9 @@ public class ItemDatabase : MonoBehaviour
 
     public List<Item> itemDB = new List<Item>();
 
+    private void Start()
+    {
+        GameObject.Find("Louis").GetComponent<Louis_Interaction>().setDB(itemDB);
+    }
+
 }

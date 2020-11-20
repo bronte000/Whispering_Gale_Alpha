@@ -124,7 +124,7 @@ AnimatorStateMachine:
     m_Position: {x: 260, y: 280, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7233059204564384147}
-    m_Position: {x: 300, y: 90, z: 0}
+    m_Position: {x: 420, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8031078012901568097}
     m_Position: {x: 229.83806, y: 382.85583, z: 0}
@@ -254,6 +254,12 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: IsSit
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 1
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5

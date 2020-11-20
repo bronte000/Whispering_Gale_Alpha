@@ -512,9 +512,9 @@ MonoBehaviour:
     itemImage: {fileID: 0}
     describe: 
   - itemType: 1
-    itemName: 
-    itemImage: {fileID: 0}
-    describe: 
+    itemName: Candy Wrapper
+    itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
+    describe: Someone's trick. There is no candy inside the wrapper.
 --- !u!1 &2587767402814225021
 GameObject:
   m_ObjectHideFlags: 0
