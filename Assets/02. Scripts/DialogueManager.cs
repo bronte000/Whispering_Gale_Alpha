@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public Queue<string> sentences;
+    public Queue<Sprite> pictures;
 
     public Text nameText;
     public Text dialogueText;
+    public Image imageBox;
 
     public Animator animator;
 
@@ -16,23 +18,33 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        pictures = new Queue<Sprite>();
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue (Dialogue dialogue, Images images, bool hasImages)
     {
-        Debug.Log("Starting conversation with " + dialogue.name);
+        //Debug.Log("Starting conversation with " + dialogue.name);
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
 
         sentences.Clear();
+        pictures.Clear();
 
         foreach(string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
+        if (hasImages)
+        {
+            foreach (Sprite picture in images.images)
+                pictures.Enqueue(picture);
+        }
+
         DisplayNextSentence();
+        if (hasImages)
+            DisplayNextImage();
     }
 
     public void DisplayNextSentence()
@@ -46,6 +58,14 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         //dialogueText.text = sentence;
         StartCoroutine(TypeSentence(sentence));
+    }
+
+    public void DisplayNextImage()
+    {
+        if (sentences.Count == 0)
+            return;
+        Sprite i = pictures.Dequeue();
+        imageBox.sprite = i;
     }
 
     IEnumerator TypeSentence (string sentence)

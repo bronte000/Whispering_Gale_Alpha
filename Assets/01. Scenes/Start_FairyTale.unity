@@ -261,9 +261,60 @@ MonoBehaviour:
   dialogue:
     name: deedee
     sentences:
-    - hi
-    - how are you doing?
-    - bye
+    - A long time ago, in a land far away, there was a princess so entranced by her
+      own beauty, she always ended the day by looking into her mirror.
+    - She was self-possessed enough to fall in love with her mirror, the same way
+      children love their toys.
+    - 'Her self-love overflowed, and its drops fell into the mirror while she was
+      obsessed with what it reflected. The mirror, a simple non-magical tool, gained
+      a will - to shine.
+
+'
+    - "Her plain little sister did not think highly of the princess\u2019s love for
+      appearances, and decided to play a trick."
+    - "She cast a spell on her sister\u2019s mirror that made it distort its owner\u2019s
+      appearances."
+    - The next day, the princess screamed in distress at the ugly appearance she
+      saw in the mirror.
+    - 'The mirror fell from her hands, shattering into a million pieces as it hit
+      the floor. '
+    - "Only when she looked into the other mirrors of the castle did she realize
+      she had been tricked.\r"
+    - But she had learned her lesson; such infatuation with one's own beauty did
+      more harm than good. She did not pursue such narcissism again.
+    - Meanwhile the shards of her broken mirror embedded themselves in the sky to
+      console its owner.
+    - "And that is why we have the hazy Milky Way. It sparkles the world during times
+      when we cannot see our own beauty.\r"
+    - "A strange tale, isn\u2019t it?"
+  images:
+    name: fairy tale
+    images:
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+    - name: 
+      images: []
+  hasImages: 1
 --- !u!114 &162606402
 MonoBehaviour:
   m_ObjectHideFlags: 0
