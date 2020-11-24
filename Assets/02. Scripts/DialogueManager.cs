@@ -20,7 +20,19 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         pictures = new Queue<Sprite>();
     }
-
+    /*
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.KeypadEnter))
+        {
+            GameObject button = GameObject.FindGameObjectWithTag("PressWithEnter");
+            if (button.GetComponent<Button>() != null)
+            {
+                button.GetComponent<Button>().onClick.Invoke();
+            }
+        }
+    }
+    */
     public void StartDialogue (Dialogue dialogue, Images images, bool hasImages)
     {
         //Debug.Log("Starting conversation with " + dialogue.name);

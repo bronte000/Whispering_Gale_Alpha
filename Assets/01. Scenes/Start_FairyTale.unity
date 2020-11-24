@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: deedee
+    name: Louis
     sentences:
     - A long time ago, in a land far away, there was a princess so entranced by her
       own beauty, she always ended the day by looking into her mirror.
@@ -290,30 +290,18 @@ MonoBehaviour:
   images:
     name: fairy tale
     images:
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
-    - name: 
-      images: []
+    - {fileID: 21300000, guid: 5b4934460717d8641a7949a0f525dba7, type: 3}
+    - {fileID: 21300000, guid: 51c0884686d4fb5499ce3f2a73109e7d, type: 3}
+    - {fileID: 21300000, guid: 44a9415e208c952498a7d230207bfa76, type: 3}
+    - {fileID: 21300000, guid: ae56bb5afd391b545ba2e710188aeef9, type: 3}
+    - {fileID: 21300000, guid: 1ef5bd4dfa321604aa3130b09248bd3a, type: 3}
+    - {fileID: 21300000, guid: 690f01ce46323dd43a5b07085292ba2a, type: 3}
+    - {fileID: 21300000, guid: 9760da34f5684084da444a01d8b8900f, type: 3}
+    - {fileID: 21300000, guid: 1fec82dd411b49e48bcd51deec416c63, type: 3}
+    - {fileID: 21300000, guid: 56412c996fa4e1644a542963d5b02fd5, type: 3}
+    - {fileID: 21300000, guid: edc258a68ce034d429169f4301a3c54c, type: 3}
+    - {fileID: 21300000, guid: edc258a68ce034d429169f4301a3c54c, type: 3}
+    - {fileID: 0}
   hasImages: 1
 --- !u!114 &162606402
 MonoBehaviour:
@@ -365,6 +353,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -597,6 +597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 1356666772}
   dialogueText: {fileID: 1184637975}
+  imageBox: {fileID: 1073368797}
   animator: {fileID: 1237328192}
 --- !u!4 &656162039
 Transform:
@@ -1400,9 +1401,10 @@ GameObject:
   - component: {fileID: 2016262831}
   - component: {fileID: 2016262830}
   - component: {fileID: 2016262829}
+  - component: {fileID: 2016262828}
   m_Layer: 5
   m_Name: NextButton
-  m_TagString: Untagged
+  m_TagString: PressWithEnter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1427,6 +1429,21 @@ RectTransform:
   m_AnchoredPosition: {x: 349, y: -26}
   m_SizeDelta: {x: 80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2016262828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016262826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!114 &2016262829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,6 +1490,18 @@ MonoBehaviour:
       - m_Target: {fileID: 656162038}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 656162038}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: DisplayNextImage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
