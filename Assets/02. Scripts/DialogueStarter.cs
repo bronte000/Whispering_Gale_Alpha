@@ -15,13 +15,6 @@ public class DialogueStarter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        //FindObjectOfType<DialogueManager>().StartDialogue(dialogue, images, hasImages);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         FindObjectOfType<DialogueTrigger>().TriggerDialogue();
     }
 }
