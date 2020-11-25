@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/Basic Scene.unity
     guid: b5353fc6baa4bc245a4782d2f9814598
+  - enabled: 1
+    path: Assets/01. Scenes/Start_FairyTale.unity
+    guid: 44acdb7743cc64a4180c702ae993297d
   m_configObjects: {}
