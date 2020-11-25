@@ -20,7 +20,7 @@ public class Start_Menu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Basic Scene");
+        SceneManager.LoadScene("Start_FairyTale");
     }
 
     public void Quit()

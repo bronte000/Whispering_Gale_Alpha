@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96542c5a9da406249962ea0797a8f31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTr: {fileID: 0}
+  playerTr: {fileID: 970418898}
   melody: {fileID: 205001314}
   mp3: {fileID: 8300000, guid: b0b9d1217d403954a8ae8d9f1c6052a9, type: 3}
 --- !u!1001 &177800862
@@ -2608,6 +2608,10 @@ PrefabInstance:
     - target: {fileID: 9112447767830380644, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_Name
       value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112447767830380644, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
@@ -4116,6 +4120,10 @@ PrefabInstance:
     - target: {fileID: 4510447531522386521, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4510447531522386523, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
+      propertyPath: ingameTimeSpeed
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4510447531522386524, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_Name
@@ -13116,7 +13124,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357510424}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2739a2997e9cefd46be93657d9fded0d, type: 3}
   m_Name: 
@@ -19182,6 +19190,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2066697623489822405, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2567925465414790116, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2578291982867886539, guid: dae9230dec35dc3419747b78da29a188, type: 3}

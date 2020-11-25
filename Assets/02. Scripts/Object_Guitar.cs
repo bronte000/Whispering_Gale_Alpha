@@ -22,12 +22,12 @@ public class Object_Guitar : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(guitarTr.position, playerTr.position);
-        if ((dist <= 3.0f) && (melody.isPlaying == false))
+        if ((dist <= 10.0f) && (melody.isPlaying == false))
         {
             melody.Play();
-            Debug.Log("Play");
+            //Debug.Log("Play");
         }
-        else if (dist > 3.0f)
+        else if (dist > 10.0f)
             melody.Stop();
         
     }
