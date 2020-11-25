@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -14,25 +15,16 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    public bool changeSceneWhenFinished;
+    public string nextSceneName;
+
     // Start is called before the first frame update
     void OnEnable()
     {
         sentences = new Queue<string>();
         pictures = new Queue<Sprite>();
     }
-    /*
-    private void Update()
-    {
-        if (Input.GetKey(KeyCode.KeypadEnter))
-        {
-            GameObject button = GameObject.FindGameObjectWithTag("PressWithEnter");
-            if (button.GetComponent<Button>() != null)
-            {
-                button.GetComponent<Button>().onClick.Invoke();
-            }
-        }
-    }
-    */
+
     public void StartDialogue (Dialogue dialogue, Images images, bool hasImages)
     {
         //Debug.Log("Starting conversation with " + dialogue.name);
@@ -74,7 +66,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextImage()
     {
-        if (sentences.Count == 0)
+        if (pictures.Count == 0)
             return;
         Sprite i = pictures.Dequeue();
         imageBox.sprite = i;
@@ -93,5 +85,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        if (changeSceneWhenFinished)
+            SceneManager.LoadScene(nextSceneName);
     }
 }

@@ -5,25 +5,19 @@ using UnityEngine.UI;
 
 public class PressButtonWithEnter : MonoBehaviour
 {
-    private GameObject button;
+    private Button button;
 
-    private void Start()
+    void Start()
     {
-        button = this.gameObject;
+        button = this.gameObject.GetComponent<Button>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.KeypadEnter))
-        {
-            //GameObject button = this.GameObject.FindGameObjectWithTag("PressWithEnter");
-            //button.GetComponent<>
-            if (button.GetComponent<Button>() != null)
-            {
-                button.GetComponent<Button>().onClick.Invoke();
-            }
-        }
+        if (Input.GetKeyDown(KeyCode.Return))
+            button.onClick.Invoke();
+
     }
 
 

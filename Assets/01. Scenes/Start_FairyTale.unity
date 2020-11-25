@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 162606403}
   - component: {fileID: 162606402}
   - component: {fileID: 162606401}
+  - component: {fileID: 162606405}
   m_Layer: 5
   m_Name: StartButton(Temp)
   m_TagString: Untagged
@@ -287,6 +288,11 @@ MonoBehaviour:
     - "And that is why we have the hazy Milky Way. It sparkles the world during times
       when we cannot see our own beauty.\r"
     - "A strange tale, isn\u2019t it?"
+    - My grandmother read it to me when I was eight or nine - a bit past the age
+      for fairy tales.
+    - Looking back I think she wrote it herself; her hobby was writing, though I
+      never saw her writing tales for kids.
+    - I should have asked her before she passed away......
   images:
     name: fairy tale
     images:
@@ -310,7 +316,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162606399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -377,7 +383,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162606399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -408,6 +414,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162606399}
   m_CullTransparentMesh: 0
+--- !u!114 &162606405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162606399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &168045171
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +617,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1184637975}
   imageBox: {fileID: 1073368797}
   animator: {fileID: 1237328192}
+  changeSceneWhenFinished: 1
+  nextSceneName: LowCity1
 --- !u!4 &656162039
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,7 +1109,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510983061}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
@@ -1402,6 +1422,7 @@ GameObject:
   - component: {fileID: 2016262830}
   - component: {fileID: 2016262829}
   - component: {fileID: 2016262828}
+  - component: {fileID: 2016262832}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: PressWithEnter
@@ -1549,3 +1570,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016262826}
   m_CullTransparentMesh: 0
+--- !u!114 &2016262832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016262826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1c5160e9c936445b2e424687119350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
