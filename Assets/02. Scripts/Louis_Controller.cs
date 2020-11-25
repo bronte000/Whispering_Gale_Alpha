@@ -10,23 +10,25 @@ public class Louis_Controller : MonoBehaviour
 
     private CharacterController controller;
     private Animator animator;
-    private Vector3 MoveDir;
-    private Vector3 RotDir;
+
+    private float rotation;
+    private bool walking;
+    private bool back;
 
     private float x;
     private float z;
+    private bool stop;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 6.0f;
-        jumpSpeed = 8.0f;
-        gravity = 20.0f;
-
-        MoveDir = Vector3.zero;
-        RotDir = Vector3.zero;
+        
+        rotation = 0.0f;
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+
+        walking = false;
+        back = false;
     }
 
 
@@ -37,23 +39,46 @@ public class Louis_Controller : MonoBehaviour
         {
 
             x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
-            MoveDir = new Vector3(x, 0, z); MoveDir *= speed;
 
-            if (MoveDir != Vector3.zero){
-                animator.SetBool("IsWalk", true);
-                RotDir = Vector3.Lerp(RotDir, MoveDir, 10.0f * Time.deltaTime);
-                RotDir = RotDir.normalized;
-                transform.rotation = Quaternion.LookRotation(RotDir);
-            } else {
-                animator.SetBool("IsWalk", false);
+            stop = (x == 0) && (z == 0);
+
+            //rotation
+            transform.Rotate(0, x*5, 0);
+
+            //stop
+            if (stop)
+            {
+                if (walking) animator.SetBool("IsWalk", false);
+                if (back) animator.SetBool("GoBack", false);
+                walking = false;
+                back = false;
+            }
+            else
+            {
+                if (!walking && z >= 0)
+                {
+                    if (back)
+                    {
+                        animator.SetBool("GoBack", false);
+                        back = false;
+                    }
+                    animator.SetBool("IsWalk", true);
+                    walking = true;
+                }
+                if (!back && z < 0)
+                {
+                    if (walking)
+                    {
+                        animator.SetBool("IsWalk", false);
+                        walking = false;
+                    }
+                    animator.SetBool("GoBack", true);
+                    back = true;
+                }
+
             }
         }
-        if (Input.GetButton("Jump")) { 
-            MoveDir.y = jumpSpeed;
-        }
-
-        MoveDir.y -= gravity * Time.deltaTime;
-        controller.Move(MoveDir * Time.deltaTime);
+        
         WalkAndRun();
     }
 
