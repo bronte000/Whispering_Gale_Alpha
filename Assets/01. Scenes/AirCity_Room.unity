@@ -1714,9 +1714,30 @@ MonoBehaviour:
   dialogue:
     name: Louis
     sentences:
-    - aaa
-    - bb
-    - c
+    - When do children become adults? I'm sure I'm not the only person who has asked
+      herself this question.
+    - Nothing has changed from yesterday, but starting from today I'm 20. So I'm
+      free to go wherever I want, buy alcohol, blahblahblah.
+    - Or so the laws say - I mean, it doesn't say that I have the guts to do anything
+      that... brave... will the word reckless be more suitable?
+    - "It\u2019s been a very boring birthday so far; the dinner was about my grades
+      and future."
+    - "I think the old topic of politics would be much better - my attention drifts
+      away without any effort, whereas if I\u2019m the topic, my ears perk up just
+      to feed my brain displeasure."
+    - "Don\u2019t get me wrong - I love my parents and am thankful for their attention.
+      It\u2019s the fact that I can\u2019t give any retorts that make me unreasonably
+      angry.\r"
+    - "Grandpa would say something like, \"Where has the \u201Ctwenties\u2019 passion
+      gone in this century?\""
+    - But he's gone, and everyone  I know is following the same, seemingly ages-old
+      but actually recently-paved-and-will-shift-according-to-paradigm path.
+    - "I don\u2019t know if this is right, but the word itself is so ambiguous to
+      the point of meaninglessness."
+    - "So I\u2019m just lost in thought. Sorry if I bored you - and me."
+    - ...
+    - "Hmm\u2026 but it is my birthday\u2026 so I\u2019m going to do something naughty."
+    - '[MISSION] Find a bottle of wine from your inventory!'
   images:
     name: 
     images: []
@@ -1992,6 +2013,8 @@ MonoBehaviour:
   dialogueText: {fileID: 1644257517}
   imageBox: {fileID: 0}
   animator: {fileID: 1037930367}
+  changeSceneWhenFinished: 0
+  nextSceneName: 
 --- !u!4 &1684849696
 Transform:
   m_ObjectHideFlags: 0
