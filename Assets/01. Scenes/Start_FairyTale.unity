@@ -618,7 +618,7 @@ MonoBehaviour:
   imageBox: {fileID: 1073368797}
   animator: {fileID: 1237328192}
   changeSceneWhenFinished: 1
-  nextSceneName: LowCity1
+  nextSceneName: AirCity_Room
 --- !u!4 &656162039
 Transform:
   m_ObjectHideFlags: 0

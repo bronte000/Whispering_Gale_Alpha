@@ -14,6 +14,8 @@ public class Item
     public ItemType itemType;
     public string itemName;
     public Sprite itemImage;
+
+    [TextArea(3, 30)]
     public string describe;
 
     public bool Use()
