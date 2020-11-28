@@ -9,8 +9,10 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool hasImages;
 
+    public NextAction next;
+
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, images, hasImages);
+        FindObjectOfType<DialogueManager>().StartDialogue(dialogue, images, hasImages, next);
     }
 }

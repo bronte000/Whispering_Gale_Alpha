@@ -14,9 +14,7 @@ public class DialogueManager : MonoBehaviour
     public Image imageBox;
 
     public Animator animator;
-
-    public bool changeSceneWhenFinished;
-    public string nextSceneName;
+    private NextAction nextAction;
 
     // Start is called before the first frame update
     void OnEnable()
@@ -25,9 +23,10 @@ public class DialogueManager : MonoBehaviour
         pictures = new Queue<Sprite>();
     }
 
-    public void StartDialogue (Dialogue dialogue, Images images, bool hasImages)
+    public void StartDialogue (Dialogue dialogue, Images images, bool hasImages, NextAction next)
     {
-        //Debug.Log("Starting conversation with " + dialogue.name);
+        //Debug.Log("Starting conversation with " + dialogue.name); Debug.Log(next.nextSceneName);
+        nextAction = next;
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -85,7 +84,19 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
-        if (changeSceneWhenFinished)
-            SceneManager.LoadScene(nextSceneName);
+        NextAction(nextAction);
+    }
+
+    // what to do at the end of dialogue (NextAction.cs 참고)
+    public void NextAction(NextAction next)
+    {
+        if (next.nextActionCode == 0)
+            return;
+        else if (next.nextActionCode == 1) //load next scene
+            SceneManager.LoadScene(next.nextSceneName);
+        else if (next.nextActionCode == 2) //start quest
+            next.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
+        else if (next.nextActionCode == 3) //start dialogue
+            next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 }
