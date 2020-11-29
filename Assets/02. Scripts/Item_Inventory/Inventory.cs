@@ -8,13 +8,24 @@ public class Inventory : MonoBehaviour
     public Slot[] slots;
     public Transform slotHolder;
     public List<Item> items = new List<Item>();
+    public static Inventory instance;
 
     public delegate void OnChangeItem();
     public OnChangeItem onChangeItem;
 
+    void Awake()
+    {
+        instance = this;
+    }
+
+
     private void Start()
     {
         slots = slotHolder.GetComponentsInChildren<Slot>();
+        for (int i = 0; i < 20; i++)
+        {
+            slots[i].slotnum = i;
+        }
     }
 
     private void Update()
@@ -34,6 +45,17 @@ public class Inventory : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public void RemoveItem(int slotnum)
+    {
+        int i = slotnum;
+        items.Remove(slots[i].item);
+        for (i = slotnum; i < items.Count; i++)
+        {
+            slots[i].UpdateSlot(slots[i+1].item);
+        }
+        slots[i].RemoveSlot();
     }
     
 }

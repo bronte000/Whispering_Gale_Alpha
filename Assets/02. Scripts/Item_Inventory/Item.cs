@@ -14,12 +14,18 @@ public class Item
     public ItemType itemType;
     public string itemName;
     public Sprite itemImage;
+    public List<ItemEffect> efts;
 
     [TextArea(3, 30)]
     public string describe;
 
     public bool Use()
     {
-        return false;
+        bool isUsed = true;
+        foreach(ItemEffect eft in efts)
+        {
+            isUsed = isUsed && eft.ExecuteRole();
+        }
+        return isUsed;
     }
 }
