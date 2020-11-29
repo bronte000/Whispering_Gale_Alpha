@@ -386,6 +386,7 @@ MonoBehaviour:
   hasImages: 1
   next:
     nextActionCode: 1
+    nextObject: {fileID: 0}
     nextSceneName: AirCity_Room
     nextQuestNum: 0
 --- !u!114 &162606402
@@ -696,8 +697,6 @@ MonoBehaviour:
   dialogueText: {fileID: 849088152}
   imageBox: {fileID: 1073368797}
   animator: {fileID: 1485270058}
-  changeSceneWhenFinished: 1
-  nextSceneName: AirCity_Room
 --- !u!4 &656162039
 Transform:
   m_ObjectHideFlags: 0
@@ -1043,7 +1042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4690035924439494196, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4690035924439494196, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1093,5 +1092,13 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 656162038}
+    - target: {fileID: 4690035926040333505, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 4690035926040333505, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
