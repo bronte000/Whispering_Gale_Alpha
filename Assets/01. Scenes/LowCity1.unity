@@ -27557,6 +27557,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4090700261655970, guid: e02c9b28d24218a43a18d8d7c739b5b9, type: 3}
   m_PrefabInstance: {fileID: 1180663106}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1183599067 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3296479189189117370, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+  m_PrefabInstance: {fileID: 2140619183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1184287507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46003,6 +46014,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 970418896}
+    - target: {fileID: 4327811755479956813, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: ItemName
+      value: 
+      objectReference: {fileID: 1183599067}
     - target: {fileID: 4409182328088428706, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -46099,6 +46114,10 @@ PrefabInstance:
       propertyPath: itemDB.Array.data[1].efts.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 6a061ee7b51989a449fa4840ac327a8d, type: 2}
+    - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: itemDB.Array.data[1].itemDescribe
+      value: ' Someone''s trick. There is no candy iside the wrapper'
+      objectReference: {fileID: 0}
     - target: {fileID: 5741924780484631807, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
