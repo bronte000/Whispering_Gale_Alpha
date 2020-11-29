@@ -5,17 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class DialogueStarter : MonoBehaviour
 {
-    public bool isNextAction;
-
-    // Start is called before the first frame update
+    //Script that starts the dialogue
     void Start()
     {
         FindObjectOfType<DialogueTrigger>().TriggerDialogue();
-        Debug.Log("start done");
     }
 
-    private void Update()
-    {
-        Debug.Log("update");
-    }
 }

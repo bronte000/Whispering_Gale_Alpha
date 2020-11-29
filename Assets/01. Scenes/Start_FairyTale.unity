@@ -384,6 +384,10 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 673f784495fd1864c9bc96f7777dcd73, type: 3}
     - {fileID: 21300000, guid: 673f784495fd1864c9bc96f7777dcd73, type: 3}
   hasImages: 1
+  next:
+    nextActionCode: 1
+    nextSceneName: AirCity_Room
+    nextQuestNum: 0
 --- !u!114 &162606402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isNextAction: 0
 --- !u!1 &168045171
 GameObject:
   m_ObjectHideFlags: 0

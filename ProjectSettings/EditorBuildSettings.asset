@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/Start_FairyTale.unity
     guid: 44acdb7743cc64a4180c702ae993297d
+  - enabled: 1
+    path: Assets/01. Scenes/AirCity_Room.unity
+    guid: 1d782c14d97b43c45a4fc293e9378ea2
   m_configObjects: {}
