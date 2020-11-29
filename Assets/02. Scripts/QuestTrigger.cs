@@ -9,6 +9,6 @@ public class QuestTrigger : MonoBehaviour
     
     public void TriggerQuest() // (Lower City용)
     {
-        FindObjectOfType<QuestManager>().StartQuest(quest.questNumber);
+        FindObjectOfType<QuestManager>().StartQuest(quest);
     }
 }

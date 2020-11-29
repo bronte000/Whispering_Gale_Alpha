@@ -11,7 +11,8 @@ public class QuestData
 
     [TextArea(3, 10)]
     public string questContent;
-    public NextAction nextAction; //얘를 여기에 넣을지, QuestTrigger.cs에 넣을지 고민하다가 결국 여기다 둠
+    public bool hasStarted; //기본적으로 false로 맞춰두기
+    public NextAction nextAction;
 
     // 선택
     public int[] npcId; //npc(s) Louis may interact with
@@ -21,5 +22,6 @@ public class QuestData
     {
         questName = name;
         npcId = npc;
+        hasStarted = false;
     }
 }

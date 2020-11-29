@@ -27,24 +27,27 @@ public class QuestManager : MonoBehaviour
     }
     */
 
-    public void StartQuest(int questNum)
+    public void StartQuest(QuestData quest)
     {
         //show the quest's objective on-screen
-        Debug.Log(questNum);
+        Debug.Log(quest.questNumber);
         Debug.Log("Get the bottle of wine from Louis's inventory!");
+        quest.hasStarted = true;
     }
 
     //function that's activated when the quest is finished (usually attached to specified object)
     public void QuestCompleted(QuestData quest)
     {
         int i = quest.nextAction.nextActionCode;
+        quest.hasStarted = false;
         Debug.Log(quest.questNumber + "complete!");
         if (i == 0)
             return;
         else if (i == 1) //load next scene
             SceneManager.LoadScene(quest.nextAction.nextSceneName);
         else if (i == 2) //start quest
-            FindObjectOfType<QuestManager>().StartQuest(quest.nextAction.nextQuestNum);
+            quest.nextAction.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
+        //FindObjectOfType<QuestManager>().StartQuest(quest.nextAction.nextQuestNum);
         else if (i == 3)
             quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
