@@ -15,7 +15,7 @@ public class QuestData
 
     // 선택
     public int[] npcId; //npc(s) Louis may interact with
-    public Dialogue dialogue;
+    //public Dialogue dialogue;
 
     public QuestData(string name, int[] npc)
     {

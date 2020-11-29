@@ -1451,7 +1451,24 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3656083928737019484, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656083928737019485, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3656083928737019485, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1684849695}
+    - target: {fileID: 3656083928737019485, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3656083928737019484, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
 --- !u!224 &1033761000 stripped
 RectTransform:
@@ -2172,6 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46ba92ec94958f44eb9c2e52679baac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxDistance: 0
 --- !u!95 &1587226463 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8265375418647601075, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
@@ -2256,6 +2274,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644257515}
   m_CullTransparentMesh: 0
+--- !u!95 &1677554099 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3656083928206844122, guid: 7ec813b33a4911a408ba259ad98266c0, type: 3}
+  m_PrefabInstance: {fileID: 1033760999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1684849694
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,7 +2311,7 @@ MonoBehaviour:
   nameText: {fileID: 1033761002}
   dialogueText: {fileID: 1033761001}
   imageBox: {fileID: 0}
-  animator: {fileID: 1037930367}
+  animator: {fileID: 1677554099}
 --- !u!4 &1684849696
 Transform:
   m_ObjectHideFlags: 0
@@ -2607,10 +2630,10 @@ MonoBehaviour:
     images: []
   hasImages: 0
   next:
-    nextActionCode: 0
-    nextObject: {fileID: 0}
+    nextActionCode: 2
+    nextObject: {fileID: 6281846053335694453}
     nextSceneName: 
-    nextQuestNum: 0
+    nextQuestNum: 1
 --- !u!114 &1849311020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,7 +3317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 129.78333, y: 14.975037}
+  m_AnchoredPosition: {x: 129.78333, y: 14.974976}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &860077830374034717
@@ -3553,7 +3576,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 9.983276, y: 9.983337}
+  m_AnchoredPosition: {x: 9.983276, y: 9.983276}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1581294895974177713
