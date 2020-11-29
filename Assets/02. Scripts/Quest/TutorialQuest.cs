@@ -6,12 +6,21 @@ using UnityEngine.UI;
 public class TutorialQuest : MonoBehaviour
 {
     public GameObject tutorial;
+    private int counter;
+
+    void Start()
+    {
+        counter = 1;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (tutorial.GetComponent<QuestTrigger>().quest.hasStarted == true)
+        if ((tutorial.GetComponent<QuestTrigger>().quest.hasStarted == true) && (counter == 1))
+        {
             ActivateQuestCompletedFunc();
+            counter -= 1;
+        } 
     }
 
     void ActivateQuestCompletedFunc()
@@ -24,6 +33,7 @@ public class TutorialQuest : MonoBehaviour
     {
         tutorial.GetComponent<QuestTrigger>().quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         tutorial.GetComponent<QuestTrigger>().quest.hasStarted = false;
+        tutorial.GetComponent<Button>().onClick.RemoveListener(QuestDone);
     }
 
 }
