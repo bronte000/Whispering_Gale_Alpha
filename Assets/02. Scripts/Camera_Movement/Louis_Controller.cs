@@ -14,6 +14,7 @@ public class Louis_Controller : MonoBehaviour
     private float rotation;
     private bool walking;
     private bool running;
+    private bool back;
 
     private float x;
     private float z;
@@ -28,6 +29,7 @@ public class Louis_Controller : MonoBehaviour
 
         walking = false;
         running = false;
+        back = false;
     }
 
 
@@ -43,16 +45,27 @@ public class Louis_Controller : MonoBehaviour
             //rotation
             transform.Rotate(0, 5*x, 0);
 
-            //stop
+            //walk
             if (z <= 0 && walking)
             {
-                if (walking) animator.SetBool("IsWalk", false);
+                animator.SetBool("IsWalk", false);
                 walking = false;
             }
-            
             if (z > 0 && !walking) { 
                 animator.SetBool("IsWalk", true);
                 walking = true;
+            }
+            
+            //back
+            if (z < 0 && !back)
+            {
+                animator.SetBool("GoBack", true);
+                back = true;
+            }
+            if (z>=0 && back)
+            {
+                animator.SetBool("GoBack", false);
+                back = false;
             }
         }
         
