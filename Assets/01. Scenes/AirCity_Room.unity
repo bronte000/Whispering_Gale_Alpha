@@ -413,7 +413,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 474979337}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72704c0d7e4e8144fa8d5198a5a524e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 8237607fff75b8b4b96f62b0b749ce78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &474979339
@@ -1026,11 +1026,28 @@ MonoBehaviour:
     - "Yes\u2026 now I don\u2019t need to think about my future for the night...\n...aaaand
       I\u2019m already there.\r"
     - "(Sigh) Guess C5H5OH won\u2019t wipe out thoughts for me."
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Would my grandparents laugh at me for following their footsteps? Or would they
+      be sympathetic?
+    - ...Oh. Grandpa's old compass.
+    - 'Hmm? It''s shining?
+
+      I remember it stopped working when he died... Guess
+      he put a spell on it to activate on my birthday; he always did that sort of
+      stuff.'
+    - '"It points to where your heart thinks your home is, and makes that place shine
+      if you put it on a map - was it?"'
+    - It's pointing to the grounds under this Upper City - I'll put it on a map to
+      see for sure.
+    - That's the city where Grandma and Grandpa used to live... Guess I'm feeling
+      nostalgic today.
+    - '...Shall I go down for a bit?
+
+      It is my birthday, and I don''t have
+      any plans for a week...'
+    - Yeah, I think I'll go. If Grandpa left a spell on this compass, he probably
+      left something there too.
+    - ...See you in a couple of days, mom and dad.
+    - And with that, I teleported.
     - 
   images:
     name: 
@@ -4716,10 +4733,12 @@ MonoBehaviour:
   - itemType: 0
     itemName: Wine
     itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
+    efts: []
     describe: Louis's self-birthday gift.
   - itemType: 1
     itemName: Candy Wrapper
     itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
+    efts: []
     describe: Someone's trick. There is no candy inside the wrapper.
 --- !u!1 &5731836229191865437
 GameObject:
@@ -4996,13 +5015,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6281846053335694453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4206a168b9e18d64a87af95d8d406d56, type: 3}
+  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
     questNumber: 1
-    questName: Tutorial - inventory
-    questContent: Get the bottle of wine from Louis's inventory!
+    questName: 
+    questContent: 
     hasStarted: 0
     nextAction:
       nextActionCode: 3
@@ -5020,7 +5039,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6281846053335694453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebcbb5d03cafc41418e4d9be88f6ee51, type: 3}
+  m_Script: {fileID: 11500000, guid: 5dafc9de87b89894181903f18a9bf6de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tutorial: {fileID: 6281846053335694453}
@@ -5807,19 +5826,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5530590019066721255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3401815733055692286}
-        m_TargetAssemblyTypeName: Louis_Health, Assembly-CSharp
-        m_MethodName: Sleep
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &9136869374346252071
 PrefabInstance:
   m_ObjectHideFlags: 0
