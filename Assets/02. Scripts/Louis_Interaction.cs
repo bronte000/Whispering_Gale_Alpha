@@ -50,7 +50,7 @@ public class Louis_Interaction : MonoBehaviour
         switch (count)
         {
             case 0:
-                Inventory.instance.AddItem(database[1]);
+                if (!Inventory.instance.AddItem(database[1])) JackCount--;
                 break;
         }
     }

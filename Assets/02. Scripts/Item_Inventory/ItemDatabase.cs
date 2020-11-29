@@ -6,6 +6,9 @@ public class ItemDatabase : MonoBehaviour
 {
     public static ItemDatabase instance;
 
+    [SerializeField]
+    private SlotToolTip theSlotToolTip;
+
     private void Awake()
     {
         instance = this;
@@ -16,6 +19,16 @@ public class ItemDatabase : MonoBehaviour
     private void Start()
     {
         GameObject.Find("Louis").GetComponent<Louis_Interaction>().setDB(itemDB);
+    }
+
+    public void ShowToolTip(Item _item, Vector3 _pos)
+    {
+        theSlotToolTip.ShowToolTip(_item, _pos);
+    }
+
+    public void HideToolTip()
+    {
+        theSlotToolTip.HideToolTip();
     }
 
 }

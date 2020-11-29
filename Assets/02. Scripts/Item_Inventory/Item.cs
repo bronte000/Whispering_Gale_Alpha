@@ -17,7 +17,7 @@ public class Item
     public List<ItemEffect> efts;
 
     [TextArea(3, 30)]
-    public string describe;
+    public string itemDescribe;
 
     public bool Use()
     {

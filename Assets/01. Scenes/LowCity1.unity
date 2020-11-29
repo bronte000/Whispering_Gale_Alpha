@@ -46027,6 +46027,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4500057919626783405, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4863762968149446854, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -46074,6 +46078,14 @@ PrefabInstance:
     - target: {fileID: 5095538357035577715, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: itemDB.Array.data[1].efts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: itemDB.Array.data[2].efts.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: itemDB.Array.data[1].itemName
@@ -46083,6 +46095,10 @@ PrefabInstance:
       propertyPath: itemDB.Array.data[1].describe
       value: Someone's trick. There is no candy inside the wrapper.
       objectReference: {fileID: 0}
+    - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: itemDB.Array.data[1].efts.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6a061ee7b51989a449fa4840ac327a8d, type: 2}
     - target: {fileID: 5741924780484631807, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0

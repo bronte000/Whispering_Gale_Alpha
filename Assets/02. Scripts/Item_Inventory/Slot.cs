@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-public class Slot : MonoBehaviour, IPointerUpHandler
+public class Slot : MonoBehaviour, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public int slotnum;
     public Image itemIcon;
@@ -27,12 +27,27 @@ public class Slot : MonoBehaviour, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (item == null) return;
-        bool isUse = item.Use();
-        if (isUse)
+        if (item != null)
         {
-            Inventory.instance.RemoveItem(slotnum);
+            bool isUse = item.Use();
+            if (isUse)
+            {
+                Inventory.instance.RemoveItem(slotnum);
+            }
         }
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Debug.Log("Entered");
+        if (item  != null)
+        {
+            ItemDatabase.instance.ShowToolTip(item, transform.position);
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        ItemDatabase.instance.HideToolTip();
+    }
 }
