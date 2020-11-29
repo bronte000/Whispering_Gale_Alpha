@@ -23,12 +23,12 @@ void Start()
     void Update()
     {
         float scroll =  Input.GetAxis("Mouse ScrollWheel") * speed;
-        zoom += scroll;
+        zoom -= scroll;
         if (scroll !=0 && minZoom < zoom && zoom < maxZoom)
         {
             camera.m_Lens.FieldOfView = zoom;
         }
         else
-            zoom -= scroll;
+            zoom += scroll;
     }
 }

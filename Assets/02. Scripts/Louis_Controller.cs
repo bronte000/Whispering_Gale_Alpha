@@ -13,11 +13,10 @@ public class Louis_Controller : MonoBehaviour
 
     private float rotation;
     private bool walking;
-    private bool back;
+    private bool running;
 
     private float x;
     private float z;
-    private bool stop;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +27,7 @@ public class Louis_Controller : MonoBehaviour
         animator = GetComponent<Animator>();
 
         walking = false;
-        back = false;
+        running = false;
     }
 
 
@@ -39,43 +38,21 @@ public class Louis_Controller : MonoBehaviour
         {
 
             x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
-
-            stop = (x == 0) && (z == 0);
+            
 
             //rotation
-            transform.Rotate(0, x*5, 0);
+            transform.Rotate(0, 5*x, 0);
 
             //stop
-            if (stop)
+            if (z <= 0 && walking)
             {
                 if (walking) animator.SetBool("IsWalk", false);
-                if (back) animator.SetBool("GoBack", false);
                 walking = false;
-                back = false;
             }
-            else
-            {
-                if (!walking && z >= 0)
-                {
-                    if (back)
-                    {
-                        animator.SetBool("GoBack", false);
-                        back = false;
-                    }
-                    animator.SetBool("IsWalk", true);
-                    walking = true;
-                }
-                if (!back && z < 0)
-                {
-                    if (walking)
-                    {
-                        animator.SetBool("IsWalk", false);
-                        walking = false;
-                    }
-                    animator.SetBool("GoBack", true);
-                    back = true;
-                }
-
+            
+            if (z > 0 && !walking) { 
+                animator.SetBool("IsWalk", true);
+                walking = true;
             }
         }
         
@@ -84,13 +61,14 @@ public class Louis_Controller : MonoBehaviour
 
     void WalkAndRun()
     {
-        if (animator.GetBool("IsWalk") == true)
+        if (walking && !running && Input.GetKey(KeyCode.LeftShift))
         {
-            if (Input.GetKey(KeyCode.LeftShift))
-                animator.SetBool("IsRun", true);
+            running = true;
+            animator.SetBool("IsRun", true);
         }
-        else
+        if (running && !walking)
         {
+            running = false;
             animator.SetBool("IsRun", false);
         }
     }

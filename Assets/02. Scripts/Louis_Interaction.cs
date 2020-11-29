@@ -2,20 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Louis_Interaction : MonoBehaviour
 {
+    public float maxDistance;
+
     private List<Item> database;
     private int JackCount;
+    private LayerMask layerMask;
+    private RaycastHit hit;
 
     private void Start()
     {
         JackCount = 0;
     }
 
-  /*  private void Start()
+    private void Update()
     {
-        database = GameObject.Find("ItemDatabse").GetComponent<ItemDatabase>().GetDatabase();
-    } */
+        if (Input.GetKeyDown("return"))
+        {
+            if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance) )
+            {
+
+                Debug.Log("collid");
+            }
+        }
+    }
 
     public void setDB(List<Item> DB)
     {
