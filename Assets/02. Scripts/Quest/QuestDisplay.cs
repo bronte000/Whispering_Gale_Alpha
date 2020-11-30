@@ -55,7 +55,7 @@ public class QuestDisplay : MonoBehaviour
         //Debug.Log(activeNum);
     }
 
-    public void DisplayQuest(QuestData quest)
+    public void DisplayNewQuest(QuestData quest)
     {
         this.gameObject.SetActive(true);
         questTitle.GetComponent<TextMeshProUGUI>().text = quest.questName;
@@ -78,3 +78,8 @@ public class QuestDisplay : MonoBehaviour
         toHide.SetActive(false);
     }
 }
+/* 메모
+ activeNum - Scene이 열리자마자 시작되는 퀘스트 기록용
+            (& 동시에 여러 퀘스트를 받을 수 있도록 프로그램 할 때 대비) -> 아직은 구현 안 함.
+
+ */

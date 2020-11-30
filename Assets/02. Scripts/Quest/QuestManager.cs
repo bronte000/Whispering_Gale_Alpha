@@ -20,7 +20,7 @@ public class QuestManager : MonoBehaviour
     {
         Debug.Log(quest.questName);
         Debug.Log(quest.questContent);
-        questWindow.GetComponent<QuestDisplay>().DisplayQuest(quest); //function that shows player the quest infos
+        questWindow.GetComponent<QuestDisplay>().DisplayNewQuest(quest); //function that shows player the quest infos
     }
 
     //function that's activated when the quest is finished (usually attached to specified object)
