@@ -10,8 +10,7 @@ public class Inventory : MonoBehaviour
     public List<Item> items = new List<Item>();
     public static Inventory instance;
 
-    public delegate void OnChangeItem();
-    public OnChangeItem onChangeItem;
+    public GameObject menu;
 
     void Awake()
     {
@@ -32,7 +31,7 @@ public class Inventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            GameObject.Find("Menu").GetComponent<Louis_Menu>().Click_Bag_Button();
+            menu.GetComponent<Louis_Menu>().Click_Bag_Button();
         }
     }
 
