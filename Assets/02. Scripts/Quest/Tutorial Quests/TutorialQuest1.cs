@@ -17,7 +17,7 @@ public class TutorialQuest1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (keyWPressTime > 2.0f)
+        if (keyWPressTime > 3.0f)
         {
             questManager.QuestCompleted(this.gameObject.GetComponent<QuestTrigger>().quest);
             this.gameObject.SetActive(false);
