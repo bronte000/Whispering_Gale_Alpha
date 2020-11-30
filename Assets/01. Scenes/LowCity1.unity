@@ -3845,6 +3845,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 176967838}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &177486902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177486903}
+  m_Layer: 0
+  m_Name: 2 Eat Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177486903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177486902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1825460500}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &177800862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40777,6 +40807,51 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: faaf529487783f0498ca145d0093e2d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48edffd325af3146abf35b230330117, type: 3}
+--- !u!1 &1825460498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1825460500}
+  - component: {fileID: 1825460499}
+  m_Layer: 0
+  m_Name: Quests
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1825460499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825460498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8237607fff75b8b4b96f62b0b749ce78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1825460500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825460498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1881390908}
+  - {fileID: 177486903}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832432493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41634,6 +41709,70 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1880261689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1881390907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1881390908}
+  - component: {fileID: 1881390909}
+  m_Layer: 0
+  m_Name: 1 Walk Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1881390908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881390907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1825460500}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881390909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881390907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    questNumber: 1
+    questName: Walk Tutorial
+    questContent: 'Walk forward with W, and backward with S.
+
+      Then try running
+      by pressing W and Shift. (Louis doesn''t know how to run backwards)
+
+      Turn
+      left with A, and turn right with D. The degree of rotation will be proportional
+      to how long you press A or D.
+
+      Now, try walking and running.'
+    hasStarted: 0
+    nextAction:
+      nextActionCode: 2
+      nextObject: {fileID: 177486902}
+      nextSceneName: 
+      nextQuestNum: 0
+    npcId: 
+  questCertificate: {fileID: 0}
 --- !u!1001 &1883984575
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,34 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
-    /*
-    public int questId;
-
-    Dictionary<int, QuestData> questList;
-
-    void Awake()
-    {
-        questList = new Dictionary<int, QuestData>();
-        GenerateData();
-    }
-
-    void GenerateData()
-    {
-        questList.Add(10, new QuestData("tutorial quest", new int[] { }));
-    }
-
-    public int GetQuestTalkIndex(int npcId)
-    {
-        return questId;
-    }
-    */
+    public GameObject questWindow;
 
     public void StartQuest(QuestData quest)
     {
         //show the quest's objective on-screen
-        Debug.Log(quest.questNumber);
-        Debug.Log("Get the bottle of wine from Louis's inventory!");
+        //Debug.Log(quest.questNumber);
         quest.hasStarted = true;
+        questWindow.GetComponent<QuestDisplay>().activeNum += 1;
+        ShowQuestInfo(quest);
+    }
+
+    void ShowQuestInfo(QuestData quest)
+    {
+        Debug.Log(quest.questName);
+        Debug.Log(quest.questContent);
+        questWindow.GetComponent<QuestDisplay>().DisplayQuest(); //function that shows player the quest infos
     }
 
     //function that's activated when the quest is finished (usually attached to specified object)
@@ -40,6 +28,7 @@ public class QuestManager : MonoBehaviour
     {
         int i = quest.nextAction.nextActionCode;
         quest.hasStarted = false;
+        questWindow.GetComponent<QuestDisplay>().activeNum -= 1;
         Debug.Log(quest.questNumber + "complete!");
         if (i == 0)
             return;
@@ -48,7 +37,7 @@ public class QuestManager : MonoBehaviour
         else if (i == 2) //start quest
             quest.nextAction.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
         //FindObjectOfType<QuestManager>().StartQuest(quest.nextAction.nextQuestNum);
-        else if (i == 3)
+        else if (i == 3) //load dialogue
             quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 }

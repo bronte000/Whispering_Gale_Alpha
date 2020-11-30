@@ -25,7 +25,7 @@ public class TutorialQuest : MonoBehaviour
 
     void ActivateQuestCompletedFunc()
     {
-        Debug.Log("QuestCompleteActivated");
+        //Debug.Log("QuestCompleteActivated");
         tutorial.GetComponent<Button>().onClick.AddListener(QuestDone);
     }
 
@@ -34,6 +34,8 @@ public class TutorialQuest : MonoBehaviour
         tutorial.GetComponent<QuestTrigger>().quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         tutorial.GetComponent<QuestTrigger>().quest.hasStarted = false;
         tutorial.GetComponent<Button>().onClick.RemoveListener(QuestDone);
+        GameObject.Find("QuestInfo").GetComponent<QuestDisplay>().activeNum -= 1;
+        GameObject.Find("QuestInfo").SetActive(false);
     }
 
 }
