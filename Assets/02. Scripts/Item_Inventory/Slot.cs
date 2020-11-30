@@ -11,10 +11,13 @@ public class Slot : MonoBehaviour, IPointerUpHandler, IPointerEnterHandler, IPoi
     public Image itemIcon;
     public Item item;
 
+    private bool haveItem = false;
+
     public void UpdateSlot(Item _item)
     {
         itemIcon.sprite = _item.itemImage;
         item = _item;
+        haveItem = true;
         itemIcon.gameObject.SetActive(true);
     }
 
@@ -22,12 +25,13 @@ public class Slot : MonoBehaviour, IPointerUpHandler, IPointerEnterHandler, IPoi
     {
         itemIcon.sprite = null;
         item = null;
+        haveItem = false;
         itemIcon.gameObject.SetActive(false);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        if (item != null)
+        if (haveItem)
         {
             bool isUse = item.Use();
             if (isUse)
@@ -40,7 +44,7 @@ public class Slot : MonoBehaviour, IPointerUpHandler, IPointerEnterHandler, IPoi
     public void OnPointerEnter(PointerEventData eventData)
     {
         Debug.Log("Entered");
-        if (item  != null)
+        if (haveItem)
         {
             ItemDatabase.instance.ShowToolTip(item, transform.position);
         }
