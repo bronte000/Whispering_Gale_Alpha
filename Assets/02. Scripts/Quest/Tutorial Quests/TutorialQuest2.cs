@@ -25,6 +25,7 @@ public class TutorialQuest2 : MonoBehaviour
         if (shiftPressTime > 3.0f)
         {
             questManager.QuestCompleted(this.gameObject.GetComponent<QuestTrigger>().quest);
+            this.gameObject.SetActive(false);
         }
     }
 }

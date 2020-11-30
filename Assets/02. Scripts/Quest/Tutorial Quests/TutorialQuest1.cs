@@ -28,6 +28,6 @@ public class TutorialQuest1 : MonoBehaviour
             keyWPressTime += Time.deltaTime;
         }
 
-        Debug.Log(keyWPressTime);
+        //Debug.Log(keyWPressTime);
     }
 }
