@@ -10,9 +10,15 @@ public class QuestDisplay : MonoBehaviour
 
     private QuestTrigger[] questObjects;
 
-    public GameObject questTitle;
-    public GameObject questContent;
-    private GameObject questViewButton;
+    [SerializeField]
+    private GameObject questTitle;
+    [SerializeField]
+    private GameObject questContent;
+    [SerializeField]
+    private GameObject questButton;
+
+    private bool QuestShown = true;
+    private bool QuestActive = true;
 
     //public string test;
     public int activeNum; //number of active quests
@@ -20,9 +26,7 @@ public class QuestDisplay : MonoBehaviour
     private void Start()
     {
         allQuests = new Dictionary<int, QuestData>();
-        this.gameObject.SetActive(false);
         questObjects = Resources.FindObjectsOfTypeAll<QuestTrigger>();
-        questViewButton = GameObject.Find("QuestViewButton");
 
         activeNum = 0;
         foreach (QuestTrigger q in questObjects)
@@ -33,49 +37,55 @@ public class QuestDisplay : MonoBehaviour
                 activeNum += 1;
             }
         }
+
         questTitle.GetComponent<TextMeshProUGUI>().text = allQuests[1].questName;
         questContent.GetComponent<TextMeshProUGUI>().text = allQuests[1].questContent;
+    }
 
-        // hide QuestViewButton if all quests are inactive
-        if (activeNum == 0)
-            questViewButton.SetActive(false);
-        else
-            this.gameObject.SetActive(true);
+    private void QuestActivate(bool active)
+    {
+        this.gameObject.SetActive(active);
+        questButton.SetActive(active);
+        QuestActive = active;
+        QuestShown = active;
     }
 
     private void Update()
     {
-        if (activeNum > 0)
-            questViewButton.SetActive(true);
-        else if (activeNum < 0)
-            activeNum = 0; //just-in-case
-        else
-            questViewButton.SetActive(false);
-
+        if (activeNum > 0 && !QuestActive) QuestActivate(true); 
+        if (activeNum == 0 && QuestActive) QuestActivate(false);
+        if (activeNum > 0 && Input.GetKeyDown("Q")) QuestButtonClick();
+        //   if (activeNum > 0) QuestActivate(true);
+        //    else if (activeNum < 0)
+        //         activeNum = 0; //just-in-case
+        //    else QuestDisactivate(false);
         //Debug.Log(activeNum);
     }
 
     public void DisplayNewQuest(QuestData quest)
     {
-        this.gameObject.SetActive(true);
+        QuestActivate(true);
         questTitle.GetComponent<TextMeshProUGUI>().text = quest.questName;
         questContent.GetComponent<TextMeshProUGUI>().text = quest.questContent;
     }
-
-    public void ShowQuestDisplay()
-    {
-        this.gameObject.SetActive(true);
-    }
-
-    public void HideQuestDisplay(GameObject viewButton)
-    {
-        this.gameObject.SetActive(false);
-        viewButton.SetActive(true);
-    }
-
+    
     public void HideGameObject(GameObject toHide)
     {
         toHide.SetActive(false);
+    }
+
+    public void QuestButtonClick()
+    {
+        if (QuestShown)
+        {
+            this.gameObject.SetActive(false);
+            QuestShown = false;
+        }
+        else
+        {
+            this.gameObject.SetActive(true);
+            QuestShown = true;
+        }
     }
 }
 /* 메모
