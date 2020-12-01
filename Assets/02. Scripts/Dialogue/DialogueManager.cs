@@ -13,10 +13,11 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
     public Image imageBox;
+    public GameObject dialogueBox;
 
     public Animator animator;
     private NextAction nextAction;
-
+    
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -28,27 +29,37 @@ public class DialogueManager : MonoBehaviour
     {
         //Debug.Log("Starting conversation with " + dialogue.name); Debug.Log(next.nextSceneName);
         nextAction = next;
-        animator.SetBool("IsOpen", true);
+        //animator.SetBool("IsOpen", true);
+        dialogueBox.SetActive(true);
 
         nameText.text = dialogue.name;
 
         sentences.Clear();
         pictures.Clear();
-
-        foreach(string sentence in dialogue.sentences)
+        
+        foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
+       // Debug.Log("Image");
         if (hasImages)
         {
             foreach (Sprite picture in images.images)
                 pictures.Enqueue(picture);
         }
 
-        DisplayNextSentence();
         if (hasImages)
             DisplayNextImage();
+
+        StartCoroutine(delay(0.65f));
+    }
+
+    private IEnumerator delay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        //Debug.Log("delayed");
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -78,13 +89,14 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+            yield return new WaitForSeconds(0.01f);
         }
     }
 
     void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        //animator.SetBool("IsOpen", false);
+        dialogueBox.SetActive(false);
         NextAction(nextAction);
     }
 

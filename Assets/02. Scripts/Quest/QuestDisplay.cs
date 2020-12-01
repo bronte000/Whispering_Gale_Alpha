@@ -11,6 +11,8 @@ public class QuestDisplay : MonoBehaviour
     private QuestTrigger[] questObjects;
 
     [SerializeField]
+    private GameObject questinfo;
+    [SerializeField]
     private GameObject questTitle;
     [SerializeField]
     private GameObject questContent;
@@ -38,13 +40,13 @@ public class QuestDisplay : MonoBehaviour
             }
         }
 
-        questTitle.GetComponent<TextMeshProUGUI>().text = allQuests[1].questName;
-        questContent.GetComponent<TextMeshProUGUI>().text = allQuests[1].questContent;
+      //  questTitle.GetComponent<TextMeshProUGUI>().text = allQuests[1].questName;
+      //  questContent.GetComponent<TextMeshProUGUI>().text = allQuests[1].questContent;
     }
 
     private void QuestActivate(bool active)
     {
-        this.gameObject.SetActive(active);
+        questinfo.SetActive(active);
         questButton.SetActive(active);
         QuestActive = active;
         QuestShown = active;
@@ -54,7 +56,7 @@ public class QuestDisplay : MonoBehaviour
     {
         if (activeNum > 0 && !QuestActive) QuestActivate(true); 
         if (activeNum == 0 && QuestActive) QuestActivate(false);
-        if (activeNum > 0 && Input.GetKeyDown("Q")) QuestButtonClick();
+        if (activeNum > 0 && Input.GetKeyDown("q")) QuestButtonClick();
         //   if (activeNum > 0) QuestActivate(true);
         //    else if (activeNum < 0)
         //         activeNum = 0; //just-in-case
@@ -78,12 +80,12 @@ public class QuestDisplay : MonoBehaviour
     {
         if (QuestShown)
         {
-            this.gameObject.SetActive(false);
+            questinfo.SetActive(false);
             QuestShown = false;
         }
         else
         {
-            this.gameObject.SetActive(true);
+            questinfo.SetActive(true);
             QuestShown = true;
         }
     }

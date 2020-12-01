@@ -5,22 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
-    public GameObject questWindow;
+    public GameObject questUI;
 
     public void StartQuest(QuestData quest)
     {
         //show the quest's objective on-screen
         //Debug.Log(quest.questNumber);
         quest.hasStarted = true;
-        questWindow.GetComponent<QuestDisplay>().activeNum += 1;
+        questUI.GetComponent<QuestDisplay>().activeNum += 1;
         ShowQuestInfo(quest);
     }
 
     void ShowQuestInfo(QuestData quest)
     {
-        Debug.Log(quest.questName);
-        Debug.Log(quest.questContent);
-        questWindow.GetComponent<QuestDisplay>().DisplayNewQuest(quest); //function that shows player the quest infos
+      //  Debug.Log(quest.questName);
+      //  Debug.Log(quest.questContent);
+        questUI.GetComponent<QuestDisplay>().DisplayNewQuest(quest); //function that shows player the quest infos
     }
 
     //function that's activated when the quest is finished (usually attached to specified object)
@@ -28,8 +28,8 @@ public class QuestManager : MonoBehaviour
     {
         int i = quest.nextAction.nextActionCode;
         quest.hasStarted = false;
-        questWindow.GetComponent<QuestDisplay>().activeNum -= 1;
-        Debug.Log(quest.questNumber + "complete!");
+        questUI.GetComponent<QuestDisplay>().activeNum -= 1;
+       // Debug.Log(quest.questNumber + "complete!");
         switch (i)
         {
             case 0: return;
