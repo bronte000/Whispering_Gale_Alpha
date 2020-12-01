@@ -30,14 +30,18 @@ public class QuestManager : MonoBehaviour
         quest.hasStarted = false;
         questWindow.GetComponent<QuestDisplay>().activeNum -= 1;
         Debug.Log(quest.questNumber + "complete!");
-        if (i == 0)
-            return;
-        else if (i == 1) //load next scene
-            SceneManager.LoadScene(quest.nextAction.nextSceneName);
-        else if (i == 2) //start quest
-            quest.nextAction.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
-        //FindObjectOfType<QuestManager>().StartQuest(quest.nextAction.nextQuestNum);
-        else if (i == 3) //load dialogue
-            quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+        switch (i)
+        {
+            case 0: return;
+            case 1: // load next scene
+                SceneManager.LoadScene(quest.nextAction.nextSceneName);
+                break;
+            case 2: //start quest
+                quest.nextAction.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
+                break;
+            case 3://load dialogue
+                quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+                break;
+        }
     }
 }

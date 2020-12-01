@@ -1,22 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
-public class CinemaScript : MonoBehaviour
+public class MainCameraScript : MonoBehaviour
 {
     public float speed = 10.0f;
     public float minZoom = 10.0f;
     public float maxZoom = 40.0f;
 
     private float zoom;
-    private CinemachineVirtualCamera camera;
+    private Camera camera;
 
 // Start is called before the first frame update
 void Start()
     {
         zoom = 20.0f;
-        camera = GetComponent<CinemachineVirtualCamera>();
+        camera = this.gameObject.GetComponent<Camera>();
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ void Start()
         zoom -= scroll;
         if (scroll !=0 && minZoom < zoom && zoom < maxZoom)
         {
-            camera.m_Lens.FieldOfView = zoom;
+            camera.fieldOfView = zoom;
         }
         else
             zoom += scroll;

@@ -46,17 +46,14 @@ MonoBehaviour:
   theSlotToolTip: {fileID: 0}
   itemDB:
   - itemType: 0
-    itemName: 
-    itemImage: {fileID: 0}
+    itemName: Wine
+    itemImage: {fileID: 21300000, guid: 6f2d84b7c98df1f478d9379c8c1c013d, type: 3}
     efts: []
-    itemDescribe: 
+    itemDescribe: 'A bottle of wine.
+
+      Louis''s self-birthday gift.'
   - itemType: 1
     itemName: Candy Wrapper
     itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
     efts: []
-    itemDescribe: 
-  - itemType: 0
-    itemName: Delicious Quest
-    itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
-    efts: []
-    itemDescribe: 
+    itemDescribe: ' Someone''s trick. There is no candy inside the wrapper'
