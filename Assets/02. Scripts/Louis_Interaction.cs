@@ -7,7 +7,6 @@ public class Louis_Interaction : MonoBehaviour
 {
     public float maxDistance;
 
-    private List<Item> database;
     private int JackCount;
     private LayerMask layerMask;
     private RaycastHit hit;
@@ -40,17 +39,12 @@ public class Louis_Interaction : MonoBehaviour
         }
     }
 
-    public void setDB(List<Item> DB)
-    {
-        database = DB;
-    }
-    
     private void JackoLanternEvent(int count)
     {
         switch (count)
         {
             case 0:
-                if (!Inventory.instance.AddItem(database[1])) JackCount--;
+                if (!Inventory.instance.AddItem(1)) JackCount--;
                 break;
         }
     }

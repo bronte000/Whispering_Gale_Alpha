@@ -31,7 +31,7 @@ public class TutorialQuest : MonoBehaviour
 
     void QuestDone()
     {
-        tutorial.GetComponent<QuestTrigger>().quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+     //   tutorial.GetComponent<QuestTrigger>().quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         tutorial.GetComponent<QuestTrigger>().quest.hasStarted = false;
         tutorial.GetComponent<Button>().onClick.RemoveListener(QuestDone);
         GameObject.Find("QuestInfo").GetComponent<QuestDisplay>().activeNum -= 1;

@@ -12,6 +12,7 @@ public class QuestManager : MonoBehaviour
         //show the quest's objective on-screen
         //Debug.Log(quest.questNumber);
         quest.hasStarted = true;
+        quest.StartActions();
         questUI.GetComponent<QuestDisplay>().activeNum += 1;
         ShowQuestInfo(quest);
     }
@@ -26,22 +27,8 @@ public class QuestManager : MonoBehaviour
     //function that's activated when the quest is finished (usually attached to specified object)
     public void QuestCompleted(QuestData quest)
     {
-        int i = quest.nextAction.nextActionCode;
         quest.hasStarted = false;
         questUI.GetComponent<QuestDisplay>().activeNum -= 1;
-       // Debug.Log(quest.questNumber + "complete!");
-        switch (i)
-        {
-            case 0: return;
-            case 1: // load next scene
-                SceneManager.LoadScene(quest.nextAction.nextSceneName);
-                break;
-            case 2: //start quest
-                quest.nextAction.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
-                break;
-            case 3://load dialogue
-                quest.nextAction.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
-                break;
-        }
+        quest.EndQuest();
     }
 }

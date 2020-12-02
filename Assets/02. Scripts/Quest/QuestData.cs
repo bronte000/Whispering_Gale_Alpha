@@ -12,7 +12,10 @@ public class QuestData
     [TextArea(3, 10)]
     public string questContent;
     public bool hasStarted; //기본적으로 false로 맞춰두기
-    public NextAction nextAction;
+   // public NextAction nextAction;
+
+    public List<QuestAction> startActions;
+    public List<QuestAction> endActions;
 
     // 선택
     public int[] npcId; //npc(s) Louis may interact with
@@ -24,4 +27,25 @@ public class QuestData
         npcId = npc;
         hasStarted = false;
     }
+
+    public bool StartActions()
+    {
+        bool done = true;
+        foreach (QuestAction act in startActions)
+        {
+            done = done && act.ExecuteRole();
+        }
+        return done;
+    }
+
+    public bool EndQuest()
+    {
+        bool done = true;
+        foreach (QuestAction act in endActions)
+        {
+            done = done && act.ExecuteRole();
+        }
+        return done;
+    }
+
 }

@@ -11,15 +11,12 @@ public class Inventory : MonoBehaviour
     public static Inventory instance;
 
     public GameObject menu;
+    
+    private List<Item> database;
 
     void Awake()
     {
         instance = this;
-    }
-
-
-    private void Start()
-    {
         slots = slotHolder.GetComponentsInChildren<Slot>();
         for (int i = 0; i < 20; i++)
         {
@@ -35,8 +32,15 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public bool AddItem(Item item)
+    public void setDB(List<Item> DB)
     {
+        database = DB;
+    }
+
+    public bool AddItem(int index)
+    {
+        Item item = database[index];
+
         if(items.Count < 20)
         {
             items.Add(item);

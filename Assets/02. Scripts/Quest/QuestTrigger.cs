@@ -10,7 +10,11 @@ public class QuestTrigger : MonoBehaviour
     public void TriggerQuest() // (Lower City용)
     {
         FindObjectOfType<QuestManager>().StartQuest(quest);
-     //   Debug.Log("quest started!");
-        Debug.Log(quest.questName);
+        //Debug.Log(quest.questName);
+    }
+
+    public void QuestCompleted()
+    {
+        FindObjectOfType<QuestManager>().QuestCompleted(quest);
     }
 }

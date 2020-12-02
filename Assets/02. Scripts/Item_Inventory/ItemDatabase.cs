@@ -18,7 +18,7 @@ public class ItemDatabase : MonoBehaviour
 
     private void Start()
     {
-        GameObject.Find("Louis").GetComponent<Louis_Interaction>().setDB(itemDB);
+        Inventory.instance.setDB(itemDB);
     }
 
     public void ShowToolTip(Item _item, Vector3 _pos)
