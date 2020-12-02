@@ -8,7 +8,8 @@ public class QuestDisplay : MonoBehaviour
     private string[] questNames;
     private Dictionary<int, QuestData> allQuests;
 
-    private QuestTrigger[] questObjects;
+    [SerializeField]
+    private GameObject [] questObjects;
 
     [SerializeField]
     private GameObject questinfo;
@@ -28,22 +29,17 @@ public class QuestDisplay : MonoBehaviour
     private void Start()
     {
         allQuests = new Dictionary<int, QuestData>();
-        questObjects = Resources.FindObjectsOfTypeAll<QuestTrigger>();
-        int i;
         activeNum = 0;
-            i = 0;
-        foreach (QuestTrigger q in questObjects)
+        foreach (GameObject quest in questObjects)
         {
-            Debug.Log(i++);
+            QuestTrigger q = quest.GetComponent<QuestTrigger>();
             allQuests.Add(q.quest.questNumber, q.quest);
             if (q.quest.hasStarted == true)
             {
                 activeNum += 1;
+                FindObjectOfType<QuestManager>().StartQuest(q.quest);
             }
         }
-
-      //  questTitle.GetComponent<TextMeshProUGUI>().text = allQuests[1].questName;
-      //  questContent.GetComponent<TextMeshProUGUI>().text = allQuests[1].questContent;
     }
 
     private void QuestActivate(bool active)
