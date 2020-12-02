@@ -174,7 +174,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -270,7 +270,10 @@ MonoBehaviour:
     hasStarted: 0
     startActions:
     - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
+    - {fileID: 11400000, guid: d84ffde806a5401428890dbe8c44cf0f, type: 2}
     endActions:
+    - {fileID: 11400000, guid: 4be1385a3a684ac4a8d382e3b493ad08, type: 2}
+    - {fileID: 11400000, guid: c1cd1ac409d651f42bd66ddde387a6bf, type: 2}
     - {fileID: 11400000, guid: a54652679c58bd04f941e10aef3f674a, type: 2}
     npcId: 
   questCertificate: {fileID: 0}
@@ -325,7 +328,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1000,6 +1003,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8999235555856867575, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8999235555856867575, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9083295154303664694, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -1210,7 +1221,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1305,7 +1316,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1495,7 +1506,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1598,11 +1609,9 @@ MonoBehaviour:
     - Would my grandparents laugh at me for following their footsteps? Or would they
       be sympathetic?
     - ...Oh. Grandpa's old compass.
-    - 'Hmm? It''s shining?
-
-      I remember it stopped working when he died... Guess
-      he put a spell on it to activate on my birthday; he always did that sort of
-      stuff.'
+    - Hmm? It's shining?
+    - I remember it stopped working when he died... Guess he put a spell on it to
+      activate on my birthday; he always did that sort of stuff.
     - '"It points to where your heart thinks your home is, and makes that place shine
       if you put it on a map - was it?"'
     - It's pointing to the grounds under this Upper City - I'll put it on a map to
@@ -1617,7 +1626,6 @@ MonoBehaviour:
       left something there too.
     - ...See you in a couple of days, mom and dad.
     - And with that, I teleported.
-    - 
   images:
     name: 
     images: []
@@ -1722,6 +1730,101 @@ Transform:
   m_Father: {fileID: 1785402920}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1016169497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016169498}
+  - component: {fileID: 1016169501}
+  - component: {fileID: 1016169500}
+  - component: {fileID: 1016169499}
+  m_Layer: 0
+  m_Name: Wall (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016169498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016169497}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5, y: 2.5, z: 0}
+  m_LocalScale: {x: 0.3, y: 5, z: 8}
+  m_Children: []
+  m_Father: {fileID: 1785402920}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1016169499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016169497}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1016169500
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016169497}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1016169501
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016169497}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1272154075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,11 +2017,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3942693883639303546, guid: dae9230dec35dc3419747b78da29a188, type: 3}
   m_PrefabInstance: {fileID: 461166028}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1560419130 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 1da67dcf0dc91a745a078e8dbc92a146, type: 3}
-  m_PrefabInstance: {fileID: 1802851508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1587226459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2018,8 +2116,9 @@ Transform:
   - {fileID: 368040511}
   - {fileID: 989222637}
   - {fileID: 1375556062}
-  - {fileID: 1560419130}
+  - {fileID: 1802718772}
   - {fileID: 967044330}
+  - {fileID: 1016169498}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2115,6 +2214,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 80, y: -30, z: 0}
+--- !u!4 &1802718772 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 1da67dcf0dc91a745a078e8dbc92a146, type: 3}
+  m_PrefabInstance: {fileID: 1802851508}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1802851508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2275,6 +2379,7 @@ MonoBehaviour:
     - "So I\u2019m just lost in thought. Sorry if I bored you - and me."
     - ...
     - "Hmm\u2026 but it is my birthday\u2026 so I\u2019m going to do something naughty."
+    - 
   images:
     name: 
     images: []
@@ -2358,7 +2463,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3f009fbf4fcfa8444b6d1fa1799a5b73, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
