@@ -262,14 +262,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
-    questNumber: 0
-    questName: 
-    questContent: Drink Wine
+    questNumber: 1
+    questName: Inventory Tutorial
+    questContent: Get a bottle of wine from Louis's inventory!
     hasStarted: 0
-    startActions:
-    - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
-    endActions:
-    - {fileID: 11400000, guid: f1455a6519d85774396bf4b091692278, type: 2}
+    startActions: []
+    endActions: []
     npcId: 
   questCertificate: {fileID: 0}
 --- !u!1 &368040507
@@ -2274,7 +2272,6 @@ MonoBehaviour:
     - "So I\u2019m just lost in thought. Sorry if I bored you - and me."
     - ...
     - "Hmm\u2026 but it is my birthday\u2026 so I\u2019m going to do something naughty."
-    - '[MISSION] Find a bottle of wine from your inventory!'
   images:
     name: 
     images: []
