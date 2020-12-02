@@ -28,7 +28,7 @@ public class QuestData
         hasStarted = false;
     }
 
-    public bool StartActions()
+    public bool StartActions() // acitons that start simultaneously with the quest
     {
         bool done = true;
         foreach (QuestAction act in startActions)

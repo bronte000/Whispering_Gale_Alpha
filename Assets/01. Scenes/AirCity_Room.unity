@@ -266,8 +266,10 @@ MonoBehaviour:
     questName: Inventory Tutorial
     questContent: Get a bottle of wine from Louis's inventory!
     hasStarted: 0
-    startActions: []
-    endActions: []
+    startActions:
+    - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
+    endActions:
+    - {fileID: 11400000, guid: a54652679c58bd04f941e10aef3f674a, type: 2}
     npcId: 
   questCertificate: {fileID: 0}
 --- !u!1 &368040507
@@ -1532,7 +1534,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 981302319}
-  - component: {fileID: 981302321}
   - component: {fileID: 981302320}
   m_Layer: 5
   m_Name: Dialouge2
@@ -1612,18 +1613,6 @@ MonoBehaviour:
     nextObject: {fileID: 0}
     nextSceneName: LowCity1
     nextQuestNum: 0
---- !u!114 &981302321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981302318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &989222633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4976,7 +4965,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9112447769063188285}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.065, z: -2.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4989,7 +4978,7 @@ Transform:
   - {fileID: 4138360107298839827}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!137 &8545677787233308232
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
