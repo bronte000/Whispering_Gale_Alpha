@@ -264,13 +264,12 @@ MonoBehaviour:
   quest:
     questNumber: 0
     questName: 
-    questContent: 
+    questContent: Drink Wine
     hasStarted: 0
-    nextAction:
-      nextActionCode: 0
-      nextObject: {fileID: 0}
-      nextSceneName: 
-      nextQuestNum: 0
+    startActions:
+    - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
+    endActions:
+    - {fileID: 11400000, guid: f1455a6519d85774396bf4b091692278, type: 2}
     npcId: 
   questCertificate: {fileID: 0}
 --- !u!1 &368040507
@@ -375,6 +374,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 222062857}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuestCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 671098708328805169, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_Name
       value: UI
@@ -547,6 +574,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2540114281905166314, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2540114281905166314, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2578291982867886539, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -569,6 +604,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2578291982867886539, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670000446172233445, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2848098421773081811, guid: dae9230dec35dc3419747b78da29a188, type: 3}
@@ -678,6 +717,10 @@ PrefabInstance:
     - target: {fileID: 4863762968149446854, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5064265013943720618, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5095538357035577715, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y
