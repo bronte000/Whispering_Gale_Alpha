@@ -3968,64 +3968,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 176967838}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &177486902
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 177486903}
-  - component: {fileID: 177486904}
-  m_Layer: 0
-  m_Name: 3 Eat Tutorial
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &177486903
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177486902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1825460500}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &177486904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177486902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest:
-    questNumber: 3
-    questName: Eating Tutorial
-    questContent: 'All that walking and running has made Louis hungry.
-
-      Grab
-      a snack from her bag and fill up the Hungry bar.'
-    hasStarted: 0
-    nextAction:
-      nextActionCode: 0
-      nextObject: {fileID: 0}
-      nextSceneName: 
-      nextQuestNum: 0
-    npcId: 
-  questCertificate: {fileID: 0}
 --- !u!1001 &177800862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6218,11 +6160,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1259268539521762299, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1562005670006398365, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6589585931677367238, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_CastShadows
@@ -10074,7 +10016,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4510447531522386521, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4510447531522386521, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -32288,77 +32230,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 511e4c322d313224ebf77c8d70a54f17, type: 3}
   m_PrefabInstance: {fileID: 1308461072}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1310701081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1310701082}
-  - component: {fileID: 1310701083}
-  - component: {fileID: 1310701084}
-  m_Layer: 0
-  m_Name: 2 Run Tutorial
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1310701082
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310701081}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1825460500}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1310701083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310701081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest:
-    questNumber: 2
-    questName: Run Tutorial
-    questContent: 'Good Job!
-
-      Now, try running by pressing W and Shift. (Louis
-      doesn''t know how to run backwards)'
-    hasStarted: 0
-    nextAction:
-      nextActionCode: 2
-      nextObject: {fileID: 177486902}
-      nextSceneName: 
-      nextQuestNum: 0
-    npcId: 
-  questCertificate: {fileID: 0}
---- !u!114 &1310701084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310701081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21402ede73ec1a34ca44fe6fea58852c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1311615849 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4447271018949824, guid: 9e1ff9dae9b01c0428264de7d6caaf2c, type: 3}
@@ -32839,7 +32710,7 @@ Transform:
   - {fileID: 1698793495}
   - {fileID: 1855159263}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1332799948
 PrefabInstance:
@@ -42626,53 +42497,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: faaf529487783f0498ca145d0093e2d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c48edffd325af3146abf35b230330117, type: 3}
---- !u!1 &1825460498
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1825460500}
-  - component: {fileID: 1825460499}
-  m_Layer: 0
-  m_Name: Quests
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1825460499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825460498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8237607fff75b8b4b96f62b0b749ce78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questUI: {fileID: 0}
---- !u!4 &1825460500
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1825460498}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1881390908}
-  - {fileID: 177486903}
-  - {fileID: 1310701082}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832432493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43413,80 +43237,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1880261689}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1881390907
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1881390908}
-  - component: {fileID: 1881390909}
-  - component: {fileID: 1881390910}
-  m_Layer: 0
-  m_Name: 1 Walk Tutorial
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1881390908
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881390907}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1825460500}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1881390909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881390907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest:
-    questNumber: 1
-    questName: Walk Tutorial
-    questContent: 'Walk forward with W, and backward with S.
-
-      You can turn
-      left with A, and turn right with D. Press longer to turn more.
-
-      Try walking
-      for 3 seconds.'
-    hasStarted: 1
-    nextAction:
-      nextActionCode: 2
-      nextObject: {fileID: 1310701081}
-      nextSceneName: 
-      nextQuestNum: 0
-    npcId: 
-  questCertificate: {fileID: 0}
---- !u!114 &1881390910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881390907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38b5a07593de9e6408eff037e6addbc4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1883984575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46186,7 +45936,7 @@ Transform:
   - {fileID: 30571892}
   - {fileID: 1387535295}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2056421219
 PrefabInstance:
@@ -48430,38 +48180,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae9230dec35dc3419747b78da29a188, type: 3}
---- !u!1 &2140619184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7496728612963921315, guid: dae9230dec35dc3419747b78da29a188, type: 3}
-  m_PrefabInstance: {fileID: 2140619183}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2140619185 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3942693883639303546, guid: dae9230dec35dc3419747b78da29a188, type: 3}
-  m_PrefabInstance: {fileID: 2140619183}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2140619186 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7496728612593454867, guid: dae9230dec35dc3419747b78da29a188, type: 3}
-  m_PrefabInstance: {fileID: 2140619183}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2140619187 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7496728613669519520, guid: dae9230dec35dc3419747b78da29a188, type: 3}
-  m_PrefabInstance: {fileID: 2140619183}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2142658217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48751,22 +48469,52 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2344855700526409510, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2344855700526409511, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 2140619187}
+      objectReference: {fileID: 0}
     - target: {fileID: 2344855700526409511, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 2140619186}
+      objectReference: {fileID: 0}
     - target: {fileID: 2344855700526409511, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: dialogueBox
       value: 
-      objectReference: {fileID: 2140619184}
+      objectReference: {fileID: 0}
     - target: {fileID: 3443921147895938587, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: questUI
       value: 
-      objectReference: {fileID: 2140619185}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443921148179974934, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443921148179974936, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: quest.hasStarted
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443921148179974936, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: quest.questNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443921148179974936, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: quest.questName
+      value: Walk Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 3443921148179974936, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
+      propertyPath: quest.questContent
+      value: 'Walk forward with W, and backward with S.
+
+        You can turn left
+        with A, and turn right with D. Press longer to turn more.
+
+        Try walking
+        for 3 seconds.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4611912163432008506, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -48797,7 +48545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4611912163432008506, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4611912163432008506, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48817,63 +48565,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64da3310cfbe99e46a651588f8a7df2c, type: 3}
---- !u!1001 &5007256603180677043
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 970418898}
-    m_Modifications:
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4160747215234326434, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7007084480028159802, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
-      propertyPath: m_Name
-      value: MiniMapCam
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a5835e811a5826a42ade851620d0b68f, type: 3}
 --- !u!4 &8458345745107188615 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4425913256900446, guid: 8c351874d93f7ff46a61b50dad0cf9f2, type: 3}

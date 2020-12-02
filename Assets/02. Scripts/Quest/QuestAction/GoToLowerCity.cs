@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(menuName = "QuestAction/UpperRoom/WineQuestDone")]
-public class WineQuestDone : QuestAction
+[CreateAssetMenu(menuName = "QuestAction/UpperRoom/GoToLowerCity")]
+public class GoToLowerCity : QuestAction
 {
     public override bool ExecuteRole()
     {

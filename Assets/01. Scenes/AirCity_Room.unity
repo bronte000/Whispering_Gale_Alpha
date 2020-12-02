@@ -264,10 +264,15 @@ MonoBehaviour:
   quest:
     questNumber: 1
     questName: Inventory Tutorial
-    questContent: Get a bottle of wine from Louis's inventory!
+    questContent: " Get a bottle of wine from Louis's inventory!\n\n Hint: You can
+      click Louis Image to open the menu. Then, click the bag image to open your
+      invetory.\n Or, just use 'I' key!"
     hasStarted: 0
-    startActions: []
-    endActions: []
+    startActions:
+    - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
+    endActions:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 62c8015d0abb3094cbefc91f44862e41, type: 2}
     npcId: 
   questCertificate: {fileID: 0}
 --- !u!1 &368040507
@@ -663,6 +668,18 @@ PrefabInstance:
     - target: {fileID: 3401815733395494628, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942693884256069681, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_text
+      value: text
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942693884256069682, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942693884256069682, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 4409182328088428706, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMin.y

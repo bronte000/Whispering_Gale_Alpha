@@ -29,10 +29,12 @@ public class QuestDisplay : MonoBehaviour
     {
         allQuests = new Dictionary<int, QuestData>();
         questObjects = Resources.FindObjectsOfTypeAll<QuestTrigger>();
-
+        int i;
         activeNum = 0;
+            i = 0;
         foreach (QuestTrigger q in questObjects)
         {
+            Debug.Log(i++);
             allQuests.Add(q.quest.questNumber, q.quest);
             if (q.quest.hasStarted == true)
             {
