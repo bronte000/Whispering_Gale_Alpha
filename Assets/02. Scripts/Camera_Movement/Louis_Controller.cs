@@ -74,7 +74,7 @@ public class Louis_Controller : MonoBehaviour
 
     void WalkAndRun()
     {
-        if (walking && !running && Input.GetKey(KeyCode.LeftShift))
+        if (walking && !running && (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)))
         {
             running = true;
             animator.SetBool("IsRun", true);

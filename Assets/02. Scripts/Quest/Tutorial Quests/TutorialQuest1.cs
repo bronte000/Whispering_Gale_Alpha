@@ -4,23 +4,29 @@ using UnityEngine;
 
 public class TutorialQuest1 : MonoBehaviour
 {
+
+    private bool done;
     private float keyWPressTime;
-    private QuestManager questManager;
+
+    public GameObject questManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        questManager = GameObject.Find("Quests").GetComponent<QuestManager>();
         keyWPressTime = 0.0f;
+        done = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (done) return;
+
         if (keyWPressTime > 3.0f)
         {
-            questManager.QuestCompleted(this.gameObject.GetComponent<QuestTrigger>().quest);
-            this.gameObject.SetActive(false);
+            done = true;
+          //  Debug.Log("walkingquestdone");
+            questManager.GetComponent<QuestManager>().QuestCompleted(this.gameObject.GetComponent<QuestTrigger>().quest);
         }
         
         if (Input.GetKey(KeyCode.W))

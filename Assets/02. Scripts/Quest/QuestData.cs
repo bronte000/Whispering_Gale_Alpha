@@ -45,6 +45,7 @@ public class QuestData
         {
             done = done && act.ExecuteRole();
         }
+        Debug.Log(questName);
         return done;
     }
 

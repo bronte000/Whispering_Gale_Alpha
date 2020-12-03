@@ -11,6 +11,7 @@ public class QuestManager : MonoBehaviour
     {
         //show the quest's objective on-screen
         //Debug.Log(quest.questNumber);
+        //Debug.Log(quest.questName);
         quest.hasStarted = true;
         quest.StartActions();
         questUI.GetComponent<QuestDisplay>().activeNum += 1;
