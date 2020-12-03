@@ -4375,6 +4375,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3942693883639303546, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3942693884256069681, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_text
       value: text
@@ -4649,6 +4653,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6699342312293656028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496728612593454867, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496728612963921315, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7496728613506677542, guid: dae9230dec35dc3419747b78da29a188, type: 3}
@@ -9160,31 +9172,31 @@ MonoBehaviour:
   dialogue:
     name: Louis
     sentences:
-    - Yep, here it is, safe and sound! My own private dessert.
-    - hmm...Grape juice for adults?
-    - "Yes\u2026 now I don\u2019t need to think about my future for the night...\n...aaaand
+    - ' Yep, here it is, safe and sound! My own private dessert.'
+    - ' hmm...Grape juice for adults?'
+    - " Yes\u2026 now I don\u2019t need to think about my future for the night...\n...aaaand
       I\u2019m already there.\r"
-    - "(Sigh) Guess C5H5OH won\u2019t wipe out thoughts for me."
-    - Would my grandparents laugh at me for following their footsteps? Or would they
-      be sympathetic?
-    - ...Oh. Grandpa's old compass.
-    - Hmm? It's shining?
-    - I remember it stopped working when he died... Guess he put a spell on it to
-      activate on my birthday; he always did that sort of stuff.
-    - '"It points to where your heart thinks your home is, and makes that place shine
-      if you put it on a map - was it?"'
-    - It's pointing to the grounds under this Upper City - I'll put it on a map to
-      see for sure.
-    - That's the city where Grandma and Grandpa used to live... Guess I'm feeling
-      nostalgic today.
-    - '...Shall I go down for a bit?
+    - " (Sigh) Guess C5H5OH won\u2019t wipe out thoughts for me."
+    - ' Would my grandparents laugh at me for following their footsteps? Or would
+      they be sympathetic?'
+    - ' ...Oh. Grandpa''s old compass.'
+    - ' Hmm? It''s shining?'
+    - ' I remember it stopped working when he died... Guess he put a spell on it
+      to activate on my birthday; he always did that sort of stuff.'
+    - ' "It points to where your heart thinks your home is, and makes that place
+      shine if you put it on a map - was it?"'
+    - ' It''s pointing to the grounds under this Upper City - I''ll put it on a map
+      to see for sure.'
+    - ' That''s the city where Grandma and Grandpa used to live... Guess I''m feeling
+      nostalgic today.'
+    - ' ...Shall I go down for a bit?
 
       It is my birthday, and I don''t have
       any plans for a week...'
-    - Yeah, I think I'll go. If Grandpa left a spell on this compass, he probably
-      left something there too.
-    - ...See you in a couple of days, mom and dad.
-    - And with that, I teleported.
+    - ' Yeah, I think I''ll go. If Grandpa left a spell on this compass, he probably
+      left something there too.'
+    - ' ...See you in a couple of days, mom and dad.'
+    - ' And with that, I teleported.'
   images:
     name: 
     images: []
@@ -16273,29 +16285,29 @@ MonoBehaviour:
   dialogue:
     name: Louis
     sentences:
-    - When do children become adults? I'm sure I'm not the only person who has asked
-      herself this question.
-    - Nothing has changed from yesterday, but starting from today I'm 20. So I'm
-      free to go wherever I want, buy alcohol, blahblahblah.
-    - Or so the laws say - I mean, it doesn't say that I have the guts to do anything
-      that... brave... will the word reckless be more suitable?
-    - "It\u2019s been a very boring birthday so far; the dinner was about my grades
+    - ' When do children become adults? I''m sure I''m not the only person who has
+      asked herself this question.'
+    - ' Nothing has changed from yesterday, but starting from today I''m 20. So I''m
+      free to go wherever I want, buy alcohol, blahblahblah.'
+    - ' Or so the laws say - I mean, it doesn''t say that I have the guts to do anything
+      that... brave... will the word reckless be more suitable?'
+    - " It\u2019s been a very boring birthday so far; the dinner was about my grades
       and future."
-    - "I think the old topic of politics would be much better - my attention drifts
+    - " I think the old topic of politics would be much better-\nmy attention drifts
       away without any effort, whereas if I\u2019m the topic, my ears perk up just
       to feed my brain displeasure."
-    - "Don\u2019t get me wrong - I love my parents and am thankful for their attention.
+    - " Don\u2019t get me wrong - I love my parents and am thankful for their attention.
       It\u2019s the fact that I can\u2019t give any retorts that make me unreasonably
       angry.\r"
-    - "Grandpa would say something like, \"Where has the \u201Ctwenties\u2019 passion
+    - " Grandpa would say something like, \"Where has the \u201Ctwenties\u2019 passion
       gone in this century?\""
-    - But he's gone, and everyone  I know is following the same, seemingly ages-old
-      but actually recently-paved-and-will-shift-according-to-paradigm path.
-    - "I don\u2019t know if this is right, but the word \"right\" itself is ambiguous
+    - ' But he''s gone, and everyone  I know is following the same, seemingly ages-old
+      but actually recently-paved-and-will-shift-according-to-paradigm path.'
+    - " I don\u2019t know if this is right, but the word \"right\" itself is ambiguous
       to the point of meaninglessness."
-    - "So I\u2019m just lost in thought. Sorry if I bored you - and me."
-    - ...
-    - "Hmm\u2026 but it is my birthday\u2026 so I\u2019m going to do something naughty."
+    - " So I\u2019m just lost in thought. Sorry if I bored you - and me."
+    - ' ...'
+    - " Hmm\u2026 but it is my birthday\u2026 so I\u2019m going to do something naughty."
     - 
   images:
     name: 
