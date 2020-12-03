@@ -43,7 +43,7 @@ public class Slot : MonoBehaviour, IPointerUpHandler, IPointerEnterHandler, IPoi
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Debug.Log("Entered");
+       // Debug.Log("Entered");
         if (haveItem)
         {
             ItemDatabase.instance.ShowToolTip(item, transform.position);
