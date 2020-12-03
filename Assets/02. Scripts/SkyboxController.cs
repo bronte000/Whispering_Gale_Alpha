@@ -37,6 +37,7 @@ public class SkyboxController : MonoBehaviour
 
     void Start()
     {
+        currentHour = 22.0f;
         RenderSettings.skybox = skyboxMaterial;
     }
 
