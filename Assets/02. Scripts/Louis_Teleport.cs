@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Louis_Teleport : MonoBehaviour
 {
-    public GameObject door;
+    public GameObject portal;
+    public string destination;
     public GameObject Louis;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == door)
-            SceneManager.LoadScene("Basic Scene");//MoveGameObjectToScene(Louis, "Basic Scene");
+        if (other.gameObject == Louis)
+            SceneManager.LoadScene(destination);//MoveGameObjectToScene(Louis, "Basic Scene");
     }
 }
