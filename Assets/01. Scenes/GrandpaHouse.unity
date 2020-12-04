@@ -1164,6 +1164,10 @@ PrefabInstance:
       propertyPath: field of view
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 8125561546155129056, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8240187358054537213, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3413,7 +3417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0b3874fad703745a6aa8de576b7cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 361542112}
+  portal: {fileID: 0}
+  destination: 
   Louis: {fileID: 0}
 --- !u!65 &361542114
 BoxCollider:
