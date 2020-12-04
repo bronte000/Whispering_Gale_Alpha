@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TeleportNotice
       objectReference: {fileID: 0}
+    - target: {fileID: 7980364745764816554, guid: f5ac3b8b79da2ec41a217d19efd3b0da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5ac3b8b79da2ec41a217d19efd3b0da, type: 3}
 --- !u!224 &7679461134073801350 stripped
