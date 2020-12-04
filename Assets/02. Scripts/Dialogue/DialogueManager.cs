@@ -7,6 +7,7 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public Queue<string> speakers;
     public Queue<string> sentences;
     public Queue<Sprite> pictures;
 
@@ -21,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void OnEnable()
     {
+        speakers = new Queue<string>();
         sentences = new Queue<string>();
         pictures = new Queue<Sprite>();
     }
@@ -32,11 +34,17 @@ public class DialogueManager : MonoBehaviour
         //animator.SetBool("IsOpen", true);
         dialogueBox.SetActive(true);
 
-        nameText.text = dialogue.name;
+        //nameText.text = dialogue.name;
 
+        speakers.Clear();
         sentences.Clear();
         pictures.Clear();
         
+        foreach (string speaker in dialogue.speakers)
+        {
+            speakers.Enqueue(speaker);
+        }
+
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
@@ -69,6 +77,8 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
+        string speaker = speakers.Dequeue();
+        nameText.text = speaker;
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         //dialogueText.text = sentence;

@@ -6,8 +6,9 @@ using UnityEngine;
 public class Dialogue
 {
     //public int dialogueNum;
-    public string name;
+    //public string dialogueName;
 
+    public string[] speakers;
     [TextArea(3, 30)] //minimum & maximum number of lines TextArea will use
     public string[] sentences;
 }

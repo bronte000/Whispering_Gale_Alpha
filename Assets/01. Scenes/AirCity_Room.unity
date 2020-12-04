@@ -9170,7 +9170,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Louis
+    speakers:
+    - Louis1
+    - Louis2
+    - Louis3
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis15
     sentences:
     - ' Yep, here it is, safe and sound! My own private dessert.'
     - ' hmm...Grape juice for adults?'
@@ -20571,6 +20586,62 @@ PrefabInstance:
       propertyPath: next.nextObject
       value: 
       objectReference: {fileID: 222062855}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[0]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[1]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[2]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[3]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[4]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[5]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[6]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[7]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[8]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[9]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[10]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[11]
+      value: Louis
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.speakers.Array.data[12]
+      value: Louis
+      objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933883, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: m_Name
       value: Dialouge1
