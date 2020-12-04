@@ -32,17 +32,23 @@ public class TeleportNotice : MonoBehaviour
         }
 
         if (sceneName == "GrandpaHouse")
-            teleportNotice.transform.GetChild(1).gameObject.SetActive(false);
-        else if (sceneName == "Graveyard")
-            teleportNotice.transform.GetChild(2).gameObject.SetActive(false);
-        else if (sceneName == "Temple")
             teleportNotice.transform.GetChild(3).gameObject.SetActive(false);
+        else if (sceneName == "Graveyard")
+            teleportNotice.transform.GetChild(4).gameObject.SetActive(false);
+        else if (sceneName == "Temple")
+            teleportNotice.transform.GetChild(5).gameObject.SetActive(false);
+        else if (sceneName == "TownHouses")
+            teleportNotice.transform.GetChild(6).gameObject.SetActive(false);
+        else if (sceneName == "Midground")
+            teleportNotice.transform.GetChild(7).gameObject.SetActive(false);
+        else if (sceneName == "School")
+            teleportNotice.transform.GetChild(8).gameObject.SetActive(false);
     }
 
     public void ToHouse()
     {
-        Debug.Log("to house");
-        //SceneManager.LoadScene("GrandpaHouse");
+        //Debug.Log("to house");
+        SceneManager.LoadScene("GrandpaHouse");
     }
 
     public void ToGraveyard()
@@ -55,6 +61,15 @@ public class TeleportNotice : MonoBehaviour
         SceneManager.LoadScene("Temple");
     }
 
+    public void ToTownhouses()
+    {
+        SceneManager.LoadScene("TownHouses");
+    }
+
+    public void ToSchool()
+    {
+        SceneManager.LoadScene("School");
+    }
 
 
     public void NeverMind()
