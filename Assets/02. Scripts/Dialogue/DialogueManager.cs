@@ -77,8 +77,11 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        string speaker = speakers.Dequeue();
-        nameText.text = speaker;
+        if (speakers.Count != 0)
+        {
+            string speaker = speakers.Dequeue();
+            nameText.text = speaker;
+        }
         string sentence = sentences.Dequeue();
         StopAllCoroutines();
         //dialogueText.text = sentence;
