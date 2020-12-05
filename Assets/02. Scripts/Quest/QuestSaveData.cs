@@ -19,6 +19,7 @@ public class QuestSaveData : MonoBehaviour
     (file_number)_tutorial_house
     (file_number)_tutorial_walk
     (file_number)_tutorial_run
+    (file_number)_tutorial_food
     
     (file_number)_quest11 (Grandpa's time capsule)
     (file_number)_quest12
@@ -92,6 +93,10 @@ public class QuestSaveData : MonoBehaviour
             {
                 PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_house", 1);
             }
+            else if (questNum == 4)
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_food", 1);
+            }
         }
     }
 
@@ -116,6 +121,10 @@ public class QuestSaveData : MonoBehaviour
             else if (questNum == 3) //house tutorial
             {
                 PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_house", 2);
+            }
+            else if (questNum == 4)
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_food", 2);
             }
         }
     }

@@ -14826,7 +14826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: ' Louis have teleported to the lower city. '
+      value: ' Louis has teleported to the lower city. '
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
@@ -16351,8 +16351,8 @@ MonoBehaviour:
   quest:
     questNumber: 4
     questName: Eat Something
-    questContent: "\n Louis is very hungry.\n Eat something to fill her hungry bar.\n\nHint>\n
-      Interact with objects by 'Enter' Key. There may be some food left in the kitchen. "
+    questContent: "\n Louis is very hungry.\n Eat something to fill her hungry bar.\n\nHint>\nInteract
+      with objects by 'Enter' Key. There may be some food left in the kitchen. "
     hasStarted: 0
     completed: 0
     startActions:
@@ -50030,6 +50030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questUI: {fileID: 171849677}
+  questSave: {fileID: 7787854279870798192}
 --- !u!114 &7787854280157277296
 MonoBehaviour:
   m_ObjectHideFlags: 0
