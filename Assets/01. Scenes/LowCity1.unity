@@ -6114,28 +6114,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: " \uC2DC\uAC04\uC774 \uB9CE\uC774 \uB2A6\uC5C8\uB2E4."
+      value: It's late.
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: " \uB3CC\uC544\uB2E4\uB2C8\uB294 \uAC74 \uB0B4\uC77C\uB85C \uBBF8\uB8E8\uACE0,
-        \uC624\uB298\uC740 \uC77C\uB2E8 \uC880 \uC26C\uC5B4\uC57C\uACA0\uB2E4."
+      value: Let's put off exploring the city to tomorrow, and rest for the day.
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: " \uD560\uC544\uBC84\uC9C0 \uB301\uC774 \uBD84\uBA85 \uC774 \uADFC\uCC98\uC600\uB358
-        \uAC83 \uAC19\uC740\uB370."
+      value: I think Grandpa's place was around here...
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[3]
-      value: " \uC608\uC804\uC5D0\uB294\uC6B8\uD0C0\uB9AC\uB3C4 \uC788\uACE0, \uC798
-        \uC815\uB3C8\uB41C \uAE38\uB3C4 \uC788\uC5C8\uB294\uB370, \uC9C0\uAE08\uC740
-        \uB2E4 \uBB34\uB108\uC84C\uB294\uC9C0 \uBCF4\uC774\uC9C0 \uC54A\uB294\uB2E4. "
+      value: There used to be a fence and a well-kept sidewalk, but I suppose they're
+        all gone now...
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[4]
-      value: " \uD558\uC9C0\uB9CC \uC88C\uD45C\uAC00 \uD2C0\uB9AC\uC9C0\uB294 \uC54A\uC558\uC744
-        \uAC83\uC774\uB2E4."
+      value: But the coordinates should be correct, so I'll find it pretty soon.
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933883, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: m_Name
@@ -17383,12 +17379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: " \uAC00\uAD6C\uB3C4 \uB300\uBD80\uBD84 \uC815\uB9AC\uD55C \uBAA8\uC591\uC774\uB2E4."
+      value: ' Most of the furniture have been sold - that''s like them.'
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: " \uADF8\uB7F0\uB370, \uC0DD\uAC01\uD574\uBCF4\uB2C8 \uBE48\uC9D1\uC5D0
-        \uBA39\uC744 \uAC8C \uC788\uC744\uAE4C?"
+      value: ' Come to think of it, does an empty house have any food?'
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
@@ -43572,18 +43567,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[0]
-      value: "\uD560\uC544\uBC84\uC9C0 \uB301\uB3C4 \uC624\uB79C\uB9CC\uC774\uB2E4."
+      value: "\uD560\uC544\uBC84\uC9C0 \uB301\uB3C4 \uC624\uB79C\uB9CC\uC774\uB2E4.\nWow,
+        it's been a while."
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[1]
-      value: "\uC5B4\uB838\uC744 \uB54C\uB294 \uC5EC\uAE30 \uC790\uC8FC \uC654\uC9C0\uB9CC,
-        \uB450 \uBD84\uC774 \uB3CC\uC544\uAC00\uC2E0 \uB4A4\uB85C\uB294 \uC624\uC9C0
-        \uC54A\uAC8C \uB418\uC5C8\uB2E4. "
+      value: I used to come often when I was younger, but after they died and left
+        me the place, I haven't visited at all.
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.sentences.Array.data[2]
-      value: "\uC624\uB7AB\uB3D9\uC548 \uBC29\uCE58\uB418\uC5B4 \uC788\uB358 \uD0D3\uC778\uC9C0
-        \uC9D1\uC774 \uD669\uB7C9\uD558\uB2E4. "
+      value: It's rather desolate, after having been left alone for too long...
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933883, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: m_Name
