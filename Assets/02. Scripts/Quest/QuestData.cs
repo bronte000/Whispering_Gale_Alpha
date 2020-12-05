@@ -12,6 +12,7 @@ public class QuestData
     [TextArea(3, 10)]
     public string questContent;
     public bool hasStarted; //기본적으로 false로 맞춰두기
+    public bool completed;
    // public NextAction nextAction;
 
     public List<QuestAction> startActions;
