@@ -8,7 +8,8 @@ public class TurnOffInventory : QuestAction
 {
     public override bool ExecuteRole()
     {
-        GameObject.Find("Inventory").SetActive(false);
+        GameObject inventory = GameObject.Find("Inventory");
+        if (inventory) inventory.SetActive(false);
         return true;
     }
 }

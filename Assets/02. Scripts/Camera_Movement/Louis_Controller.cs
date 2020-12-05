@@ -39,8 +39,8 @@ public class Louis_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (controller.isGrounded)
-        {
+     //   if (controller.isGrounded)
+     //   {
 
             x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
             
@@ -70,7 +70,7 @@ public class Louis_Controller : MonoBehaviour
                 animator.SetBool("GoBack", false);
                 back = false;
             }
-        }
+   //     }
         
         WalkAndRun();
     }
@@ -91,11 +91,11 @@ public class Louis_Controller : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collide barrier");
         if (collision.gameObject.layer == 9)    // 9 is barrier
         {
             BarrierD.TriggerDialogue();
         }
     }
+    
 
 }

@@ -8,6 +8,8 @@ TagManager:
   - BookAndPotion
   - JackoLantern
   - PressWithEnter
+  - EnterDoor
+  - ExitDoor
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - 
   - MiniMap
   - Barrier
-  - 
+  - Door
   - 
   - 
   - 

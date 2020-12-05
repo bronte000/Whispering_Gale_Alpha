@@ -10,6 +10,9 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> speakers;
     public Queue<string> sentences;
     public Queue<Sprite> pictures;
+    
+    public List<QuestAction> startActions;
+    public List<QuestAction> endActions;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
@@ -18,6 +21,14 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
     private NextAction nextAction;
+
+    private void DoActions(List<QuestAction> Actions) // acitons that start simultaneously with the quest
+    {
+        foreach (QuestAction act in Actions)
+        {
+            act.ExecuteRole();
+        }
+    }
     
     // Start is called before the first frame update
     void OnEnable()
@@ -29,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue, Images images, bool hasImages, NextAction next)
     {
+        DoActions(startActions);
         //Debug.Log("Starting conversation with " + dialogue.name); Debug.Log(next.nextSceneName);
         nextAction = next;
         //animator.SetBool("IsOpen", true);
@@ -112,6 +124,7 @@ public class DialogueManager : MonoBehaviour
     {
         //animator.SetBool("IsOpen", false);
         dialogueBox.SetActive(false);
+        DoActions(endActions);
         NextAction(nextAction);
     }
 
