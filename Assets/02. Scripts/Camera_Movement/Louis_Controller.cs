@@ -19,6 +19,9 @@ public class Louis_Controller : MonoBehaviour
     private float x;
     private float z;
 
+    [SerializeField]
+    private DialogueTrigger BarrierD;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -83,6 +86,15 @@ public class Louis_Controller : MonoBehaviour
         {
             running = false;
             animator.SetBool("IsRun", false);
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Collide barrier");
+        if (collision.gameObject.layer == 9)    // 9 is barrier
+        {
+            BarrierD.TriggerDialogue();
         }
     }
 

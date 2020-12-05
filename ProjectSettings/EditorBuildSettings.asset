@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/LowCity1.unity
     guid: 954f525f85670ab43844934fe8f970db
+  - enabled: 1
+    path: Assets/01. Scenes/GrandpaHouse.unity
+    guid: f4ccdd8e412d1f041a6bb6a2421de7fa
   m_configObjects: {}
