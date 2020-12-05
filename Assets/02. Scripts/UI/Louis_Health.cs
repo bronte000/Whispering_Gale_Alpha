@@ -8,8 +8,9 @@ public class Louis_Health : MonoBehaviour
     public Image hungryBar;
     public Image sleepyBar;
 
+    public float speed = 0.05f;
     public float currentHunger = 0.0f;
-    public float maxHunger = 10.0f; //마지막으로 세이브 했을 때의 데이터 값을 어떻게 가져오는지는 나중에...
+    public float maxHunger = 30.0f; //마지막으로 세이브 했을 때의 데이터 값을 어떻게 가져오는지는 나중에...
     private float prevHunger = 0.0f;
 
     public float currentSleepy = 0.0f;
@@ -35,14 +36,14 @@ void Start()
     {
         if (currentHunger > 0.0f)
         {
-            currentHunger = prevHunger - Time.deltaTime;
+            currentHunger = prevHunger - speed * Time.deltaTime;
             hungryBar.fillAmount = currentHunger / maxHunger;
             prevHunger = currentHunger;
         }
 
         if (sleeping == 0 && currentSleepy > 0.0f)
         {
-            currentSleepy = prevSleepy - Time.deltaTime;
+            currentSleepy = prevSleepy - speed * Time.deltaTime;
             prevSleepy = currentSleepy;
             sleepyBar.fillAmount = currentSleepy / maxSleepy;
         }
@@ -59,6 +60,14 @@ void Start()
                 sleeping = 0;
             }
         }
+    }
+
+    public void eat()
+    {
+        currentHunger = prevHunger + 5;
+        if (currentHunger > maxHunger) currentHunger = maxHunger;
+        prevHunger = currentHunger;
+        hungryBar.fillAmount = currentHunger / maxHunger;
     }
 
 

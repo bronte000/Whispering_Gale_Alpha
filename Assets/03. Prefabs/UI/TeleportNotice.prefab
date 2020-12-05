@@ -122,7 +122,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7980364745764816552}
         m_TargetAssemblyTypeName: TeleportNotice, Assembly-CSharp
-        m_MethodName: ToHouse
+        m_MethodName: ToMidground
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

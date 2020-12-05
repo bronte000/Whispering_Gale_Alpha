@@ -66,11 +66,15 @@ public class TeleportNotice : MonoBehaviour
         SceneManager.LoadScene("TownHouses");
     }
 
+    public void ToMidground()
+    {
+        SceneManager.LoadScene("Midground");
+    }
+
     public void ToSchool()
     {
         SceneManager.LoadScene("School");
     }
-
 
     public void NeverMind()
     {
