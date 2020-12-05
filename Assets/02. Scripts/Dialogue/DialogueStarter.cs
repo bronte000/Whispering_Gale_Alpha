@@ -8,7 +8,7 @@ public class DialogueStarter : MonoBehaviour
     //Script that starts the dialogue
     void Start()
     {
-        FindObjectOfType<DialogueTrigger>().TriggerDialogue();
+        this.gameObject.GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 
 }

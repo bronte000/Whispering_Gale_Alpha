@@ -22359,9 +22359,8 @@ MonoBehaviour:
     - Louis
     - Louis
     sentences:
-    - " \uAC00\uAD6C\uB3C4 \uB300\uBD80\uBD84 \uC815\uB9AC\uD55C \uBAA8\uC591\uC774\uB2E4."
-    - " \uADF8\uB7F0\uB370, \uC0DD\uAC01\uD574\uBCF4\uB2C8 \uBE48\uC9D1\uC5D0 \uBA39\uC744
-      \uAC8C \uC788\uC744\uAE4C?"
+    - ' Most of the furniture have been sold - that''s like them.'
+    - ' Come to think of it, does an empty house have any food?'
   images:
     name: 
     images: []
@@ -22548,12 +22547,10 @@ MonoBehaviour:
     - Louis
     - Louis
     sentences:
-    - "\uD560\uC544\uBC84\uC9C0 \uB301\uB3C4 \uC624\uB79C\uB9CC\uC774\uB2E4."
-    - "\uC5B4\uB838\uC744 \uB54C\uB294 \uC5EC\uAE30 \uC790\uC8FC \uC654\uC9C0\uB9CC,
-      \uB450 \uBD84\uC774 \uB3CC\uC544\uAC00\uC2E0 \uB4A4\uB85C\uB294 \uC624\uC9C0
-      \uC54A\uAC8C \uB418\uC5C8\uB2E4. "
-    - "\uC624\uB7AB\uB3D9\uC548 \uBC29\uCE58\uB418\uC5B4 \uC788\uB358 \uD0D3\uC778\uC9C0
-      \uC9D1\uC774 \uD669\uB7C9\uD558\uB2E4. "
+    - ' Wow, it''s been a while.'
+    - ' I used to come often when I was younger, but after they died and left me
+      the place, I haven''t visited at all.'
+    - ' It''s rather desolate, after having been left alone for too long...'
   images:
     name: 
     images: []
@@ -22595,6 +22592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questUI: {fileID: 613590072}
+  questSave: {fileID: 0}
 --- !u!4 &5335501314784435185
 Transform:
   m_ObjectHideFlags: 0

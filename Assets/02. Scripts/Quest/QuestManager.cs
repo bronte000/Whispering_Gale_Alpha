@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class QuestManager : MonoBehaviour
 {
     public GameObject questUI;
+    public GameObject questSave;
 
     public void StartQuest(QuestData quest)
     {
@@ -15,6 +16,7 @@ public class QuestManager : MonoBehaviour
         quest.hasStarted = true;
         quest.StartActions();
         questUI.GetComponent<QuestDisplay>().activeNum += 1;
+        questSave.GetComponent<QuestSaveData>().SaveQuestStarted(quest.questNumber);
         ShowQuestInfo(quest);
     }
 
@@ -30,6 +32,7 @@ public class QuestManager : MonoBehaviour
     {
         quest.hasStarted = false;
         questUI.GetComponent<QuestDisplay>().activeNum -= 1;
+        questSave.GetComponent<QuestSaveData>().SaveQuestCompleted(quest.questNumber);
         quest.EndQuest();
     }
 }
