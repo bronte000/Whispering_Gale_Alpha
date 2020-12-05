@@ -13458,6 +13458,7 @@ MonoBehaviour:
     questContent: " To grandparents' house.\n Louis has to reset.\n\n Hint>\n Refer
       to the minimap.\n Louis: Yellow Spot\n NPC: Green Spot\n Buildings: Box"
     hasStarted: 0
+    completed: 0
     startActions: []
     endActions: []
     npcId: 
@@ -45713,6 +45714,7 @@ MonoBehaviour:
     questContent: "\n Good Job! \n Now, try running by pressing W and Shift. \n\n(Louis
       doesn't know \nhow to run backwards)"
     hasStarted: 0
+    completed: 0
     startActions: []
     endActions:
     - {fileID: 11400000, guid: eefa6c19581f5ab4d9f7defaed9a33e5, type: 2}
@@ -49318,6 +49320,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5509508805766381247, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5730316646924400396, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: itemDB.Array.data[1].describe
       value: Someone's trick. There is no candy inside the wrapper.
@@ -49952,6 +49958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7787854279870798194}
   - component: {fileID: 7787854279870798195}
+  - component: {fileID: 7787854279870798193}
   m_Layer: 0
   m_Name: QuestManager
   m_TagString: Untagged
@@ -49959,6 +49966,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7787854279870798193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7787854279870798192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5615e9260f435fa45ab518f9dc4e4835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player_name: ctp321
 --- !u!4 &7787854279870798194
 Transform:
   m_ObjectHideFlags: 0
@@ -50008,6 +50028,7 @@ MonoBehaviour:
     questContent: " \n Try walking for a while.\n\n Hint>\n Use WASD or Arrrows.\nWS:
       Foward/ Backward\n AD: Turn Left/ Right"
     hasStarted: 0
+    completed: 0
     startActions:
     - {fileID: 11400000, guid: d84ffde806a5401428890dbe8c44cf0f, type: 2}
     - {fileID: 11400000, guid: 8ecea1623fe30804fb7734e6fe0d80e3, type: 2}
