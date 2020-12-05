@@ -57,6 +57,8 @@ public class DialogueManager : MonoBehaviour
                 pictures.Enqueue(picture);
         }
 
+        nameText.text = dialogue.speakers[0];
+
         if (hasImages)
             DisplayNextImage();
 

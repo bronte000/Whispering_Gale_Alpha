@@ -2473,10 +2473,11 @@ MonoBehaviour:
   quest:
     questNumber: 1
     questName: Inventory Tutorial
-    questContent: " Get a bottle of wine from Louis's inventory!\n\n Hint: You can
-      click Louis Image to open the menu. Then, click the bag image to open your
+    questContent: "\n Get a bottle of wine from Louis's inventory!\n\n Hint: You
+      can click Louis Image to open the menu. Then, click the bag image to open your
       invetory.\n Or, just use 'I' key!"
     hasStarted: 0
+    completed: 0
     startActions:
     - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
     - {fileID: 11400000, guid: d84ffde806a5401428890dbe8c44cf0f, type: 2}
@@ -3941,6 +3942,23 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &449075773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4821292241927933883, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+  m_PrefabInstance: {fileID: 4821292240079696018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &449075774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449075773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!28 &449356125
 Texture2D:
   m_ObjectHideFlags: 0
@@ -4389,7 +4407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3942693884256069682, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 20
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4409182328088428706, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMax.y
@@ -21696,6 +21714,7 @@ MonoBehaviour:
   speed: 0
   jumpSpeed: 0
   gravity: 0
+  BarrierD: {fileID: 0}
 --- !u!95 &8265375418000308458
 Animator:
   serializedVersion: 3
