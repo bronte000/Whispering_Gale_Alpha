@@ -6,9 +6,15 @@ public class QuestSaveData : MonoBehaviour
 {
     public string player_name;
     private int file_number;
+    private bool newFile;
 
     /*
-    <List of keys>
+     <List of keys used in all files>
+     highest_fnum // highest file number
+     */
+
+    /*
+    <List of keys for individual save files>
     player_name --> its key is file_number
     (file_number)_tutorial_house
     (file_number)_tutorial_walk
@@ -27,19 +33,91 @@ public class QuestSaveData : MonoBehaviour
     For file_number, the value is an int.
     For all keys excluding file_number:
         value = 0(not started), 1(hasStarted), 2(completed)
+        if the key doesn't exist, count as not started
 
     */
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.DeleteAll(); // delete this line before building
+
         if (PlayerPrefs.HasKey(player_name))
         {
             Debug.Log("existing save file");
             file_number = PlayerPrefs.GetInt(player_name);
+            newFile = false;
         }
         else
-            Debug.Log("ERROR: this save file does not exist");
+        {
+            Debug.Log("new file");
+            if (PlayerPrefs.HasKey("highest_fnum"))
+            {
+                file_number = PlayerPrefs.GetInt("highest_fnum") + 1;
+            }
+            else
+            {
+                file_number = 0;
+                PlayerPrefs.SetInt("highest_fnum", 0);
+            }
+            //Debug.Log(PlayerPrefs.GetInt(player_name));
+            //Debug.Log(PlayerPrefs.GetInt("highest_fnum"));
+
+            PlayerPrefs.SetInt(player_name, file_number);
+            newFile = true;
+            // delete previous data with the same file_number!
+        }
+
+    }
+
+    public void SaveQuestStarted(int questNum)
+    {
+        if (questNum > 10) //story quest
+            PlayerPrefs.SetInt(file_number.ToString() + "_quest" + questNum.ToString(), 1);
+        else //tutorial quest
+        {
+            if (questNum == 1) //walk tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_walk", 1);
+            }
+            else if (questNum == 2) //run tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_run", 1);
+                Debug.Log("Run tutorial:");
+                Debug.Log(PlayerPrefs.GetInt(file_number.ToString() + "_tutorial_run"));
+                Debug.Log("Walk tutorial:");
+                Debug.Log(PlayerPrefs.GetInt(file_number.ToString() + "_tutorial_walk"));
+            }
+            else if (questNum == 3) //house tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_house", 1);
+            }
+        }
+    }
+
+    public void SaveQuestCompleted(int questNum)
+    {
+        if (questNum > 10) //story quest
+            PlayerPrefs.SetInt(file_number.ToString() + "_quest" + questNum.ToString(), 2);
+        else //tutorial quest
+        {
+            if (questNum == 1) //walk tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_walk", 2);
+            }
+            else if (questNum == 2) //run tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_run", 2);
+                Debug.Log("Run tutorial:");
+                Debug.Log(PlayerPrefs.GetInt(file_number.ToString() + "_tutorial_run"));
+                Debug.Log("Walk tutorial:");
+                Debug.Log(PlayerPrefs.GetInt(file_number.ToString() + "_tutorial_walk"));
+            }
+            else if (questNum == 3) //house tutorial
+            {
+                PlayerPrefs.SetInt(file_number.ToString() + "_tutorial_house", 2);
+            }
+        }
     }
 
     public int[] GetStoryData(int fileNumber)
@@ -64,3 +142,4 @@ public class QuestSaveData : MonoBehaviour
         return new int[] { tutorial_house, tutorial_walk, tutorial_run };
     }
 }
+
