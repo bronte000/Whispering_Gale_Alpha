@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     private NextAction nextAction;
 
-    public QuestAction effect;
 
     private void DoActions(List<QuestAction> Actions) // acitons that start simultaneously with the quest
     {
@@ -143,6 +142,6 @@ public class DialogueManager : MonoBehaviour
         else if (next.nextActionCode == 3) //start dialogue
             next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         else if (next.nextActionCode == 4) //Do Quest Action
-            effect.ExecuteRole();
+            next.effect.ExecuteRole();
     }
 }
