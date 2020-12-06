@@ -62,3 +62,8 @@ Love, Grandpa
 14 Louis) I couldn't help but give the letter a teary smile, mixed with a drop of resentment.
 15 Louis) Like always, he had left me with questions, not answers.
 16 Louis) I sighed, and returned to the house for the day.
+
+--> Go to the credits!
+
+
++ Item 추가할 때 반드시 Prefab의 itemdatabase에 추가하고, item index를 database에서의 순서랑 똑같이 지정해둬야지 아이템이 정상적으로 다음 씬에서 로드됩니다 주의해주세요

@@ -13817,7 +13817,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    speakers: []
+    speakers:
+    - Louis
+    - Louis
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Louis
+    - Louis
+    - Louis
     sentences:
     - 'Inside the orb was an old paper with a memo attached to it.
 
@@ -13858,11 +13875,11 @@ MonoBehaviour:
     images: []
   hasImages: 0
   next:
-    nextActionCode: 2
-    nextObject: {fileID: 1374984541}
+    nextActionCode: 4
+    nextObject: {fileID: 0}
     effect: {fileID: 0}
     nextSceneName: 
-    nextQuestNum: 11
+    nextQuestNum: 0
   effect: {fileID: 0}
 --- !u!1001 &424207090
 PrefabInstance:
