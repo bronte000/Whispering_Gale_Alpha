@@ -10,7 +10,6 @@ public class DialogueTrigger : MonoBehaviour
     public bool hasImages;
 
     public NextAction next;
-    public QuestAction effect;
 
     public void TriggerDialogue()
     {
