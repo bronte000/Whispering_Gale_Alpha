@@ -11,10 +11,6 @@ public class Q11_JohnExit : QuestAction
     public override bool ExecuteRole()
     {
         john = GameObject.Find("john");
-        // John walks away
-        john.GetComponent<Animator>().SetBool("D4_done", true);
-
-        // Execute Dialogue5
         john.GetComponent<John_Controller>().AfterDialogue4();
 
         return true;

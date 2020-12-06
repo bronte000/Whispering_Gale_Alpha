@@ -12679,7 +12679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6023323675805823345, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6023323675805823345, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13877,10 +13877,10 @@ MonoBehaviour:
   next:
     nextActionCode: 4
     nextObject: {fileID: 0}
-    effect: {fileID: 0}
+    effect:
+    - {fileID: 0}
     nextSceneName: 
     nextQuestNum: 0
-  effect: {fileID: 0}
 --- !u!1001 &424207090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27809,10 +27809,9 @@ MonoBehaviour:
   next:
     nextActionCode: 0
     nextObject: {fileID: 0}
-    effect: {fileID: 0}
+    effect: []
     nextSceneName: 
     nextQuestNum: 0
-  effect: {fileID: 0}
 --- !u!1001 &850828352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42732,19 +42731,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.86577
+      value: 193.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1286008
+      value: 26.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.792698
+      value: -81.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalRotation.x
@@ -42752,7 +42751,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalRotation.z
@@ -42764,7 +42763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -42774,6 +42773,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: john
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 04204bac51fd6104db7d219fd8bb8d06, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 516a8248d30014342865f47770660876, type: 3}
 --- !u!1001 &1275008595
@@ -49485,10 +49488,10 @@ MonoBehaviour:
   next:
     nextActionCode: 4
     nextObject: {fileID: 0}
-    effect: {fileID: 0}
+    effect:
+    - {fileID: 11400000, guid: a2fe63f7060e2a6489cec9dc45d3b601, type: 2}
     nextSceneName: 
     nextQuestNum: 0
-  effect: {fileID: 0}
 --- !u!1001 &1499346803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54132,10 +54135,10 @@ MonoBehaviour:
   next:
     nextActionCode: 4
     nextObject: {fileID: 0}
-    effect: {fileID: 0}
+    effect:
+    - {fileID: 0}
     nextSceneName: 
     nextQuestNum: 0
-  effect: {fileID: 0}
 --- !u!1001 &1681274537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95176,7 +95179,7 @@ Transform:
   - {fileID: 296809607974731531}
   - {fileID: 1120968021}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!4 &296809607974731531
 Transform:
@@ -95657,10 +95660,9 @@ MonoBehaviour:
   next:
     nextActionCode: 5
     nextObject: {fileID: 1686226614}
-    effect: {fileID: 0}
+    effect: []
     nextSceneName: 
     nextQuestNum: 0
-  effect: {fileID: 0}
 --- !u!224 &4821292241190697449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -95805,10 +95807,9 @@ MonoBehaviour:
   next:
     nextActionCode: 2
     nextObject: {fileID: 1374984541}
-    effect: {fileID: 0}
+    effect: []
     nextSceneName: 
     nextQuestNum: 11
-  effect: {fileID: 0}
 --- !u!1001 &5235858531242125321
 PrefabInstance:
   m_ObjectHideFlags: 0
