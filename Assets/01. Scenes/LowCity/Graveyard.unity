@@ -13817,45 +13817,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    speakers:
-    - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Megan
-    - Megan
-    - Megan
-    - Megan
-    - Louis
-    - Louis
-    - Megan
+    speakers: []
     sentences:
-    - Hello...
-    - 'Oh, hi. Are you visiting a relative?
+    - 'Inside the orb was an old paper with a memo attached to it.
 
-      I''m the part-time keeper of this
-      graveyard, so ask me if you need something.'
-    - Um, I was wondering if my grandfather - he's over there - left anything in
-      the hands of the previous gatekeeper, Tom.
-    - Are you Louis, his granddaughter?
-    - Yes - do I need to prove it?
-    - Nah. I'll just relay what Tom always talked about. If you're not his kid then
-      I don't think you'll get it anyway.
-    - Your grandfather left behind a request - and a ton of money - to tell you about
-      the three time capsules you, him, and your grandmother buried when you were
-      ten.
-    - The first time capsule is... "inside Tom's wish."
-    - And Tom's biggest wish was for the wind to whisper words of comfort to the
-      mourning.
-    - What do you make of that? Personally, I think Tom was trying to get his hands
-      on more money from your grandfather...
-    - (The compass isn't pointing towards her, and the light has vanished...)
-    - 'I''ll... try to investigate. Grandpa always liked riddles.
+      The memo
+      turned out to be a letter from Grandpa.'
+    - 'The memo read:'
+    - This old paper is a bucket list that I wrote when I was twenty-one, and stuck
+      inside a book I wanted to read.
+    - Finding and re-reading it last week while picking books to give away made me
+      feel despondent.
+    - It was a list of things I wanted to do after retirement - the portrait of a
+      young man dreaming of old age, of the end of life!
+    - I decided to put this in my time capsule because I do not want my dear Louis
+      to follow this path.
+    - Putting off the things that I really wanted to do made my time more or less
+      a burden.
+    - 'Besides, you should know I haven''t accomplished half of the things written
+      here. '
+    - (For starters, I was about to give that book away without reading it!)
+    - If you're reading this letter then you must be wondering what to do with your
+      life, at least a bit.
+    - This is an old know-it-all's wish; please dream of middle-age before retirement,
+      and of youth before middle-age.
+    - Look at the trail at least for a moment before letting your eyes reach the
+      peak.
+    - 'I did not know how to value time as much as your Grandma did, and I lost the
+      chance to make more memories.
 
-      Thank you.'
-    - Well, good luck.
+      This is proof of my regret.'
+    - 'Well, then on to the next time capsule, my lady!
+
+      Love, Grandpa'
+    - I couldn't help but give the letter a teary smile, mixed with a drop of resentment.
+    - Like always, he had left me with questions, not answers.
+    - I sighed, and returned to the house for the day.
   images:
     name: 
     images: []
@@ -27793,11 +27790,11 @@ MonoBehaviour:
     images: []
   hasImages: 0
   next:
-    nextActionCode: 2
-    nextObject: {fileID: 1374984541}
+    nextActionCode: 0
+    nextObject: {fileID: 0}
     effect: {fileID: 0}
     nextSceneName: 
-    nextQuestNum: 11
+    nextQuestNum: 0
   effect: {fileID: 0}
 --- !u!1001 &850828352
 PrefabInstance:
@@ -54123,53 +54120,25 @@ MonoBehaviour:
   dialogue:
     speakers:
     - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Megan
-    - Megan
-    - Megan
-    - Megan
     - Louis
     - Louis
-    - Megan
+    - Louis
     sentences:
-    - Hello...
-    - 'Oh, hi. Are you visiting a relative?
-
-      I''m the part-time keeper of this
-      graveyard, so ask me if you need something.'
-    - Um, I was wondering if my grandfather - he's over there - left anything in
-      the hands of the previous gatekeeper, Tom.
-    - Are you Louis, his granddaughter?
-    - Yes - do I need to prove it?
-    - Nah. I'll just relay what Tom always talked about. If you're not his kid then
-      I don't think you'll get it anyway.
-    - Your grandfather left behind a request - and a ton of money - to tell you about
-      the three time capsules you, him, and your grandmother buried when you were
-      ten.
-    - The first time capsule is... "inside Tom's wish."
-    - And Tom's biggest wish was for the wind to whisper words of comfort to the
-      mourning.
-    - What do you make of that? Personally, I think Tom was trying to get his hands
-      on more money from your grandfather...
-    - (The compass isn't pointing towards her, and the light has vanished...)
-    - 'I''ll... try to investigate. Grandpa always liked riddles.
-
-      Thank you.'
-    - Well, good luck.
+    - (Making winds in response to crying - or sadness... it's advanced magic, but
+      it's also something Grandma taught me.)
+    - (I think I can cast this spell...)
+    - .........
+    - Done!
   images:
     name: 
     images: []
   hasImages: 0
   next:
-    nextActionCode: 2
-    nextObject: {fileID: 1374984541}
+    nextActionCode: 4
+    nextObject: {fileID: 0}
     effect: {fileID: 0}
     nextSceneName: 
-    nextQuestNum: 11
+    nextQuestNum: 0
   effect: {fileID: 0}
 --- !u!1001 &1681274537
 PrefabInstance:
