@@ -4800,7 +4800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ba21cb9c7a58044984218d2f84f2bdc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 130.76
+      value: 133
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ba21cb9c7a58044984218d2f84f2bdc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4808,7 +4808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ba21cb9c7a58044984218d2f84f2bdc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.46
+      value: -30.73
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ba21cb9c7a58044984218d2f84f2bdc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12540,8 +12540,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670000446172233445, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: SaveData
+      value: 
+      objectReference: {fileID: 1070830320}
+    - target: {fileID: 2670000446172233445, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2703721614154667353, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: questObjects.Array.size
@@ -95421,8 +95425,8 @@ MonoBehaviour:
     images: []
   hasImages: 0
   next:
-    nextActionCode: 0
-    nextObject: {fileID: 0}
+    nextActionCode: 5
+    nextObject: {fileID: 1686226614}
     nextSceneName: 
     nextQuestNum: 0
 --- !u!224 &4821292241190697449

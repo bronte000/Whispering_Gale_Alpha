@@ -140,5 +140,7 @@ public class DialogueManager : MonoBehaviour
             next.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
         else if (next.nextActionCode == 3) //start dialogue
             next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
+        else if (next.nextActionCode == 5) //SetActive(true)
+            next.nextObject.SetActive(true);
     }
 }
