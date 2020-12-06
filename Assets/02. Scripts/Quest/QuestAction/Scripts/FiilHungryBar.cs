@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[CreateAssetMenu(menuName = "ItemEft/Consumable/Eat")]
-public class Eat : ItemEffect
+[CreateAssetMenu(menuName = "QuestAction/FiilHungry")]
+public class FiilHungryBar : QuestAction
 {
     public float amount;
     public override bool ExecuteRole()
     {
         GameObject.Find("Louis_Health").GetComponent<Louis_Health>().eat(amount);
-        return false;
+        return true;
     }
 }

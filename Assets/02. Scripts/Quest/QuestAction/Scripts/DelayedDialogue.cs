@@ -8,18 +8,10 @@ public class DelayedDialogue : QuestAction
 {
     public int dialogueNum;
     public int time;
+
     public override bool ExecuteRole()
     {
-        delay(time);
+        GameObject.Find("DialogueManager").GetComponent<DialogueManager>().delayedDialogue(time, dialogueNum);
         return true;
     }
-
-    private IEnumerator delay(float time)
-    {
-        yield return new WaitForSeconds(time);
-        GameObject dialogue = GameObject.Find("DialogueManager").transform.GetChild(dialogueNum).gameObject;
-        dialogue.SetActive(true);
-        dialogue.GetComponent<DialogueTrigger>().TriggerDialogue();
-    }
-
 }

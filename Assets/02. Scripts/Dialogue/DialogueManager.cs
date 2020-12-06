@@ -86,6 +86,20 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    public void delayedDialogue(float time, int dialogueNum)
+    {
+        StartCoroutine(delayed2(time, dialogueNum));
+    }
+
+    private IEnumerator delayed2(float time, int dialogueNum)
+    {
+        yield return new WaitForSeconds(time);
+        GameObject dialogue = transform.GetChild(dialogueNum).gameObject;
+        dialogue.SetActive(true);
+        dialogue.GetComponent<DialogueTrigger>().TriggerDialogue();
+    }
+    
+
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
@@ -125,25 +139,31 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         //animator.SetBool("IsOpen", false);
-        dialogueBox.SetActive(false);
-        DoActions(endActions);
         NextAction(nextAction);
     }
 
     // what to do at the end of dialogue (NextAction.cs 참고)
     public void NextAction(NextAction next)
     {
-        if (next.nextActionCode == 0)
-            return;
-        else if (next.nextActionCode == 1) //load next scene
-            SceneManager.LoadScene(next.nextSceneName);
-        else if (next.nextActionCode == 2) //start quest
-            next.nextObject.GetComponent<QuestTrigger>().TriggerQuest();
-        else if (next.nextActionCode == 3) //start dialogue
-            next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
-        else if (next.nextActionCode == 4) //Do Quest Action
-            next.effect.ExecuteRole();
-        else if (next.nextActionCode == 5) //SetActive(true)
-            next.nextObject.SetActive(true);
+        int actionCode = next.nextActionCode;
+        if (actionCode >= 0) {
+            dialogueBox.SetActive(false); DoActions(endActions); }
+        else actionCode = actionCode * (-1);
+
+        switch (actionCode)
+        {
+            case 0: return; break;
+            case 1: SceneManager.LoadScene(next.nextSceneName); break;  //load scene
+            case 2: next.nextObject.GetComponent<QuestTrigger>().TriggerQuest(); break;     //trigger quest
+            case 3: next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue(); break;   //trigger dialogue
+            case 4:
+                foreach (QuestAction act in next.effect)
+                {
+                    act.ExecuteRole();
+                }
+                break;   //execute action
+            case 5: next.nextObject.SetActive(true); break;
+            case 6: next.nextObject.GetComponent<QuestTrigger>().QuestCompleted(); break;
+        }
     }
 }

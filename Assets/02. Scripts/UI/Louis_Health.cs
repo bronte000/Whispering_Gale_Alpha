@@ -62,9 +62,9 @@ void Start()
         }
     }
 
-    public void eat()
+    public void eat(float amount)
     {
-        currentHunger = prevHunger + 5;
+        currentHunger = prevHunger + amount;
         if (currentHunger > maxHunger) currentHunger = maxHunger;
         prevHunger = currentHunger;
         hungryBar.fillAmount = currentHunger / maxHunger;

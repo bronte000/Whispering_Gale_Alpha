@@ -15,7 +15,7 @@ public class NextAction
     5: nextObject.SetActive(true)
     */
     public GameObject nextObject; //다음 action에 필요한 스크립트(ex) DialogueTrigger.cs, QuestTrigger.cs)가 있는 GameObject
-    public QuestAction effect;
+    public List<QuestAction> effect;
 
     // nextActionCode의 값에 따라 얘네 중 하나만 있으면 됨
     public string nextSceneName;
