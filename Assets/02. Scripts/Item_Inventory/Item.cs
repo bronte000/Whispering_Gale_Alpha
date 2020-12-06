@@ -16,6 +16,8 @@ public class Item
     public Sprite itemImage;
     public List<ItemEffect> efts;
 
+    public int index;
+
     [TextArea(3, 30)]
     public string itemDescribe;
 

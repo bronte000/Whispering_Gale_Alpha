@@ -2477,9 +2477,10 @@ MonoBehaviour:
       can click Louis Image to open the menu. Then, click the bag image to open your
       invetory.\n Or, just use 'I' key!"
     hasStarted: 0
-    completed: 0
+    completed: 1
     startActions:
-    - {fileID: 11400000, guid: bc2a4e5e5367ba74d8b96dc1ba347b0e, type: 2}
+    - {fileID: 11400000, guid: 1dd601715fe2c0945b455d3cc92d8de7, type: 2}
+    - {fileID: 11400000, guid: e5a58936003aed543a96134c0c394163, type: 2}
     - {fileID: 11400000, guid: d84ffde806a5401428890dbe8c44cf0f, type: 2}
     endActions:
     - {fileID: 11400000, guid: 4be1385a3a684ac4a8d382e3b493ad08, type: 2}
@@ -2628,6 +2629,63 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &242231611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.95757663
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.87588024
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.7903087
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2184426383690467828, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6130344532345566329, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+      propertyPath: m_Name
+      value: LouisSaveData
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
 --- !u!28 &270809261
 Texture2D:
   m_ObjectHideFlags: 0
@@ -4103,7 +4161,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -4333,6 +4391,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2670000446172233445, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: SaveData
+      value: 
+      objectReference: {fileID: 1719350489}
     - target: {fileID: 2670000446172233445, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4673,6 +4735,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 222062857}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuestCompleted
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: QuestTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7496728612593454867, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_text
       value: 
@@ -4900,6 +4990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questUI: {fileID: 1378221234}
+  questSave: {fileID: 0}
 --- !u!4 &474979339
 Transform:
   m_ObjectHideFlags: 0
@@ -5704,7 +5795,7 @@ Transform:
   - {fileID: 1684849696}
   - {fileID: 474979339}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &540315221
 Texture2D:
@@ -9189,9 +9280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     speakers:
-    - Louis1
-    - Louis2
-    - Louis3
     - Louis
     - Louis
     - Louis
@@ -9203,7 +9291,10 @@ MonoBehaviour:
     - Louis
     - Louis
     - Louis
-    - Louis15
+    - Louis
+    - Louis
+    - Louis
+    - Louis
     sentences:
     - ' Yep, here it is, safe and sound! My own private dessert.'
     - ' hmm...Grape juice for adults?'
@@ -9679,7 +9770,7 @@ Transform:
   - {fileID: 222235023}
   - {fileID: 325487516}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &1042606662
 Texture2D:
@@ -15038,6 +15129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9510c8b43f702ca4fa51e3d2a25acedb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startActions: []
+  endActions: []
   nameText: {fileID: 476877301}
   dialogueText: {fileID: 1979226188}
   imageBox: {fileID: 0}
@@ -15194,6 +15287,17 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1719350489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2476691943430194941, guid: af070bfc58dbfca48a71988a2dd433c6, type: 3}
+  m_PrefabInstance: {fileID: 242231611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5615e9260f435fa45ab518f9dc4e4835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!28 &1726692137
 Texture2D:
   m_ObjectHideFlags: 0

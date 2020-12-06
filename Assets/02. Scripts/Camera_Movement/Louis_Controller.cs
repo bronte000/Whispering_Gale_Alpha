@@ -22,10 +22,9 @@ public class Louis_Controller : MonoBehaviour
     [SerializeField]
     private DialogueTrigger BarrierD;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+
         rotation = 0.0f;
         controller = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
@@ -34,7 +33,7 @@ public class Louis_Controller : MonoBehaviour
         running = false;
         back = false;
     }
-
+    
 
     // Update is called once per frame
     void Update()
@@ -87,6 +86,16 @@ public class Louis_Controller : MonoBehaviour
             running = false;
             animator.SetBool("IsRun", false);
         }
+    }
+
+    public void Stop()
+    {
+        walking = false;
+        running = false;
+        back = false;
+        animator.SetBool("IsRun", false);
+        animator.SetBool("GoBack", false);
+        animator.SetBool("IsWalk", false);
     }
 
     void OnCollisionEnter(Collision collision)

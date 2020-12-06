@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemDatabase : MonoBehaviour
 {
     public static ItemDatabase instance;
+    public List<Item> itemDB = new List<Item>();
 
     [SerializeField]
     private SlotToolTip theSlotToolTip;
@@ -14,7 +15,6 @@ public class ItemDatabase : MonoBehaviour
         instance = this;
     }
 
-    public List<Item> itemDB = new List<Item>();
 
     private void Start()
     {

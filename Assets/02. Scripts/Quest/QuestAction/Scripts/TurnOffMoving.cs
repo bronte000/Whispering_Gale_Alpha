@@ -8,7 +8,9 @@ public class TurnOffMoving : QuestAction
 {
     public override bool ExecuteRole()
     {
-        GameObject.Find("Louis").GetComponent<Louis_Controller>().enabled = false;
+        Louis_Controller controller = GameObject.Find("Louis").GetComponent<Louis_Controller>();
+        controller.Stop();
+        controller.enabled = false;
         return true;
     }
 }

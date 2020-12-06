@@ -5,6 +5,7 @@ using UnityEngine;
 public class QuestSaveData : MonoBehaviour
 {
     public string player_name;
+
     private int file_number;
     private bool newFile;
 
@@ -41,7 +42,7 @@ public class QuestSaveData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.DeleteAll(); // delete this line before building
+      //  PlayerPrefs.DeleteAll(); // delete this line before building
 
         if (PlayerPrefs.HasKey(player_name))
         {
@@ -69,6 +70,27 @@ public class QuestSaveData : MonoBehaviour
             // delete previous data with the same file_number!
         }
 
+    }
+
+    public void SaveInventorySize(int size)
+    {
+        PlayerPrefs.SetInt("Inventory", size);
+    }
+
+    public void SaveItem(int pos, int itemNum)
+    {
+        PlayerPrefs.SetInt("Inventory" + pos.ToString(), itemNum);
+    }
+    
+    public List<int> LoadInventory()
+    {
+        List<int> items = new List<int>();
+        int size = PlayerPrefs.GetInt("Inventory");
+        for (int i = 0; i < size; i++)
+        {
+            items.Add(PlayerPrefs.GetInt("Inventory" + i.ToString()));
+        }
+        return items;
     }
 
     public void SaveQuestStarted(int questNum)

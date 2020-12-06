@@ -57,3 +57,9 @@ MonoBehaviour:
     itemImage: {fileID: 21300000, guid: f0d0a5aa8714aa94fa2a0ab4f17e7c09, type: 3}
     efts: []
     itemDescribe: ' Someone''s trick. There is no candy inside the wrapper'
+  - itemType: 1
+    itemName: Compass
+    itemImage: {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    efts:
+    - {fileID: 11400000, guid: 07fd58c973002564098b3673187e425a, type: 2}
+    itemDescribe: ' Grandfather''s compass. It''s pointing somewhere not North.'

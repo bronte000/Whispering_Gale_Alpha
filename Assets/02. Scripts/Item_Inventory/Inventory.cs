@@ -11,7 +11,8 @@ public class Inventory : MonoBehaviour
     public static Inventory instance;
 
     public GameObject menu;
-    
+    public QuestSaveData SaveData;
+
     private List<Item> database;
 
     void Awake()
@@ -21,6 +22,17 @@ public class Inventory : MonoBehaviour
         for (int i = 0; i < 20; i++)
         {
             slots[i].slotnum = i;
+        }
+    }
+
+    void Start()
+    {
+        //AddItem(2); // Add Compass
+        items.Clear();
+        List<int> temp = SaveData.LoadInventory();
+        foreach (int index in temp)
+        {
+            AddItem(index);
         }
     }
 
@@ -45,6 +57,8 @@ public class Inventory : MonoBehaviour
         {
             items.Add(item);
             slots[items.Count - 1].UpdateSlot(item);
+            SaveData.SaveInventorySize(items.Count);
+            SaveData.SaveItem(items.Count-1, index);
             return true;
         }
         return false;
@@ -57,8 +71,10 @@ public class Inventory : MonoBehaviour
         for (i = slotnum; i < items.Count; i++)
         {
             slots[i].UpdateSlot(slots[i+1].item);
+            SaveData.SaveItem(i, slots[i+1].item.index);
         }
         slots[i].RemoveSlot();
+        SaveData.SaveInventorySize(items.Count);
     }
     
 }

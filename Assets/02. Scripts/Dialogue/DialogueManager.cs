@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue, Images images, bool hasImages, NextAction next)
     {
+        dialogueText.text = "";
         DoActions(startActions);
         //Debug.Log("Starting conversation with " + dialogue.name); Debug.Log(next.nextSceneName);
         nextAction = next;

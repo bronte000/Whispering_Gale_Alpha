@@ -28,14 +28,6 @@ public class Louis_Interaction : MonoBehaviour
                 Debug.Log("collid");
                 switch (hit.transform.tag)
                 {
-                    case "BookAndPotion":
-                        Debug.Log("potion");
-                        break;
-                    case "JackoLantern":
-                        Debug.Log("Jackolantern");
-                        JackoLanternEvent(JackCount);
-                        JackCount++;
-                        break;
                     case "EnterDoor":
                         Debug.Log("EnterDoor");
                         MoveZEvent(-2.3f);
@@ -44,9 +36,28 @@ public class Louis_Interaction : MonoBehaviour
                         Debug.Log("ExitDoor");
                         MoveZEvent(2.3f);
                         break;
+                    case "Refrigerator":
+                        Debug.Log("Refrigerator");
+                        RefrigeratorEvent();
+                        break;
+                    case "KitchenCabinet":
+                        Debug.Log("KitchenCabinet");
+                        KitchenCabinetEvent();
+                        break;
                 }
             }
         }
+    }
+
+    void KitchenCabinetEvent()
+    {
+
+    }
+
+
+    void RefrigeratorEvent()
+    {
+
     }
 
     void LateUpdate()
