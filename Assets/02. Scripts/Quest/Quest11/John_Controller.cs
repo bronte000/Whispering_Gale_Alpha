@@ -23,7 +23,8 @@ public class John_Controller : MonoBehaviour
             if (PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11") == 2)
                 quest11 = true;
 
-        //if (quest11), change the layer default state to idle
+        if (quest11)
+            anim.SetBool("IsHappy", true); // OR change the layer default state to idle
     }
 
     // Update is called once per frame
