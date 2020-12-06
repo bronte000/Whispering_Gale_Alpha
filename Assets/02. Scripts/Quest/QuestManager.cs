@@ -16,7 +16,7 @@ public class QuestManager : MonoBehaviour
         quest.hasStarted = true;
         quest.StartActions();
         questUI.GetComponent<QuestDisplay>().activeNum += 1;
-        //questSave.GetComponent<QuestSaveData>().SaveQuestStarted(quest.questNumber);
+        questSave.GetComponent<QuestSaveData>().SaveQuestStarted(quest.questNumber);
         ShowQuestInfo(quest);
     }
 
