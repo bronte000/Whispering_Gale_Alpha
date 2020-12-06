@@ -11,6 +11,8 @@ public class NextAction
     1: change scene
     2: start quest
     3: start dialogue
+    4:
+    5: nextObject.SetActive(true)
     */
     public GameObject nextObject; //다음 action에 필요한 스크립트(ex) DialogueTrigger.cs, QuestTrigger.cs)가 있는 GameObject
     public QuestAction effect;

@@ -143,5 +143,7 @@ public class DialogueManager : MonoBehaviour
             next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue();
         else if (next.nextActionCode == 4) //Do Quest Action
             next.effect.ExecuteRole();
+        else if (next.nextActionCode == 5) //SetActive(true)
+            next.nextObject.SetActive(true);
     }
 }
