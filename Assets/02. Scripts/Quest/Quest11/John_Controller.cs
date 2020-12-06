@@ -23,24 +23,19 @@ public class John_Controller : MonoBehaviour
             if (PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11") == 2)
                 quest11 = true;
 
-        //if (quest11), change the layer default state to idle
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if ((!quest11) && anim.GetBool("D4_done") == false)
-        {
-            //
-        }
-        else if ((!quest11) && (anim.GetBool("D4_done") == true))
-        {
-            //
-        }
+        if (quest11)
+            anim.SetBool("IsHappy", true); // OR change the layer default state to idle
     }
 
     public void AfterDialogue4()
     {
+        //John walks away
+        transform.rotation = johnTr.rotation;
+        anim.SetBool("D4_done", true);
+
+        //Start dialogue5
         dialogue5.TriggerDialogue();
+        if (this.transform.position.x < 0.0f)
+            this.gameObject.SetActive(false);
     }
 }

@@ -6,6 +6,7 @@ public class ColliderDialogueTrigger : MonoBehaviour
 {
     public GameObject dialogue;
     public string player_name; //임시용
+    public QuestSaveData questSave;
     private GameObject louis;
 
     void Start()
@@ -23,6 +24,7 @@ public class ColliderDialogueTrigger : MonoBehaviour
                 Vector3 newDirection = transform.position - louis.transform.position;
                 transform.rotation = Quaternion.LookRotation(-newDirection);
                 dialogue.GetComponent<DialogueTrigger>().TriggerDialogue();
+                questSave.SaveQuestStarted(11);
             }
                 
         }

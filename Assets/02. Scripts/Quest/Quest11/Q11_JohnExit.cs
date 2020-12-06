@@ -2,18 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// After Dialogue4_JohnsTale is done, John exits the screen
 [CreateAssetMenu(menuName = "QuestAction/Quest11/JohnExit")]
 public class Q11_JohnExit : QuestAction
 {
-    public GameObject john;
-    public DialogueTrigger dialogue5;
+    private GameObject john;
 
     public override bool ExecuteRole()
     {
-        // John walks away
-
-        // Execute Dialogue5
-        dialogue5.TriggerDialogue();
+        john = GameObject.Find("john");
+        john.GetComponent<John_Controller>().AfterDialogue4();
 
         return true;
     }
