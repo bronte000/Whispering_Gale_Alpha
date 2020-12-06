@@ -12,6 +12,8 @@ TagManager:
   - ExitDoor
   - Refrigerator
   - KitchenCabinet
+  - CoffeTable
+  - Reminiscence
   layers:
   - Default
   - TransparentFX

@@ -100,6 +100,7 @@ public class Louis_Controller : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("Collide");
         if (collision.gameObject.layer == 9)    // 9 is barrier
         {
             BarrierD.TriggerDialogue();
