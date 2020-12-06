@@ -2253,7 +2253,7 @@ Transform:
   - {fileID: 827207759}
   - {fileID: 1186093086}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
 --- !u!1001 &92192711
 PrefabInstance:
@@ -3116,7 +3116,7 @@ Transform:
   - {fileID: 1070830319}
   - {fileID: 792394990}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &110957838
 MonoBehaviour:
@@ -7786,76 +7786,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 236897299}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &245697041
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 464639126}
-    m_Modifications:
-    - target: {fileID: 1200360396381614, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_Name
-      value: Bld_Tall_D_Interior_A (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.008333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.131
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11886038
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e001c575caa793f459412087df5bd66d, type: 3}
---- !u!4 &245697042 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-  m_PrefabInstance: {fileID: 245697041}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &264350385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11742,7 +11672,7 @@ Transform:
   - {fileID: 585243987}
   - {fileID: 1558584363}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387391203
 GameObject:
@@ -12749,7 +12679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6023323675805823345, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6023323675805823345, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13838,6 +13768,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 420092046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &420474764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420474765}
+  - component: {fileID: 420474766}
+  m_Layer: 5
+  m_Name: Dialouge6_LetterFromGrandpa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &420474765
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420474764}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 792394990}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &420474766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420474764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - 'Inside the orb was an old paper with a memo attached to it.
+
+      The memo
+      turned out to be a letter from Grandpa.'
+    - 'The memo read:'
+    - This old paper is a bucket list that I wrote when I was twenty-one, and stuck
+      inside a book I wanted to read.
+    - Finding and re-reading it last week while picking books to give away made me
+      feel despondent.
+    - It was a list of things I wanted to do after retirement - the portrait of a
+      young man dreaming of old age, of the end of life!
+    - I decided to put this in my time capsule because I do not want my dear Louis
+      to follow this path.
+    - Putting off the things that I really wanted to do made my time more or less
+      a burden.
+    - 'Besides, you should know I haven''t accomplished half of the things written
+      here. '
+    - (For starters, I was about to give that book away without reading it!)
+    - If you're reading this letter then you must be wondering what to do with your
+      life, at least a bit.
+    - This is an old know-it-all's wish; please dream of middle-age before retirement,
+      and of youth before middle-age.
+    - Look at the trail at least for a moment before letting your eyes reach the
+      peak.
+    - 'I did not know how to value time as much as your Grandma did, and I lost the
+      chance to make more memories.
+
+      This is proof of my regret.'
+    - 'Well, then on to the next time capsule, my lady!
+
+      Love, Grandpa'
+    - I couldn't help but give the letter a teary smile, mixed with a drop of resentment.
+    - Like always, he had left me with questions, not answers.
+    - I sighed, and returned to the house for the day.
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 4
+    nextObject: {fileID: 0}
+    effect: {fileID: 0}
+    nextSceneName: 
+    nextQuestNum: 0
+  effect: {fileID: 0}
 --- !u!1001 &424207090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16076,104 +16119,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 464407743}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &464639125
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 464639126}
-  - component: {fileID: 464639129}
-  - component: {fileID: 464639128}
-  - component: {fileID: 464639127}
-  m_Layer: 0
-  m_Name: Tile7 treetile
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &464639126
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464639125}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.71426, y: 104.62862, z: 7.6188965}
-  m_LocalScale: {x: 100, y: 1, z: 120}
-  m_Children:
-  - {fileID: 1420561322}
-  - {fileID: 245697042}
-  m_Father: {fileID: 902488856}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &464639127
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464639125}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &464639128
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464639125}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 7dadb4b95ae7e5e46ac89196f23eda1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &464639129
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 464639125}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &466436306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19521,7 +19466,7 @@ Transform:
   - {fileID: 1723061866447252551}
   - {fileID: 511901814}
   m_Father: {fileID: 902488856}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &583766015
 PrefabInstance:
@@ -20001,7 +19946,7 @@ Transform:
   - {fileID: 1730501081}
   - {fileID: 438262191}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
 --- !u!1001 &599509525
 PrefabInstance:
@@ -21071,7 +21016,7 @@ Transform:
   - {fileID: 584984647}
   - {fileID: 1837854347}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
 --- !u!4 &641188263 stripped
 Transform:
@@ -23430,7 +23375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8448254115949353694, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8448254115949353694, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23510,6 +23455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 5
+  Dialogues: {fileID: 0}
 --- !u!4 &707973295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
@@ -27768,6 +27714,105 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 844636049}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &848915160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848915161}
+  - component: {fileID: 848915162}
+  m_Layer: 5
+  m_Name: Dialouge3_MisterDragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &848915161
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848915160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 792394990}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &848915162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848915160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Megan
+    - Louis
+    - Megan
+    - Louis
+    - Megan
+    - Megan
+    - Megan
+    - Megan
+    - Megan
+    - Louis
+    - Louis
+    - Megan
+    sentences:
+    - Hello...
+    - 'Oh, hi. Are you visiting a relative?
+
+      I''m the part-time keeper of this
+      graveyard, so ask me if you need something.'
+    - Um, I was wondering if my grandfather - he's over there - left anything in
+      the hands of the previous gatekeeper, Tom.
+    - Are you Louis, his granddaughter?
+    - Yes - do I need to prove it?
+    - Nah. I'll just relay what Tom always talked about. If you're not his kid then
+      I don't think you'll get it anyway.
+    - Your grandfather left behind a request - and a ton of money - to tell you about
+      the three time capsules you, him, and your grandmother buried when you were
+      ten.
+    - The first time capsule is... "inside Tom's wish."
+    - And Tom's biggest wish was for the wind to whisper words of comfort to the
+      mourning.
+    - What do you make of that? Personally, I think Tom was trying to get his hands
+      on more money from your grandfather...
+    - (The compass isn't pointing towards her, and the light has vanished...)
+    - 'I''ll... try to investigate. Grandpa always liked riddles.
+
+      Thank you.'
+    - Well, good luck.
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 0
+    nextObject: {fileID: 0}
+    effect: {fileID: 0}
+    nextSceneName: 
+    nextQuestNum: 0
+  effect: {fileID: 0}
 --- !u!1001 &850828352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29333,7 +29378,6 @@ Transform:
   - {fileID: 748828705}
   - {fileID: 399124962}
   - {fileID: 1666108014}
-  - {fileID: 464639126}
   - {fileID: 2055546738}
   - {fileID: 972829613}
   - {fileID: 582563172}
@@ -30919,7 +30963,7 @@ Terrain:
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
-  m_DetailObjectDensity: 1
+  m_DetailObjectDensity: 0.08
   m_HeightmapPixelError: 5
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
@@ -31814,7 +31858,7 @@ Transform:
   - {fileID: 1903761788}
   - {fileID: 216829612}
   m_Father: {fileID: 902488856}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &977302160
 PrefabInstance:
@@ -36670,6 +36714,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1118405459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1120401109
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 129.77078
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1286006
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -38.754288
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 516a8248d30014342865f47770660876, type: 3}
+      propertyPath: m_Name
+      value: john
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 516a8248d30014342865f47770660876, type: 3}
+--- !u!1 &1120401110 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 516a8248d30014342865f47770660876, type: 3}
+  m_PrefabInstance: {fileID: 1120401109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &1120401111
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120401110}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: -203655887218126122, guid: 3af78319168d30a4d921ca2689dd75c0, type: 3}
+  m_Animations:
+  - {fileID: -203655887218126122, guid: 3af78319168d30a4d921ca2689dd75c0, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1120968020
 GameObject:
   m_ObjectHideFlags: 0
@@ -40924,7 +41046,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4510447531522386521, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4510447531522386521, guid: 596deb5f9e5ec8d4fb5c7b09939f234b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44190,7 +44312,7 @@ Transform:
   - {fileID: 1002527068}
   - {fileID: 1502345806}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
 --- !u!1001 &1327820567
 PrefabInstance:
@@ -45608,8 +45730,7 @@ MonoBehaviour:
       does this mean?'
     hasStarted: 0
     completed: 0
-    startActions:
-    - {fileID: 11400000, guid: e58d81d34e309f4409615f0fb1830bfe, type: 2}
+    startActions: []
     endActions: []
     npcId: 
   questCertificate: {fileID: 0}
@@ -46972,76 +47093,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1418884216}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1420561321
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 464639126}
-    m_Modifications:
-    - target: {fileID: 1200360396381614, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_Name
-      value: Bld_Tall_D_Interior_A
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.008333334
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.14124706
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.11886038
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e001c575caa793f459412087df5bd66d, type: 3}
---- !u!4 &1420561322 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4583636595095350, guid: e001c575caa793f459412087df5bd66d, type: 3}
-  m_PrefabInstance: {fileID: 1420561321}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1422023642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481256, guid: 9b8fc966f95ea9c4194dc091fc40b478, type: 3}
@@ -47703,7 +47754,7 @@ Transform:
   - {fileID: 2103205400}
   - {fileID: 84114740}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -15, y: 90, z: 0}
 --- !u!1 &1438637833
 GameObject:
@@ -49331,6 +49382,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1498519619}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1499022607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1499022608}
+  - component: {fileID: 1499022609}
+  m_Layer: 5
+  m_Name: Dialouge4_JohnsTale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1499022608
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499022607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 792394990}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1499022609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499022607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - John
+    - Louis
+    - John
+    - Louis
+    - John
+    - John
+    - John
+    - John
+    - John
+    - John
+    - John
+    - Louis
+    - Louis
+    - John
+    - John
+    - John
+    - John
+    - John
+    - John
+    - Louis
+    - John
+    - John
+    - John
+    - John
+    - John
+    sentences:
+    - Ya here to see the dragon, or the tower?
+    - I... heard that people used to believe this dragon could talk to the dead,
+      so I came to see why.
+    - Why, eh? Well that's a tough question.
+    - Do you know anything about it?
+    - Know a bit.
+    - 'When I was a young one, it was a sort of common knowledge that Mister Dragon
+      could reach the dead, and send them our messages. '
+    - You see, this statue moved when it saw grief - or at least my mom and dad said
+      so.
+    - So people hiked all the way up here to look over the graveyard and send their
+      words to the people down there.
+    - 'But as time passed and magic was researched people stopped believing in stupid
+      myths. '
+    - Nobody comes here anymore unless they want exercise, or they're old like me
+      and miss all the laughing and crying.
+    - Oh, and I remember the dragon being a lot bigger- as big as that tower - but
+      then I was small...
+    - (If the dragon was as big as the tower, it should have been a lot thicker...)
+    - Then how was that tower built?
+    - Oh, that tower's not that old. It was built like 10 years ago - by a couple
+      older than me.
+    - Weird folks; well-educated but believing in the dragon. Maybe they liked the
+      idea of people believing in it?
+    - Well anyway, there was a couple from the outside that tried to make the dragon
+      as big as I thought it used to be.
+    - They failed - I dunno why, when they looked like a pair of strong magicians.
+      Maybe the dragon didn't like them?
+    - So they built the tower instead, and magicked it to send a breeze whenever
+      people cried in the graveyard.
+    - Tom - the graveyard keeper - liked it. He said winds whisper comfort. But then
+      all he ever said was poetry.
+    - Did the tower's spell bring people back here?
+    - Somewhat. But it brung back the people who'd forgotten about the dragon, not
+      the ones who'd never even heard of Mister Dragon. So it wasn't much.
+    - Besides, the spell's gone. It died out with the couple.
+    - Tom tried to re-cast it, but he's never studied magic harder than cleaning
+      the kitchen, and now he's too sick to walk up here by himself.
+    - 'And that''s it. '
+    - If Mister Dragon really is getting smaller, will he disappear when Tom and
+      I and our friends are all dead?
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 4
+    nextObject: {fileID: 1120401110}
+    effect: {fileID: 0}
+    nextSceneName: 
+    nextQuestNum: 0
+  effect: {fileID: 0}
 --- !u!1001 &1499346803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50947,7 +51126,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1550645077
 PrefabInstance:
@@ -53907,6 +54086,77 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943992381913886, guid: 0508bc58c8608ba4da7e8f91567f247f, type: 3}
   m_PrefabInstance: {fileID: 1673165555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1677947994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1677947995}
+  - component: {fileID: 1677947996}
+  m_Layer: 5
+  m_Name: Dialouge5_CastSpell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1677947995
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677947994}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 792394990}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1677947996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677947994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - (Making winds in response to crying - or sadness... it's advanced magic, but
+      it's also something Grandma taught me.)
+    - (I think I can cast this spell...)
+    - .........
+    - Done!
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 4
+    nextObject: {fileID: 0}
+    effect: {fileID: 0}
+    nextSceneName: 
+    nextQuestNum: 0
+  effect: {fileID: 0}
 --- !u!1001 &1681274537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54237,6 +54487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: {fileID: 4821292241472474789}
+  player_name: ctp321
 --- !u!65 &1686226617
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58246,7 +58497,7 @@ Transform:
   - {fileID: 1720311837}
   - {fileID: 2126598160}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1814566753
 PrefabInstance:
@@ -67105,7 +67356,7 @@ Transform:
   m_LocalScale: {x: 40, y: 1, z: 120}
   m_Children: []
   m_Father: {fileID: 902488856}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &2055546739
 MeshCollider:
@@ -94946,7 +95197,7 @@ Transform:
   - {fileID: 296809607974731531}
   - {fileID: 1120968021}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 60, z: 0}
 --- !u!4 &296809607974731531
 Transform:
@@ -95427,8 +95678,10 @@ MonoBehaviour:
   next:
     nextActionCode: 5
     nextObject: {fileID: 1686226614}
+    effect: {fileID: 0}
     nextSceneName: 
     nextQuestNum: 0
+  effect: {fileID: 0}
 --- !u!224 &4821292241190697449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -95573,8 +95826,10 @@ MonoBehaviour:
   next:
     nextActionCode: 2
     nextObject: {fileID: 1374984541}
+    effect: {fileID: 0}
     nextSceneName: 
     nextQuestNum: 11
+  effect: {fileID: 0}
 --- !u!1001 &5235858531242125321
 PrefabInstance:
   m_ObjectHideFlags: 0
