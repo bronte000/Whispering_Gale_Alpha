@@ -1054,7 +1054,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2731431374181011292, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_Height
-      value: 1.8
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: -2731431374181011292, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_Radius
@@ -1062,7 +1062,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2731431374181011292, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_Center.y
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 969592370502938637, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_LocalScale.x
@@ -1144,6 +1144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3527130653963875389, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bbdd1646f70fee4bb7bc35b2226b2fd, type: 2}
     - target: {fileID: 4927846294168021824, guid: 6e86a1f599cd9d24b88de7c8de1ba6b7, type: 3}
       propertyPath: m_Name
       value: MainCamera
@@ -1337,6 +1341,68 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &112217885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112217886}
+  - component: {fileID: 112217887}
+  m_Layer: 0
+  m_Name: Dialogue8_LouisWakeUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &112217886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112217885}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7047346, y: -1.1983593, z: -3.0208688}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1463700047}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112217887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112217885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - ' ...Umm....'
+    - ' What happened? Why am I lying in the floor?'
+    - ' I have no idea...'
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 0
+    nextObject: {fileID: 0}
+    effect: []
+    nextSceneName: 
+    nextQuestNum: 0
 --- !u!28 &116473821
 Texture2D:
   m_ObjectHideFlags: 0
@@ -3140,7 +3206,7 @@ Transform:
   m_LocalScale: {x: 2.6963, y: 2.1438, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &332267077
 Texture2D:
@@ -4093,7 +4159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &388212677
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4496,7 +4562,7 @@ PrefabInstance:
     - target: {fileID: 5380029902618112731, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b22abafbed84f774292b538d4fdc6e2f, type: 2}
+      objectReference: {fileID: 11400000, guid: 6803b51851760b74a8b84c2a2075139c, type: 2}
     - target: {fileID: 5380029902618112731, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[1]
       value: 
@@ -4512,7 +4578,7 @@ PrefabInstance:
     - target: {fileID: 7010146040340210624, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b6f15e754a211fb4999a565d2e085681, type: 2}
+      objectReference: {fileID: 11400000, guid: c4ba021ac5a79b6458b38eedb58a46d0, type: 2}
     - target: {fileID: 7010146040340210624, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[1]
       value: 
@@ -5317,7 +5383,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.5, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &479298367
 MeshRenderer:
@@ -6176,12 +6242,12 @@ GameObject:
   - component: {fileID: 530025030}
   - component: {fileID: 530025031}
   m_Layer: 0
-  m_Name: 0_LouisStunned
+  m_Name: Dialogue7_LouisStunned
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &530025030
 Transform:
   m_ObjectHideFlags: 0
@@ -6193,8 +6259,8 @@ Transform:
   m_LocalPosition: {x: -1.7047346, y: -1.1983593, z: -3.0208688}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1463700047}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &530025031
 MonoBehaviour:
@@ -7591,6 +7657,7 @@ GameObject:
   - component: {fileID: 616337636}
   - component: {fileID: 616337635}
   - component: {fileID: 616337637}
+  - component: {fileID: 616337638}
   m_Layer: 0
   m_Name: KitchenCamera
   m_TagString: Untagged
@@ -7678,6 +7745,21 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 2
+--- !u!114 &616337638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616337634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a574c58c47b448e44b1a4233f7fb41ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  minZoom: 50
+  maxZoom: 70
 --- !u!28 &622530086
 Texture2D:
   m_ObjectHideFlags: 0
@@ -7959,7 +8041,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.35, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &659309170
 MeshRenderer:
@@ -8151,6 +8233,11 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!4 &671853585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 838765304666591087, guid: 7ca21a8b7381f3242a1b9dcee64845bd, type: 3}
+  m_PrefabInstance: {fileID: 4731144334328992926}
+  m_PrefabAsset: {fileID: 0}
 --- !u!28 &677909973
 Texture2D:
   m_ObjectHideFlags: 0
@@ -9090,7 +9177,7 @@ PrefabInstance:
     - target: {fileID: 5380029902618112731, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b22abafbed84f774292b538d4fdc6e2f, type: 2}
+      objectReference: {fileID: 11400000, guid: 9827308ffb405fb46a8e546a934ac6d8, type: 2}
     - target: {fileID: 5380029902618112731, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[1]
       value: 
@@ -9106,7 +9193,7 @@ PrefabInstance:
     - target: {fileID: 7010146040340210624, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: b6f15e754a211fb4999a565d2e085681, type: 2}
+      objectReference: {fileID: 11400000, guid: c4ba021ac5a79b6458b38eedb58a46d0, type: 2}
     - target: {fileID: 7010146040340210624, guid: 2bf093bbbdffe294197df8e823991ef9, type: 3}
       propertyPath: actions.Array.data[1]
       value: 
@@ -9310,6 +9397,75 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &810002754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 810002755}
+  - component: {fileID: 810002756}
+  m_Layer: 5
+  m_Name: Dialouge6_BadEat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &810002755
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810002754}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 1463700047}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &810002756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810002754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - ' ... I really don''t want to eat this one.'
+    - ' ...Okay, okay. I''ll try it.'
+    - ' Terrible smell, terrible tas...t....e..........'
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 4
+    nextObject: {fileID: 169281477}
+    effect:
+    - {fileID: 11400000, guid: 0d7ca9915b16718418dd3a5ec7ce3b95, type: 2}
+    - {fileID: 11400000, guid: 7659c4c2b3178674c8c2eb7ea5a34d2c, type: 2}
+    nextSceneName: 
+    nextQuestNum: 4
 --- !u!28 &811310841
 Texture2D:
   m_ObjectHideFlags: 0
@@ -9783,6 +9939,7 @@ GameObject:
   - component: {fileID: 846055806}
   - component: {fileID: 846055805}
   - component: {fileID: 846055807}
+  - component: {fileID: 846055808}
   m_Layer: 0
   m_Name: BedRoomCamera
   m_TagString: Untagged
@@ -9870,6 +10027,21 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 1.5
+--- !u!114 &846055808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846055804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a574c58c47b448e44b1a4233f7fb41ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  minZoom: 50
+  maxZoom: 80
 --- !u!28 &860122599
 Texture2D:
   m_ObjectHideFlags: 0
@@ -10780,7 +10952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &919889359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14891,8 +15063,12 @@ MonoBehaviour:
   dialogue:
     speakers:
     - Louis
+    - Louis
+    - Louis
     sentences:
-    - ' Nothing left.'
+    - ' It''s canned food, so probably safe, but... '
+    - ' ....It seems a bit strange. Why is it so inflated?'
+    - ' I''m not sure.... Is it really okay?'
   images:
     name: 
     images: []
@@ -15831,6 +16007,7 @@ GameObject:
   - component: {fileID: 1390546461}
   - component: {fileID: 1390546460}
   - component: {fileID: 1390546462}
+  - component: {fileID: 1390546463}
   m_Layer: 0
   m_Name: LivingRoomVam
   m_TagString: Untagged
@@ -15918,6 +16095,21 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 2.6
+--- !u!114 &1390546463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390546459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a574c58c47b448e44b1a4233f7fb41ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  minZoom: 30
+  maxZoom: 70
 --- !u!1001 &1394964084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17238,8 +17430,12 @@ MonoBehaviour:
   dialogue:
     speakers:
     - Louis
+    - GM
+    - GM
     sentences:
     - ' ....I''ll put it back to my bag.'
+    - ' You should find a trash can to throw your item away.'
+    - ' Do not throw trash anywhere.'
   images:
     name: 
     images: []
@@ -17897,10 +18093,9 @@ MonoBehaviour:
     - Louis
     - Louis
     sentences:
-    - ' Drawer 1.... nothing.... drawer 2.... nothing... It seems empty.... ?'
-    - ' Oh. There''re somethings left.'
-    - ' Half-eaten straberry jam, eww it''s mouldy, backed beans....and spam? This
-      one seems fine.'
+    - ' Oh, gross!'
+    - ' It smells terrible! What''s this? Strawberry jam? Mold jam?'
+    - " Should I really eat this one? Really? REALLY? \n YOU WANT ME TO EAT MOLD?"
   images:
     name: 
     images: []
@@ -18779,6 +18974,60 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1668153013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668153014}
+  - component: {fileID: 1668153015}
+  m_Layer: 0
+  m_Name: Quest2_SleepQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668153014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668153013}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 671853585}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1668153015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668153013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f73baf86477979b4b91945b4ea0c918f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    questNumber: 5
+    questName: Eat Something
+    questContent: "\n Louis is very hungry.\n Eat something to fill her hungry bar.\n\nHint>\nInteract
+      with objects by 'Enter' Key. There may be some food left in the kitchen. "
+    hasStarted: 0
+    completed: 0
+    startActions: []
+    endActions: []
+    npcId: 
+  questCertificate: {fileID: 0}
 --- !u!28 &1673102640
 Texture2D:
   m_ObjectHideFlags: 0
@@ -22068,6 +22317,7 @@ GameObject:
   - component: {fileID: 2019911784}
   - component: {fileID: 2019911783}
   - component: {fileID: 2019911785}
+  - component: {fileID: 2019911786}
   m_Layer: 0
   m_Name: EntracneVcam
   m_TagString: Untagged
@@ -22155,6 +22405,21 @@ MonoBehaviour:
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 1.293
+--- !u!114 &2019911786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019911782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a574c58c47b448e44b1a4233f7fb41ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  minZoom: 45
+  maxZoom: 80
 --- !u!28 &2021622143
 Texture2D:
   m_ObjectHideFlags: 0
@@ -23286,7 +23551,7 @@ Transform:
   m_LocalScale: {x: 2.1175194, y: 1.8224945, z: 3.3479936}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!28 &2124162379
 Texture2D:

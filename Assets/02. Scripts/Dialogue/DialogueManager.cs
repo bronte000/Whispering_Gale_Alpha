@@ -86,6 +86,20 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    public void delayedDialogue(float time, int dialogueNum)
+    {
+        StartCoroutine(delayed2(time, dialogueNum));
+    }
+
+    private IEnumerator delayed2(float time, int dialogueNum)
+    {
+        yield return new WaitForSeconds(time);
+        GameObject dialogue = transform.GetChild(dialogueNum).gameObject;
+        dialogue.SetActive(true);
+        dialogue.GetComponent<DialogueTrigger>().TriggerDialogue();
+    }
+    
+
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
