@@ -69,7 +69,7 @@ MonoBehaviour:
     itemName: Spam
     itemImage: {fileID: 21300000, guid: b1a52829f8c976740b2e69408ea7d56d, type: 3}
     efts:
-    - {fileID: 11400000, guid: 07fd58c973002564098b3673187e425a, type: 2}
+    - {fileID: 11400000, guid: f0934a98380197444a45a023187d231c, type: 2}
     index: 3
     itemDescribe: ' Unopen spam. It is long past it''s sell by date, but it seems
       pretty well. Why don''t you try it?'
