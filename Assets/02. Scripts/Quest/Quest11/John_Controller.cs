@@ -27,6 +27,13 @@ public class John_Controller : MonoBehaviour
             anim.SetBool("IsHappy", true); // OR change the layer default state to idle
     }
 
+    public void BeforeDialogue4(GameObject louis)
+    {
+        // turn to face Louis
+        Vector3 newDirection = transform.position - louis.transform.position;
+        transform.rotation = Quaternion.LookRotation(-newDirection);
+    }
+
     public void AfterDialogue4()
     {
         //John walks away
