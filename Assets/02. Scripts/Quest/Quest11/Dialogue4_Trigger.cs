@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Dialogue4_Trigger : MonoBehaviour
 {
+    // attach to Dragon
     private GameObject louis, john;
     //private bool dia4; // false if dialogue4 hasn't started, true if it has started
 
@@ -19,15 +20,12 @@ public class Dialogue4_Trigger : MonoBehaviour
         if (PlayerPrefs.HasKey(PlayerPrefs.GetInt(player_name).ToString() + "_quest11"))
             if (PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11") == 2)
                 this.GetComponent<Dialogue4_Trigger>().enabled = false;
-        StartCoroutine(this.CheckLouis());
     }
 
-    IEnumerator CheckLouis()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Mathf.Abs(louis.transform.position.x - this.transform.position.x) > 10.0f)
-            yield return new WaitForSeconds(0.5f);
-        else
-            Dialogue4Time();
+        Dialogue4Time();
+        this.GetComponent<BoxCollider>().enabled = false;
     }
 
     private void Dialogue4Time()
