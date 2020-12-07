@@ -45,7 +45,7 @@ public class Louis_Controller : MonoBehaviour
             
 
             //rotation
-            transform.Rotate(0, 5*x, 0);
+            transform.Rotate(0, speed*x, 0);
 
             //walk
             if (z <= 0 && walking)

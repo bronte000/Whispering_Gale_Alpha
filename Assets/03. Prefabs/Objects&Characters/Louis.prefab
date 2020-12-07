@@ -2817,7 +2817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf6e5a7ab38cef4187bcafb15e5bbdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 2
   jumpSpeed: 0
   gravity: 0
   BarrierD: {fileID: 5660246055869272798}

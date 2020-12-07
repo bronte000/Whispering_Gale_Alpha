@@ -11,6 +11,7 @@ public class UnStun : QuestAction
     public override bool ExecuteRole()
     {
         mat.color = Color.white;
+        GameObject.Find("LouisSpot").GetComponent<Light>().enabled = false;
         return true;
     }
 }
