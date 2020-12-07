@@ -30,6 +30,7 @@ public class John_Controller : MonoBehaviour
     public void BeforeDialogue4(GameObject louis)
     {
         // turn to face Louis
+        johnTr = GetComponent<Transform>();
         Vector3 newDirection = transform.position - louis.transform.position;
         transform.rotation = Quaternion.LookRotation(-newDirection);
     }
@@ -42,7 +43,8 @@ public class John_Controller : MonoBehaviour
 
         //Start dialogue5
         dialogue5.TriggerDialogue();
-        if (this.transform.position.x < 0.0f)
-            this.gameObject.SetActive(false);
+        while (this.transform.position.x > 0.0f)
+            this.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 }

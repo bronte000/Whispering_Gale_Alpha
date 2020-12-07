@@ -42,7 +42,7 @@ Dialogue3_MisterDragon
 
 --> next action: Mousey's dance changes
 
-Dialogue4_JohnsTale
+Dialogue4_JohnsTale (triggred by Dialogue4_Trigger.cs, attached to Dragon)
 0 John) Ya here to see the dragon, or the tower?
 1 Louis) I... heard that people used to believe this dragon could talk to the dead, so I came to see why.
 2 John) Why, eh? Well that's a tough question.
