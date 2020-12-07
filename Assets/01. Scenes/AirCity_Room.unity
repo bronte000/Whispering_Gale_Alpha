@@ -168,6 +168,11 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &2003011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4500057919626783405, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+  m_PrefabInstance: {fileID: 461166028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!28 &6318580
 Texture2D:
   m_ObjectHideFlags: 0
@@ -872,6 +877,17 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!114 &68639735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+  m_PrefabInstance: {fileID: 461166028}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!28 &72442758
 Texture2D:
   m_ObjectHideFlags: 0
@@ -3566,6 +3582,91 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &367754298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367754299}
+  - component: {fileID: 367754300}
+  m_Layer: 5
+  m_Name: Dialouge2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &367754299
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367754298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 1684849696}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &367754300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367754298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - ' .....Hmm? Is it shining...?'
+    - ' I remember it stopped working when he died... Guess he put a spell on it
+      to activate on my birthday; he always did that sort of stuff.'
+    - ' "It points to where your heart thinks your home is, and makes that place
+      shine if you put it on a map - was it?"'
+    - ' It''s pointing to the grounds under this Upper City - I''ll put it on a map
+      to see for sure.'
+    - ' That''s the city where Grandma and Grandpa used to live... Guess I''m feeling
+      nostalgic today.'
+    - ' ...Shall I go down for a bit?
+
+      It is my birthday, and I don''t have
+      any plans for a week...'
+    - ' Yeah, I think I''ll go. If Grandpa left a spell on this compass, he probably
+      left something there too.'
+    - ' ...See you in a couple of days, mom and dad.'
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 1
+    nextObject: {fileID: 0}
+    effect: []
+    nextSceneName: LowCity1
+    nextQuestNum: 0
 --- !u!1001 &371544586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4170,22 +4271,22 @@ PrefabInstance:
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 222062857}
+      objectReference: {fileID: 0}
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuestCompleted
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: QuestTrigger, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 120094912351594633, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 671098708328805169, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_Name
@@ -4551,6 +4652,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5509508805766381247, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5731836231008067399, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -4736,19 +4841,47 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      propertyPath: m_Transition
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 222062857}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 68639735}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
@@ -4756,11 +4889,23 @@ PrefabInstance:
       value: QuestCompleted
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_interactable
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: QuestTrigger, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.UI.Selectable, UnityEngine.UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079464987532652028, guid: dae9230dec35dc3419747b78da29a188, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7496728612593454867, guid: dae9230dec35dc3419747b78da29a188, type: 3}
@@ -4990,7 +5135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questUI: {fileID: 1378221234}
-  questSave: {fileID: 0}
 --- !u!4 &474979339
 Transform:
   m_ObjectHideFlags: 0
@@ -9241,7 +9385,7 @@ GameObject:
   - component: {fileID: 981302319}
   - component: {fileID: 981302320}
   m_Layer: 5
-  m_Name: Dialouge2
+  m_Name: Dialouge1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9286,15 +9430,6 @@ MonoBehaviour:
     - Louis
     - Louis
     - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
-    - Louis
     sentences:
     - ' Yep, here it is, safe and sound! My own private dessert.'
     - ' hmm...Grape juice for adults?'
@@ -9303,31 +9438,17 @@ MonoBehaviour:
     - " (Sigh) Guess C5H5OH won\u2019t wipe out thoughts for me."
     - ' Would my grandparents laugh at me for following their footsteps? Or would
       they be sympathetic?'
-    - ' ...Oh. Grandpa''s old compass.'
-    - ' Hmm? It''s shining?'
-    - ' I remember it stopped working when he died... Guess he put a spell on it
-      to activate on my birthday; he always did that sort of stuff.'
-    - ' "It points to where your heart thinks your home is, and makes that place
-      shine if you put it on a map - was it?"'
-    - ' It''s pointing to the grounds under this Upper City - I''ll put it on a map
-      to see for sure.'
-    - ' That''s the city where Grandma and Grandpa used to live... Guess I''m feeling
-      nostalgic today.'
-    - ' ...Shall I go down for a bit?
-
-      It is my birthday, and I don''t have
-      any plans for a week...'
-    - ' Yeah, I think I''ll go. If Grandpa left a spell on this compass, he probably
-      left something there too.'
-    - ' ...See you in a couple of days, mom and dad.'
-    - ' And with that, I teleported.'
+    - ' ...Oh. Grandpa''s old compass..?'
   images:
     name: 
     images: []
   hasImages: 0
   next:
-    nextActionCode: 1
-    nextObject: {fileID: 0}
+    nextActionCode: -4
+    nextObject: {fileID: 2003011}
+    effect:
+    - {fileID: 11400000, guid: 9d398378c578e8c4c9ce50f63d02f83f, type: 2}
+    - {fileID: 11400000, guid: 2fa2772bde13c5c4ba6f270c65713d24, type: 2}
     nextSceneName: LowCity1
     nextQuestNum: 0
 --- !u!28 &984398484
@@ -14367,6 +14488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 0
+  Dialogues: {fileID: 0}
 --- !u!28 &1588049890
 Texture2D:
   m_ObjectHideFlags: 0
@@ -14830,6 +14952,107 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1633263296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8846530529864130463, guid: bede809f52ad2054cb72c62fc12ccde8, type: 3}
+  m_PrefabInstance: {fileID: 4514307485467939718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1633263297
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633263296}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 775242f3f58eae74bb067d98c6a0918a, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!28 &1636323660
 Texture2D:
   m_ObjectHideFlags: 0
@@ -15149,6 +15372,7 @@ Transform:
   m_Children:
   - {fileID: 1849311018}
   - {fileID: 981302319}
+  - {fileID: 367754299}
   m_Father: {fileID: 537032853}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20710,7 +20934,11 @@ PrefabInstance:
       objectReference: {fileID: 222062855}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.speakers.Array.size
-      value: 13
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.speakers.Array.data[0]
@@ -20753,6 +20981,16 @@ PrefabInstance:
       value: Louis
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: " It\u2019s been a very boring birthday so far;\n the dinner was about
+        my grades and future."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: " Grandpa would say something like,\n \"Where has the \u201Ctwenties\u2019
+        passion gone in this century?\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821292241927933881, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: dialogue.speakers.Array.data[10]
       value: Louis
       objectReference: {fileID: 0}
@@ -20766,7 +21004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4821292241927933883, guid: f2315de1458b7b446a7506c1705f9267, type: 3}
       propertyPath: m_Name
-      value: Dialouge1
+      value: Dialouge0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2315de1458b7b446a7506c1705f9267, type: 3}

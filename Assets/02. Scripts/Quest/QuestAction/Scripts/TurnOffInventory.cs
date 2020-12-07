@@ -9,7 +9,9 @@ public class TurnOffInventory : QuestAction
     public override bool ExecuteRole()
     {
         GameObject inventory = GameObject.Find("Inventory");
-        if (inventory) inventory.SetActive(false);
+        GameObject tooltip = GameObject.Find("BaseOuter");
+        if (tooltip != null) tooltip.SetActive(false);
+        if (inventory != null) inventory.SetActive(false);
         return true;
     }
 }
