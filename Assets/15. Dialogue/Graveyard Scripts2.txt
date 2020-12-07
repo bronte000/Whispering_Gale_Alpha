@@ -37,6 +37,8 @@ Dialogue3_MisterDragon
 35 Mousey) Go, go. And send Mister Dragon's remains our reminiscences.
 36 Louis) Okay... Thank you.
 
+--> next action: Mousey's dance changes
+
 Dialogue4_JohnsTale
 0 John) Ya here to see the dragon, or the tower?
 1 Louis) I... heard that people used to believe this dragon could talk to the dead, so I came to see why.
