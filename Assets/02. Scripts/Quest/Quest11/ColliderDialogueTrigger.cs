@@ -9,10 +9,14 @@ public class ColliderDialogueTrigger : MonoBehaviour
     public QuestSaveData questSave;
     private GameObject louis;
 
+    private void Awake()
+    {
+        PlayerPrefs.DeleteKey(PlayerPrefs.GetInt(player_name).ToString() + "_quest11");
+    }
+
     void Start()
     {
         louis = GameObject.Find("Louis");
-        PlayerPrefs.DeleteKey(PlayerPrefs.GetInt(player_name).ToString() + "_quest11");
     }
 
     private void OnTriggerEnter(Collider other)

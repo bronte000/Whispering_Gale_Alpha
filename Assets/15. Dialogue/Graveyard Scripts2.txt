@@ -1,3 +1,6 @@
+--> After Dialogue2 is initiated, PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11") = 1 // questSave.SaveQuestStarted(11); in ColliderDialogueTrigger.cs (attached to megan)
+Then, Dialogue3 is made available (Mousey_Controller.cs)
+
 Dialogue3_MisterDragon
 0 Louis) Are those two animals... Mythicals?
 1 Louis) I remember seeing them from afar, but since they don't exist in the Upper City, wow...

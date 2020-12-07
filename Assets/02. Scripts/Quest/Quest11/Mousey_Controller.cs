@@ -9,17 +9,19 @@ public class Mousey_Controller : MonoBehaviour
     private bool hasTalked;
 
     public GameObject dialogue3;
+    public string player_name;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         louis = GameObject.Find("Louis");
+        hasTalked = false; //세이브 파일이 없으니까
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if ((other.gameObject.name == "Louis") && (!hasTalked))
+        if ((other.gameObject.name == "Louis") && (!hasTalked) && (FindQuest11Value() == 1))
         {
             hasTalked = true;
             Vector3 newDirection = transform.position - louis.transform.position;
@@ -27,6 +29,14 @@ public class Mousey_Controller : MonoBehaviour
             dialogue3.GetComponent<DialogueTrigger>().TriggerDialogue();
             WhenDialogueStarts();
         }
+    }
+
+    private int FindQuest11Value() // 0 if quest11 hasn't started, 1 if quest11 has started, 2 if quest11 has ended
+    {
+        if (PlayerPrefs.HasKey(PlayerPrefs.GetInt(player_name).ToString() + "_quest11"))
+            return PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11");
+        else
+            return 0;
     }
 
     private void WhenDialogueStarts()

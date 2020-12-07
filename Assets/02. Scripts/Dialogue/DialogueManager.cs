@@ -152,7 +152,7 @@ public class DialogueManager : MonoBehaviour
 
         switch (actionCode)
         {
-            case 0: return; break;
+            case 0: return; //break;
             case 1: SceneManager.LoadScene(next.nextSceneName); break;  //load scene
             case 2: next.nextObject.GetComponent<QuestTrigger>().TriggerQuest(); break;     //trigger quest
             case 3: next.nextObject.GetComponent<DialogueTrigger>().TriggerDialogue(); break;   //trigger dialogue
