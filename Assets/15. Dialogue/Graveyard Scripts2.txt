@@ -1,4 +1,41 @@
 Dialogue3_MisterDragon
+0 Louis) Are those two animals... Mythicals?
+1 Louis) I remember seeing them from afar, but since they don't exist in the Upper City, wow...
+2 Louis) Excuse me, may I ask a question?
+3 Rabbit) Can't you see I'm dancin'?
+4 Louis) U-Um...
+5 Mouse) Hey, hey, Rabbit. Calm down. Anyone can ask a question. What would you like answered?
+6 Louis) I was wondering if you knew anything about Tom's wish?
+7 Mouse) Hmm... To-mmy... Wasn't his wish to meet the dead?
+8 Rabbit) No, Mr.Mouse. The Keeper didn't dream for the dead; he dreamt for the living.
+9 Mouse) Hey, why'd you identify meeting the dead with death?
+10 Rabbit) Well, what other way is there?
+11 Mouse) Mister Dragon used to be around...
+12 Rabbit) But Mister Dragon's DEAD here, you Mouse. He went back to the p--
+13 Louis) I'm sorry to interrupt your banter, Ms--
+14 Rabbit) Call me Rabbit. I'll call you Human in return.
+15 Louis) ...Is Rabbit your name?
+16 Rabbit) It's what humans call untamed rabbits. If that's what you mean by "name," then yes.
+17 Mouse) Excuse her antisocial tendencies. She abhors individuality in interracial conversations.
+18 Mouse) Call me Mous-ey. Cuz I like a little specialt-y.
+19 Mousey) And let me call you Louis-ey. Or will plain Louis fit your taste?
+20 Louis) (How did he know my name? I thought brain-reading magic was too complex to perform during conversation.)
+21 Rabbit) No, this male mouse is getting his hopes up in life.
+22 Rabbit) What am I to claim superiority over the white fluffy kids running around here?
+23 Rabbit) What are you, Mr.Mouse, to identify yourself with what you have been given by luck of ti--
+24 Louis) (This conversation is getting out of hand...)
+25 Louis) Ms.Rabbit, who was Mister Dragon?
+26 Rabbit) It, not who.
+27 Rabbit) It was one of us, though couple steps closer to magic's - and our - essence than me or Mr.Mouse.
+28 Rabbit) It could speak to the dead, and was almost worshipped by the people.
+29 Louis) ...really?
+30 Rabbit) ...You're speaking to us.
+31 Louis) ???
+32 Rabbit) (sigh) Go up the hill and reach the top - that tower. You'll be able to see what Mister Dragon looked like.
+33 Mousey) Yes, do so, Louisey.
+34 Mousey) It will do you good. More good than watching our dance research and nonsense rap battles, at least.
+35 Mousey) Go, go. And send Mister Dragon's remains our reminiscences.
+36 Louis) Okay... Thank you.
 
 Dialogue4_JohnsTale
 0 John) Ya here to see the dragon, or the tower?

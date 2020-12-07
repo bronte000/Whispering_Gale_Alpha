@@ -27764,17 +27764,89 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     speakers:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Louis
+    - Louis
+    - Louis
+    - Rabbit
+    - Louis
+    - Mouse
+    - Louis
+    - Mouse
+    - Rabbit
+    - Mouse
+    - Rabbit
+    - Mouse
+    - Rabbit
+    - Louis
+    - Rabbit
+    - Louis
+    - Rabbit
+    - Mouse
+    - Mouse
+    - Mousey
+    - Louis
+    - Rabbit
+    - Rabbit
+    - Rabbit
+    - Louis
+    - Louis
+    - Rabbit
+    - Rabbit
+    - Rabbit
+    - Louis
+    - Rabbit
+    - Louis
+    - Rabbit
+    - Mousey
+    - Mousey
+    - Mousey
+    - Louis
     sentences:
-    - 
-    - 
-    - 
-    - 
-    - 
+    - (Are those two animals... Mythicals?)
+    - (I remember seeing them from afar, but since they don't exist in the Upper
+      City, wow...)
+    - Excuse me, may I ask a question?
+    - Can't you see I'm dancin'?
+    - U-Um...
+    - Hey, hey, Rabbit. Calm down. Anyone can ask a question. What would you like
+      answered?
+    - I was wondering if you knew anything about Tom's wish?
+    - Hmm... To-mmy... Wasn't his wish to meet the dead?
+    - No, Mr.Mouse. The Keeper didn't dream for the dead; he dreamt for the living.
+    - Hey, why'd you identify meeting the dead with death?
+    - Well, what other way is there?
+    - Mister Dragon used to be around...
+    - But Mister Dragon's DEAD here, you Mouse. He went back to the p--
+    - I'm sorry to interrupt your banter, Ms--
+    - Call me Rabbit. I'll call you Human in return.
+    - ...Is Rabbit your name?
+    - "It's what humans call untamed rabbits. \nIf that's what you mean by \"name,\"
+      then yes."
+    - Excuse her antisocial tendencies. She abhors individuality in interracial conversations.
+    - "Call me Mous-ey. \nCuz I like a little specialt-y."
+    - And let me call you Louis-ey. Or will plain Louis fit your taste?
+    - (How did he know my name? I thought brain-reading magic was too complex to
+      perform during conversation.)
+    - No, this male mouse is getting his hopes up in life.
+    - What am I to claim superiority over the white fluffy kids running around here?
+    - What are you, Mr.Mouse, to identify yourself with what you have been given
+      by luck of ti--
+    - (This conversation is getting out of hand...)
+    - Ms.Rabbit, who was Mister Dragon?
+    - It, not who.
+    - It was one of us, though couple steps closer to magic's - and our - essence
+      than me or Mr.Mouse.
+    - It could speak to the dead, and was almost worshipped by the people.
+    - ...really?
+    - ...You're speaking to us.
+    - ???
+    - (sigh) Go up the hill and reach the top - that tower. You'll be able to see
+      what Mister Dragon looked like.
+    - Yes, do so, Louisey.
+    - It will do you good. More good than watching our dance research and nonsense
+      rap battles, at least.
+    - Go, go. And send Mister Dragon's remains our reminiscences.
+    - Okay... Thank you.
   images:
     name: 
     images: []
@@ -54735,7 +54807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 4821292241472474789}
   player_name: ctp321
-  questSave: {fileID: 0}
+  questSave: {fileID: 1070830320}
 --- !u!65 &1686226617
 BoxCollider:
   m_ObjectHideFlags: 0
