@@ -9,6 +9,7 @@ public class Q11_MouseyDance : QuestAction
     {
         GameObject mouse = GameObject.Find("mousy");
         mouse.GetComponent<Mousey_Controller>().AfterDialogue();
+        Debug.Log("sanity check: dialogue3 complete!");
         return true;
     }
 }

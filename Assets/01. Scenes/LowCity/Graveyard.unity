@@ -28111,9 +28111,10 @@ MonoBehaviour:
     images: []
   hasImages: 0
   next:
-    nextActionCode: 0
+    nextActionCode: 4
     nextObject: {fileID: 0}
-    effect: []
+    effect:
+    - {fileID: 11400000, guid: 4e3d36b1a89935740b1b0a0cad1fff36, type: 2}
     nextSceneName: 
     nextQuestNum: 0
 --- !u!1001 &850828352
@@ -64100,6 +64101,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue3: {fileID: 848915160}
+  player_name: ctp321
+--- !u!65 &1941773883
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941773881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2, z: 1.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1001 &1943695210
 PrefabInstance:
   m_ObjectHideFlags: 0
