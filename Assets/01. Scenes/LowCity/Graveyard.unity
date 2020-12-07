@@ -27764,44 +27764,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     speakers:
-    - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Louis
-    - Megan
-    - Megan
-    - Megan
-    - Megan
-    - Megan
-    - Louis
-    - Louis
-    - Megan
+    - 
+    - 
+    - 
+    - 
+    - 
     sentences:
-    - Hello...
-    - 'Oh, hi. Are you visiting a relative?
-
-      I''m the part-time keeper of this
-      graveyard, so ask me if you need something.'
-    - Um, I was wondering if my grandfather - he's over there - left anything in
-      the hands of the previous gatekeeper, Tom.
-    - Are you Louis, his granddaughter?
-    - Yes - do I need to prove it?
-    - Nah. I'll just relay what Tom always talked about. If you're not his kid then
-      I don't think you'll get it anyway.
-    - Your grandfather left behind a request - and a ton of money - to tell you about
-      the three time capsules you, him, and your grandmother buried when you were
-      ten.
-    - The first time capsule is... "inside Tom's wish."
-    - And Tom's biggest wish was for the wind to whisper words of comfort to the
-      mourning.
-    - What do you make of that? Personally, I think Tom was trying to get his hands
-      on more money from your grandfather...
-    - (The compass isn't pointing towards her, and the light has vanished...)
-    - 'I''ll... try to investigate. Grandpa always liked riddles.
-
-      Thank you.'
-    - Well, good luck.
+    - 
+    - 
+    - 
+    - 
+    - 
   images:
     name: 
     images: []
@@ -39408,6 +39381,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 474814, guid: c999aa571a98f164e8ddf817166e0ba2, type: 3}
   m_PrefabInstance: {fileID: 1179253677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1180244137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180244138}
+  - component: {fileID: 1180244139}
+  m_Layer: 5
+  m_Name: DialougeF1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1180244138
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180244137}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77416664, y: 0.77416664, z: 0.77416664}
+  m_Children: []
+  m_Father: {fileID: 792394990}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1180244139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180244137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Boy
+    - Louis
+    - Louis
+    - Boy
+    - Louis
+    - 
+    - 
+    - 
+    - 
+    sentences:
+    - Hey, can I ask you something?
+    - '...I''ll answer if you promise not to tell on my dad - or mom.
+
+      Deal?'
+    - '(Oh, it must be school time.
+
+      I suppose this is okay since I don''t
+      know who his parents are?)'
+    - Deal.
+    - 'So what''s your question.
+
+      Call me Luke, by the way. Instead of you.'
+    - I was wondering if you knew anything about Tom - the graveyard keeper.
+    - 
+    - 
+    - 
+    - 
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 0
+    nextObject: {fileID: 0}
+    effect: []
+    nextSceneName: 
+    nextQuestNum: 0
 --- !u!1001 &1180648096
 PrefabInstance:
   m_ObjectHideFlags: 0
