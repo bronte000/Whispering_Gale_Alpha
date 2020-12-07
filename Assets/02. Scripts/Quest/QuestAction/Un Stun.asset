@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a73033ad0983624cb8bb02a175cf6f7, type: 3}
-  m_Name: 8_Delayed Dialogue 1
+  m_Script: {fileID: 11500000, guid: e07b9f0c50f411c4b88be3bec321d3d6, type: 3}
+  m_Name: Un Stun
   m_EditorClassIdentifier: 
-  dialogueNum: 8
-  time: 30
+  mat: {fileID: 2100000, guid: 1bbdd1646f70fee4bb7bc35b2226b2fd, type: 2}

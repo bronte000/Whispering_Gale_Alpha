@@ -11,6 +11,8 @@ public class TurnOffMenu : QuestAction
     {
         GameObject.Find("UI").GetComponent<Inventory>().enabled = false;
         GameObject.Find("Menu").GetComponent<Button>().interactable = false;
+        GameObject Acts = GameObject.Find("Actions");
+        if (Acts != null) Acts.SetActive(false);
         return true;
     }
 }

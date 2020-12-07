@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e00856f29be778142979490c6b49cfe0, type: 3}
   m_Name: Stun
   m_EditorClassIdentifier: 
-  time: 0
+  mat: {fileID: 2100000, guid: 1bbdd1646f70fee4bb7bc35b2226b2fd, type: 2}
