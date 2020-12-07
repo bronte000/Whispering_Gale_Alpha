@@ -12,6 +12,7 @@ public class Stun : QuestAction
     {
         animator = GameObject.Find("Louis").GetComponent<Animator>();
         animator.SetBool("Stun", true);
+        GameObject.Find("LouisSpot").GetComponent<Light>().enabled = true;
         mat.color = Color.blue;
         return true;
     }
