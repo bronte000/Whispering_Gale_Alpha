@@ -9,7 +9,7 @@ public class TurnOnInventory : QuestAction
     public override bool ExecuteRole()
     {
         GameObject inventory = GameObject.Find("UI");
-        inventory.transform.GetChild(0).gameObject.SetActive(true);
+        inventory.transform.GetChild(1).gameObject.SetActive(true);
         return true;
     }
 }

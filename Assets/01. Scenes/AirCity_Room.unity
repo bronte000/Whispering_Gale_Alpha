@@ -14489,6 +14489,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 0
+  Louis: {fileID: 0}
+  BedSleep: {fileID: 0}
+  CouchSleep: {fileID: 0}
+  status: 0
   Dialogues: {fileID: 0}
 --- !u!28 &1588049890
 Texture2D:
@@ -15066,7 +15070,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: c7e17a35ce2a6674f98c490798b380cd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
