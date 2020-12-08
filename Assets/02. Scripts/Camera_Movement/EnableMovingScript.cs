@@ -14,6 +14,10 @@ public class EnableMovingScript : MonoBehaviour
     private IEnumerator delayedEnable(float time)
     {
         yield return new WaitForSeconds(time);
+        GameObject.Find("Source").GetComponent<AudioSource>().enabled = false;
+        GameObject.Find("Source").GetComponent<AudioListener>().enabled = false;
+        GameObject.Find("Camera").GetComponent<AudioSource>().enabled = true;
+        GameObject.Find("Camera").GetComponent<AudioListener>().enabled = true;
         controller.enabled = true;
     }
 }
