@@ -44,9 +44,9 @@ public class John_Controller : MonoBehaviour
     public void AfterDialogue4()
     {
         //John walks away
-        transform.rotation = johnTr.rotation;
+        transform.rotation = Quaternion.LookRotation(transform.position - louis.transform.position); //johnTr.rotation;
         anim.SetBool("D4_done", true);
-        StartCoroutine(walker());
+        StartCoroutine("walker");
         //this.gameObject.SetActive(false);
 
         //Start dialogue5
@@ -55,9 +55,8 @@ public class John_Controller : MonoBehaviour
 
     IEnumerator walker()
     {
-        new WaitForSeconds(3.0f);
-        Debug.Log("waitforseconds3");
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(10);
+        anim.SetBool("D4_done", false);
     }
 
 }
