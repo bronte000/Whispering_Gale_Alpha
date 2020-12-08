@@ -210,7 +210,6 @@ GameObject:
   - component: {fileID: 61546009}
   - component: {fileID: 61546008}
   - component: {fileID: 61546007}
-  - component: {fileID: 61546006}
   - component: {fileID: 61546005}
   m_Layer: 5
   m_Name: NextButton
@@ -251,21 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c1c5160e9c936445b2e424687119350, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &61546006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 61546003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!114 &61546007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,7 +573,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &479993971
 RectTransform:
   m_ObjectHideFlags: 0
@@ -617,7 +601,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 479993970}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -781,6 +765,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640478564}
+  m_CullTransparentMesh: 0
+--- !u!1 &715230355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 715230356}
+  - component: {fileID: 715230358}
+  - component: {fileID: 715230357}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &715230356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715230355}
+  m_LocalRotation: {x: -0, y: -0, z: 0.0000000074505797, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.1964426, y: 1.1964426, z: 1.1964426}
+  m_Children: []
+  m_Father: {fileID: 977085477}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -121.42032, y: -68.13748}
+  m_SizeDelta: {x: 60, y: -70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &715230357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715230355}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: StartButton
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &715230358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715230355}
   m_CullTransparentMesh: 0
 --- !u!1 &722783160
 GameObject:
@@ -1142,6 +1260,149 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &977085476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977085477}
+  - component: {fileID: 977085478}
+  - component: {fileID: 977085479}
+  m_Layer: 5
+  m_Name: Dialouge5_LetterFromGrandpa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &977085477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000074505797, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77417, y: 0.77417, z: 0.77417}
+  m_Children:
+  - {fileID: 715230356}
+  m_Father: {fileID: 1736426178}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &977085478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - 'Inside the orb was an old paper with a memo attached to it.
+
+      The memo
+      turned out to be a letter from Grandpa.'
+    - 'The memo read:'
+    - This old paper is a bucket list that I wrote when I was twenty-one, and stuck
+      inside a book I wanted to read.
+    - Finding and re-reading it last week while picking books to give away made me
+      feel despondent.
+    - It was a list of things I wanted to do after retirement - the portrait of a
+      young man dreaming of old age, of the end of life!
+    - I decided to put this in my time capsule because I do not want my dear Louis
+      to follow this path.
+    - Putting off the things that I really wanted to do made my time more or less
+      a burden.
+    - 'Besides, you should know I haven''t accomplished half of the things written
+      here. '
+    - (For starters, I was about to give that book away without reading it!)
+    - If you're reading this letter then you must be wondering what to do with your
+      life, at least a bit.
+    - This is an old know-it-all's wish; please dream of middle-age before retirement,
+      and of youth before middle-age.
+    - Look at the trail at least for a moment before letting your eyes reach the
+      peak.
+    - 'I did not know how to value time as much as your Grandma did, and I lost the
+      chance to make more memories.
+
+      This is proof of my regret.'
+    - 'Well, then on to the next time capsule, my lady!
+
+      Love, Grandpa'
+    - I couldn't help but give the letter a teary smile, mixed with a drop of resentment.
+    - Like always, he had left me with questions, not answers.
+    - I sighed, and returned to the house for the day.
+  images:
+    name: 
+    images:
+    - {fileID: 21300000, guid: 5e8969a30eac07e4cbc255ebe6bc7b8a, type: 3}
+    - {fileID: 21300000, guid: 5e8969a30eac07e4cbc255ebe6bc7b8a, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+  hasImages: 1
+  next:
+    nextActionCode: 3
+    nextObject: {fileID: 1619367532}
+    effect: []
+    nextSceneName: 
+    nextQuestNum: 0
+--- !u!114 &977085479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101749091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1460,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!114 &1101749094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1278,7 +1539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -240, y: -20}
+  m_AnchoredPosition: {x: -240, y: -70}
   m_SizeDelta: {x: 110, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1134915648
@@ -1547,14 +1808,13 @@ GameObject:
   - component: {fileID: 1619367533}
   - component: {fileID: 1619367535}
   - component: {fileID: 1619367534}
-  - component: {fileID: 1619367536}
   m_Layer: 5
   m_Name: Dialogue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1619367533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1568,7 +1828,7 @@ RectTransform:
   m_Children:
   - {fileID: 849485255}
   m_Father: {fileID: 1736426178}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1625,12 +1885,25 @@ MonoBehaviour:
     - So what I'd buried was a reluctance to give up.
     - I sighed, and left the three time capsules in my grandparents' house before
       going back to the Upper City.
-    - I kept the quivering compass with me, to use as a guide when I wandered back
-      - I knew I would.
+    - But I kept the quivering compass with me, to use as a guide when I wandered
+      back - I knew I would.
   images:
     name: 
-    images: []
-  hasImages: 0
+    images:
+    - {fileID: 21300000, guid: 44a50e935a759414c84eb3fe0f302cb7, type: 3}
+    - {fileID: 21300000, guid: 44a50e935a759414c84eb3fe0f302cb7, type: 3}
+    - {fileID: 21300000, guid: 8d5775c42c6a3bf4d900f2a343f26587, type: 3}
+    - {fileID: 21300000, guid: b36dc94e2b84b694787dff4aa4b9b864, type: 3}
+    - {fileID: 21300000, guid: 88716d43b2aa6b4418680d168a7ba0f4, type: 3}
+    - {fileID: 21300000, guid: 673f784495fd1864c9bc96f7777dcd73, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+  hasImages: 1
   next:
     nextActionCode: 0
     nextObject: {fileID: 0}
@@ -1645,18 +1918,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619367532}
   m_CullTransparentMesh: 0
---- !u!114 &1619367536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619367532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1736426177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1946,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 977085477}
   - {fileID: 1619367533}
   m_Father: {fileID: 142980679}
   m_RootOrder: 0
@@ -1744,7 +2006,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: -170}
-  m_SizeDelta: {x: 600, y: 200}
+  m_SizeDelta: {x: 600, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1803873673
 MonoBehaviour:

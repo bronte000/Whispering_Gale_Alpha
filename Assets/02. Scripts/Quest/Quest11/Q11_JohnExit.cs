@@ -11,6 +11,7 @@ public class Q11_JohnExit : QuestAction
     public override bool ExecuteRole()
     {
         john = GameObject.Find("john");
+        Debug.Log("john found");
         john.GetComponent<John_Controller>().AfterDialogue4();
 
         return true;
