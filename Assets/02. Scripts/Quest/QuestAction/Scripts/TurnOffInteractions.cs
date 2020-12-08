@@ -8,7 +8,8 @@ public class TurnOffInteractions : QuestAction
 {
     public override bool ExecuteRole()
     {
-        GameObject.Find("Louis").GetComponent<Louis_Interaction>().enabled = false;
+        GameObject Louis = GameObject.Find("Louis");
+        if (Louis != null) Louis.GetComponent<Louis_Interaction>().enabled = false;
         return true;
     }
 }

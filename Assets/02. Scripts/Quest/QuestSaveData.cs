@@ -42,7 +42,7 @@ public class QuestSaveData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      //  PlayerPrefs.DeleteAll(); // delete this line before building
+        PlayerPrefs.DeleteAll(); // delete this line before building
 
         if (PlayerPrefs.HasKey(player_name))
         {

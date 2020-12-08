@@ -6,6 +6,9 @@ using UnityEngine;
 public class Louis_Interaction : MonoBehaviour
 {
     public float maxDistance;
+    public GameObject Louis;
+    public GameObject BedSleep;
+    public GameObject CouchSleep;
     public int status;  // 0 for no quest, 1 for after food quest, 2 for after sleep quest
 
     private int JackCount;
@@ -31,8 +34,13 @@ public class Louis_Interaction : MonoBehaviour
     {
         if (Input.GetKeyDown("return"))
         {
-            if (status ==2) MonologueEvent(8);
-            if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance) )
+            if (status == 2)
+            {   if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance)) {
+                    if (hit.transform.tag == "Front")  MonologueEvent(14);
+                }
+                else MonologueEvent(8);
+            }
+            else if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
             {
                 switch (hit.transform.tag)
                 {
@@ -76,6 +84,9 @@ public class Louis_Interaction : MonoBehaviour
                     case "BookCase":
                         MonologueEvent(11);
                         break;
+                    case "Front":
+                        MonologueEvent(13);
+                        break;
 
                 }
             }
@@ -85,14 +96,32 @@ public class Louis_Interaction : MonoBehaviour
     void BedEvent()
     {
         MonologueEvent(12);
-
+        StartCoroutine(sleepSwitch(Louis, BedSleep, 5, 0));
     }
-    
+
     void CouchEvent()
     {
         MonologueEvent(12);
-
+        StartCoroutine(sleepSwitch(Louis, CouchSleep, 5, 1));
     }
+
+    public void WakeUp()
+    {
+        GameObject.Find("Louis").GetComponent<Animator>().SetBool("Couch", false);
+        GameObject.Find("Louis").GetComponent<Animator>().SetBool("Bed", false);
+        Louis.SetActive(true);
+        BedSleep.SetActive(false);
+        CouchSleep.SetActive(false);
+    }
+    IEnumerator sleepSwitch(GameObject unable, GameObject able, float time, int flag)
+    {
+        yield return new WaitForSeconds(time);
+        unable.SetActive(false);
+        able.SetActive(true);
+        if (flag == 0) GameObject.Find("Louis").GetComponent<Animator>().SetBool("Bed", true);
+        if (flag == 1) GameObject.Find("Louis").GetComponent<Animator>().SetBool("Couch", true);
+    }
+
 
     void BedRoomEvent()
     {
