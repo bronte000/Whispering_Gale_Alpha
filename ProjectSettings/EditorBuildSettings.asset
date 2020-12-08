@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/01. Scenes/GrandpaHouse.unity
     guid: f4ccdd8e412d1f041a6bb6a2421de7fa
   - enabled: 1
-    path: Assets/01. Scenes/LowCity/Graveyard.unity
+    path: Assets/01. Scenes/LowCity/Graveyard_old.unity
     guid: 0234c1434eaab4f458b7a24f769a56e3
   - enabled: 1
     path: Assets/01. Scenes/LowCity/Midground.unity
@@ -35,3 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01. Scenes/LowCity/TownHouses.unity
     guid: 549f60fde60550a41835c5e61e3d83a4
+  m_configObjects: {}
