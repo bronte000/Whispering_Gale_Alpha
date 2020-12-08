@@ -14,6 +14,7 @@ TagManager:
   - KitchenCabinet
   - CoffeTable
   - Reminiscence
+  - Bathroom
   layers:
   - Default
   - TransparentFX

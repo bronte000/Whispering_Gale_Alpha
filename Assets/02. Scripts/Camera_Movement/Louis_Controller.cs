@@ -16,6 +16,8 @@ public class Louis_Controller : MonoBehaviour
     private bool walking;
     private bool running;
     private bool back;
+    private bool left;
+    private bool right;
 
     private float x;
     private float z;
@@ -33,45 +35,76 @@ public class Louis_Controller : MonoBehaviour
         walking = false;
         running = false;
         back = false;
+        left = false;
+        right = false;
     }
     
 
     // Update is called once per frame
     void Update()
     {
-     //   if (controller.isGrounded)
-     //   {
+        x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
 
-            x = Input.GetAxis("Horizontal"); z = Input.GetAxis("Vertical");
+        //walk
+        if (z <= 0 && walking)
+        {
+            animator.SetBool("IsWalk", false);
+            walking = false;
+        }
+        if (z > 0 && !walking) { 
+            animator.SetBool("IsWalk", true);
+            walking = true;
+        }
             
+        //back
+        if (z < 0 && !back)
+        {
+            animator.SetBool("GoBack", true);
+            back = true;
+        }
+        if (z>=0 && back)
+        {
+            animator.SetBool("GoBack", false);
+            back = false;
+        }
 
-            //rotation
-            transform.Rotate(0, speed*x, 0);
+        //rotation
+        if (walking)
+        {
+            transform.Rotate(0, speed * x, 0);
+            if (left) {
+                animator.SetBool("TurnLeft", false);
+                left = false;}
+            if (right){
+                animator.SetBool("TurnRight", false);
+                right = false;}
+        }
+        else
+        {
+            if (x > 0 && !right)
+            {
+                right = true;
+                animator.SetBool("TurnRight", true);
+            }
+            if (x <= 0 && right)
+            {
+                right = false;
+                animator.SetBool("TurnRight", false);
+            }
+            if (x < 0 && !left)
+            {
+                left = true;
+                animator.SetBool("TurnLeft", true);
+            }
+            if (x >= 0 && left)
+            {
+                left = false;
+                animator.SetBool("TurnLeft", false);
+            }
+        }
 
-            //walk
-            if (z <= 0 && walking)
-            {
-                animator.SetBool("IsWalk", false);
-                walking = false;
-            }
-            if (z > 0 && !walking) { 
-                animator.SetBool("IsWalk", true);
-                walking = true;
-            }
-            
-            //back
-            if (z < 0 && !back)
-            {
-                animator.SetBool("GoBack", true);
-                back = true;
-            }
-            if (z>=0 && back)
-            {
-                animator.SetBool("GoBack", false);
-                back = false;
-            }
-   //     }
-        
+        //     }
+
         WalkAndRun();
     }
 
@@ -94,9 +127,13 @@ public class Louis_Controller : MonoBehaviour
         walking = false;
         running = false;
         back = false;
+        left = false;
+        right = false;
         animator.SetBool("IsRun", false);
         animator.SetBool("GoBack", false);
         animator.SetBool("IsWalk", false);
+        animator.SetBool("TurnLeft", false);
+        animator.SetBool("TurnRight", false);
     }
 
     void OnCollisionEnter(Collision collision)

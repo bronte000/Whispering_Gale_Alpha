@@ -146,7 +146,9 @@ public class DialogueManager : MonoBehaviour
     public void NextAction(NextAction next)
     {
         int actionCode = next.nextActionCode;
-        if (actionCode >= 0) {
+        if (actionCode >= 0)
+        {
+            StopAllCoroutines();
             dialogueBox.SetActive(false); DoActions(endActions); }
         else actionCode = actionCode * (-1);
 
