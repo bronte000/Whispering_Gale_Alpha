@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class John_Controller : MonoBehaviour
 {
-    public string player_name;
+    //public string player_name;
+    public GameObject louis;
     public DialogueTrigger dialogue5;
 
     private Transform johnTr;
     private Animator anim;
 
-    private bool quest11; // true if complete, false if incomplete
+    private bool quest11_done; // true if complete, false if incomplete
 
     // Start is called before the first frame update
     void Start()
@@ -18,12 +19,16 @@ public class John_Controller : MonoBehaviour
         johnTr = this.GetComponent<Transform>();
         anim = GetComponent<Animator>();
 
-        quest11 = false;
+        quest11_done = false;
+
+        if (louis.GetComponent<Louis_Controller>().quest11 == 2)
+            quest11_done = true;
+        /*
         if (PlayerPrefs.HasKey(PlayerPrefs.GetInt(player_name).ToString() + "_quest11"))
             if (PlayerPrefs.GetInt(PlayerPrefs.GetInt(player_name).ToString() + "_quest11") == 2)
                 quest11 = true;
-
-        if (quest11)
+        */
+        if (quest11_done)
             anim.SetBool("IsHappy", true); // OR change the layer default state to idle
     }
 

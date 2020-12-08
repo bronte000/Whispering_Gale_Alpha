@@ -7,6 +7,7 @@ public class Louis_Controller : MonoBehaviour
     public float speed;
     public float jumpSpeed;
     public float gravity;
+    public int quest11; // 0: not started, 1: started, 2: done
 
     private CharacterController controller;
     private Animator animator;
