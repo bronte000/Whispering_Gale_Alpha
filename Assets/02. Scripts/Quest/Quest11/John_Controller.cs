@@ -38,6 +38,7 @@ public class John_Controller : MonoBehaviour
         johnTr = GetComponent<Transform>();
         Vector3 newDirection = transform.position - louis.transform.position;
         transform.rotation = Quaternion.LookRotation(-newDirection);
+        louis.transform.rotation = Quaternion.LookRotation(newDirection);
     }
 
     public void AfterDialogue4()
@@ -45,11 +46,18 @@ public class John_Controller : MonoBehaviour
         //John walks away
         transform.rotation = johnTr.rotation;
         anim.SetBool("D4_done", true);
+        StartCoroutine(walker());
+        //this.gameObject.SetActive(false);
 
         //Start dialogue5
         dialogue5.TriggerDialogue();
-        while (this.transform.position.x > 0.0f)
-            this.gameObject.SetActive(true);
-        this.gameObject.SetActive(false);
     }
+
+    IEnumerator walker()
+    {
+        new WaitForSeconds(3.0f);
+        Debug.Log("waitforseconds3");
+        yield return new WaitForSeconds(3.0f);
+    }
+
 }

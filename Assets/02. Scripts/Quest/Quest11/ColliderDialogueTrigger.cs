@@ -30,6 +30,8 @@ public class ColliderDialogueTrigger : MonoBehaviour
             {
                 Vector3 newDirection = transform.position - louis.transform.position;
                 transform.rotation = Quaternion.LookRotation(-newDirection);
+                louis.transform.rotation = Quaternion.LookRotation(newDirection);
+                this.GetComponent<Light>().enabled = false;
                 dialogue.GetComponent<DialogueTrigger>().TriggerDialogue();
                 //questSave.SaveQuestStarted(11);
             }

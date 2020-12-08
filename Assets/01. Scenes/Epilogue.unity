@@ -1142,6 +1142,132 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &977085476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977085477}
+  - component: {fileID: 977085478}
+  - component: {fileID: 977085479}
+  m_Layer: 5
+  m_Name: Dialouge5_LetterFromGrandpa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &977085477
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000074505797, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.77417, y: 0.77417, z: 0.77417}
+  m_Children: []
+  m_Father: {fileID: 1736426178}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 464.5, y: 261.25}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &977085478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8e14ffb79ef474b89ca959d3675433, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakers:
+    - Louis
+    - Louis
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Grandpa
+    - Louis
+    - Louis
+    - Louis
+    sentences:
+    - 'Inside the orb was an old paper with a memo attached to it.
+
+      The memo
+      turned out to be a letter from Grandpa.'
+    - 'The memo read:'
+    - This old paper is a bucket list that I wrote when I was twenty-one, and stuck
+      inside a book I wanted to read.
+    - Finding and re-reading it last week while picking books to give away made me
+      feel despondent.
+    - It was a list of things I wanted to do after retirement - the portrait of a
+      young man dreaming of old age, of the end of life!
+    - I decided to put this in my time capsule because I do not want my dear Louis
+      to follow this path.
+    - Putting off the things that I really wanted to do made my time more or less
+      a burden.
+    - 'Besides, you should know I haven''t accomplished half of the things written
+      here. '
+    - (For starters, I was about to give that book away without reading it!)
+    - If you're reading this letter then you must be wondering what to do with your
+      life, at least a bit.
+    - This is an old know-it-all's wish; please dream of middle-age before retirement,
+      and of youth before middle-age.
+    - Look at the trail at least for a moment before letting your eyes reach the
+      peak.
+    - 'I did not know how to value time as much as your Grandma did, and I lost the
+      chance to make more memories.
+
+      This is proof of my regret.'
+    - 'Well, then on to the next time capsule, my lady!
+
+      Love, Grandpa'
+    - I couldn't help but give the letter a teary smile, mixed with a drop of resentment.
+    - Like always, he had left me with questions, not answers.
+    - I sighed, and returned to the house for the day.
+  images:
+    name: 
+    images: []
+  hasImages: 0
+  next:
+    nextActionCode: 3
+    nextObject: {fileID: 1619367532}
+    effect:
+    - {fileID: 0}
+    nextSceneName: 
+    nextQuestNum: 0
+--- !u!114 &977085479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977085476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1101749091
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,14 +1673,13 @@ GameObject:
   - component: {fileID: 1619367533}
   - component: {fileID: 1619367535}
   - component: {fileID: 1619367534}
-  - component: {fileID: 1619367536}
   m_Layer: 5
   m_Name: Dialogue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1619367533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1568,7 +1693,7 @@ RectTransform:
   m_Children:
   - {fileID: 849485255}
   m_Father: {fileID: 1736426178}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1645,18 +1770,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619367532}
   m_CullTransparentMesh: 0
---- !u!114 &1619367536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619367532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49601be8a65fede41bc3f4b633d0b13b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1736426177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +1798,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 977085477}
   - {fileID: 1619367533}
   m_Father: {fileID: 142980679}
   m_RootOrder: 0
