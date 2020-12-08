@@ -166,10 +166,7 @@ public class DialogueManager : MonoBehaviour
                 break;   //execute action
             case 5: next.nextObject.SetActive(true); break;
             case 6:
-                Debug.Log("entered");
                 next.nextObject.GetComponent<QuestTrigger>().QuestCompleted();
-                Debug.Log("comopleted");
-                if (next.nextQuestNum != 0) GameObject.Find("QuestManager").transform.GetChild(next.nextQuestNum).GetComponent<QuestTrigger>().TriggerQuest();
                 break;
         }
     }

@@ -12,9 +12,13 @@ TagManager:
   - ExitDoor
   - Refrigerator
   - KitchenCabinet
-  - CoffeTable
   - Reminiscence
   - Bathroom
+  - Bed
+  - Couch
+  - Table
+  - TV
+  - BookCase
   layers:
   - Default
   - TransparentFX

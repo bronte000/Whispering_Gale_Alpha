@@ -6,6 +6,7 @@ using UnityEngine;
 public class Louis_Interaction : MonoBehaviour
 {
     public float maxDistance;
+    public int status;  // 0 for no quest, 1 for after food quest, 2 for after sleep quest
 
     private int JackCount;
     private int KitchenCount;
@@ -23,19 +24,20 @@ public class Louis_Interaction : MonoBehaviour
         JackCount = 0;
         KitchenCount = 0;
         BedCount = 0;
+        status = 0;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown("return"))
         {
+            if (status ==2) MonologueEvent(8);
             if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance) )
             {
-                Debug.Log("collid");
                 switch (hit.transform.tag)
                 {
                     case "EnterDoor":
-                        BedEvent();
+                        BedRoomEvent();
                         MoveZEvent(-2.3f);
                         break;
                     case "ExitDoor":
@@ -47,20 +49,52 @@ public class Louis_Interaction : MonoBehaviour
                     case "KitchenCabinet":
                         KitchenCabinetEvent();
                         break;
-                    case "CoffeTable":
-                        Debug.Log("CoffeTable");
-                        CoffeTableEvent();
+                    case "Table":
+                        if (status == 0) MonologueEvent(7);
+                        else MonologueEvent(10);
                         break;
                     case "Bathroom":
-                        Debug.Log("BathRoom");
                         MonologueEvent(3);
                         break;
+                    case "Bed":
+                        Debug.Log("bed");
+                        if (status == 0) MonologueEvent(5);
+                        else BedEvent();
+                        break;
+                    case "Couch":
+                        if (status == 0) MonologueEvent(5);
+                        else CouchEvent();
+                        break;
+                    case "chair":
+                        Debug.Log("chair");
+                        if (status == 0) MonologueEvent(6);
+                        else MonologueEvent(10);
+                        break;
+                    case "TV":
+                        MonologueEvent(9);
+                        break;
+                    case "BookCase":
+                        MonologueEvent(11);
+                        break;
+
                 }
             }
         }
     }
-
+    
     void BedEvent()
+    {
+        MonologueEvent(12);
+
+    }
+    
+    void CouchEvent()
+    {
+        MonologueEvent(12);
+
+    }
+
+    void BedRoomEvent()
     {
         BedCount++;
         if (BedCount == 1)
@@ -68,11 +102,7 @@ public class Louis_Interaction : MonoBehaviour
             MonologueEvent(4);
         }
     }
-
-    void CoffeTableEvent()
-    {
-
-    }
+    
 
     void KitchenCabinetEvent()
     {
