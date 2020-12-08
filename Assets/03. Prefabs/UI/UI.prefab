@@ -436,6 +436,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -129
       objectReference: {fileID: 0}
+    - target: {fileID: 2584345855621715305, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
+      propertyPath: m_Text
+      value: ' Unopen spam. It is long past it''s sell by date, but it seems pretty
+        well. Why don''t you try it?'
+      objectReference: {fileID: 0}
     - target: {fileID: 3296915996113037654, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -624,6 +629,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -48.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4417752016280824910, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
+      propertyPath: m_Text
+      value: Spam
+      objectReference: {fileID: 0}
     - target: {fileID: 5072134669237227307, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -698,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5507825399193473057, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6021311535325231410, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -723,6 +732,14 @@ PrefabInstance:
     - target: {fileID: 6021311535325231410, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -129
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176837105284871695, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176837105284871695, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 6216811871215900807, guid: ac50c64553a6abe4a89d924a3ff8337d, type: 3}
       propertyPath: m_AnchorMax.y
