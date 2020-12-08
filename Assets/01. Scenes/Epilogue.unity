@@ -1366,8 +1366,25 @@ MonoBehaviour:
     - I sighed, and returned to the house for the day.
   images:
     name: 
-    images: []
-  hasImages: 0
+    images:
+    - {fileID: 21300000, guid: 5e8969a30eac07e4cbc255ebe6bc7b8a, type: 3}
+    - {fileID: 21300000, guid: 5e8969a30eac07e4cbc255ebe6bc7b8a, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+    - {fileID: 21300000, guid: 57949f01a2e0ff7438b9bd43e28b14e4, type: 3}
+  hasImages: 1
   next:
     nextActionCode: 3
     nextObject: {fileID: 1619367532}
@@ -1872,8 +1889,21 @@ MonoBehaviour:
       back - I knew I would.
   images:
     name: 
-    images: []
-  hasImages: 0
+    images:
+    - {fileID: 21300000, guid: 44a50e935a759414c84eb3fe0f302cb7, type: 3}
+    - {fileID: 21300000, guid: 44a50e935a759414c84eb3fe0f302cb7, type: 3}
+    - {fileID: 21300000, guid: 8d5775c42c6a3bf4d900f2a343f26587, type: 3}
+    - {fileID: 21300000, guid: b36dc94e2b84b694787dff4aa4b9b864, type: 3}
+    - {fileID: 21300000, guid: 88716d43b2aa6b4418680d168a7ba0f4, type: 3}
+    - {fileID: 21300000, guid: 673f784495fd1864c9bc96f7777dcd73, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+    - {fileID: 21300000, guid: d192ba8c31ff0674e9c87204f3fdf932, type: 3}
+  hasImages: 1
   next:
     nextActionCode: 0
     nextObject: {fileID: 0}
