@@ -9,6 +9,7 @@ public class Louis_Interaction : MonoBehaviour
 
     private int JackCount;
     private int KitchenCount;
+    private int BedCount;
 
     private LayerMask layerMask;
     private RaycastHit hit;
@@ -21,6 +22,7 @@ public class Louis_Interaction : MonoBehaviour
         maxDistance = 2.0f;
         JackCount = 0;
         KitchenCount = 0;
+        BedCount = 0;
     }
 
     private void Update()
@@ -33,27 +35,37 @@ public class Louis_Interaction : MonoBehaviour
                 switch (hit.transform.tag)
                 {
                     case "EnterDoor":
-                        Debug.Log("EnterDoor");
+                        BedEvent();
                         MoveZEvent(-2.3f);
                         break;
                     case "ExitDoor":
-                        Debug.Log("ExitDoor");
                         MoveZEvent(2.3f);
                         break;
                     case "Refrigerator":
-                        Debug.Log("Refrigerator");
                         MonologueEvent(0);  // Refrigerator event
                         break;
                     case "KitchenCabinet":
-                        Debug.Log("KitchenCabinet");
                         KitchenCabinetEvent();
                         break;
                     case "CoffeTable":
                         Debug.Log("CoffeTable");
                         CoffeTableEvent();
                         break;
+                    case "Bathroom":
+                        Debug.Log("BathRoom");
+                        MonologueEvent(3);
+                        break;
                 }
             }
+        }
+    }
+
+    void BedEvent()
+    {
+        BedCount++;
+        if (BedCount == 1)
+        {
+            MonologueEvent(4);
         }
     }
 
