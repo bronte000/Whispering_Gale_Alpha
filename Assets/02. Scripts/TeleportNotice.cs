@@ -14,7 +14,6 @@ public class TeleportNotice : MonoBehaviour
         currentScene = SceneManager.GetActiveScene().name;
         teleportNotice = GameObject.Find("TeleportNotice");
         DisableOwnSceneOption(currentScene);
-        this.gameObject.SetActive(false);
     }
 
     private void DisableOwnSceneOption(string sceneName)

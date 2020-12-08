@@ -36,7 +36,8 @@ public class Louis_Interaction : MonoBehaviour
         {
             if (status == 2)
             {   if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance)) {
-                    if (hit.transform.tag == "Front")  MonologueEvent(14);
+                    if (hit.transform.tag == "Front") MonologueEvent(14);
+                    else if (hit.transform.tag == "ExitDoor") MoveZEvent(2.3f);
                     else MonologueEvent(8);
                 }
                 else MonologueEvent(8);
